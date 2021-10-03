@@ -10,6 +10,15 @@
           "functions": [
             {
               "function": "minecraft:set_name",
+              "name": [
+                [
+                  "",
+                  {"text":"Game Area","color":"white","bold":false,"italic":false}
+                ]
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
               "conditions": [
                 {
                   "condition": "minecraft:entity_scores",
@@ -19,16 +28,16 @@
                   }
                 }
               ],
-              "name": [
+              "lore": [
                 [
                   "",
-                  {"text":"unlimited area","color":"green","bold":false,"italic":false},
+                  {"text":"Unlimited","color":"green","bold":true,"italic":false},
                   {"text":" selected","color":"white","bold":false,"italic":false}
                 ]
               ]
             },
             {
-              "function": "minecraft:set_name",
+              "function": "minecraft:set_lore",
               "conditions": [
                 {
                   "condition": "minecraft:entity_scores",
@@ -38,16 +47,16 @@
                   }
                 }
               ],
-              "name": [
+              "lore": [
                 [
                   "",
-                  {"text":"500m square","color":"green","bold":false,"italic":false},
+                  {"text":"500m square","color":"green","bold":true,"italic":false},
                   {"text":" selected","color":"white","bold":false,"italic":false}
                 ]
               ]
             },
             {
-              "function": "minecraft:set_name",
+              "function": "minecraft:set_lore",
               "conditions": [
                 {
                   "condition": "minecraft:entity_scores",
@@ -57,16 +66,16 @@
                   }
                 }
               ],
-              "name": [
+              "lore": [
                 [
                   "",
-                  {"text":"1000m square","color":"green","bold":false,"italic":false},
+                  {"text":"1000m square","color":"green","bold":true,"italic":false},
                   {"text":" selected","color":"white","bold":false,"italic":false}
                 ]
               ]
             },
             {
-              "function": "minecraft:set_name",
+              "function": "minecraft:set_lore",
               "conditions": [
                 {
                   "condition": "minecraft:entity_scores",
@@ -76,16 +85,16 @@
                   }
                 }
               ],
-              "name": [
+              "lore": [
                 [
                   "",
-                  {"text":"1500m square","color":"green","bold":false,"italic":false},
+                  {"text":"1500m square","color":"green","bold":true,"italic":false},
                   {"text":" selected","color":"white","bold":false,"italic":false}
                 ]
               ]
             },
             {
-              "function": "minecraft:set_name",
+              "function": "minecraft:set_lore",
               "conditions": [
                 {
                   "condition": "minecraft:entity_scores",
@@ -95,13 +104,17 @@
                   }
                 }
               ],
-              "name": [
+              "lore": [
                 [
                   "",
-                  {"text":"2000m square","color":"green","bold":false,"italic":false},
+                  {"text":"2000m square","color":"green","bold":true,"italic":false},
                   {"text":" selected","color":"white","bold":false,"italic":false}
                 ]
               ]
+            },
+            {
+              "function":"minecraft:set_nbt",
+              "tag":"{HideFlags:63,Tags:[\"MBB_SettingItem\",\"MBB_GameArea\"]}"
             }
           ]
         }

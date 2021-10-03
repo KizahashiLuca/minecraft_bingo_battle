@@ -16,4 +16,4 @@ tellraw @a ["",{"text":" the inventory.","color":"white"}]
 function mbb:system/common/message_end
 
 ## Change Gamephase
-function mbb:system/setting/gui/root/change_to
+function mbb:system/setting/gui/change_to

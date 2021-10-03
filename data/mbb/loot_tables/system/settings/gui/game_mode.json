@@ -6,13 +6,13 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:lava_bucket",
+          "name": "minecraft:campfire",
           "conditions": [
             {
               "condition": "minecraft:entity_scores",
               "entity": "this",
               "scores": {
-                "MBB_KeepInve": 0
+                "MBB_GameMode": 1
               }
             }
           ],
@@ -22,23 +22,35 @@
               "name": [
                 [
                   "",
-                  {"text":"Keep inventory ","color":"white","bold":false,"italic":false},
-                  {"text":"FALSE","color":"red","bold":true,"italic":false},
+                  {"text":"Game Mode","color":"white","bold":false,"italic":false}
+                ]
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                [
+                  "",
+                  {"text":"Score Attack Mode","color":"light_purple","bold":true,"italic":false},
                   {"text":" selected","color":"white","bold":false,"italic":false}
                 ]
               ]
+            },
+            {
+              "function":"minecraft:set_nbt",
+              "tag":"{HideFlags:63,Tags:[\"MBB_SettingItem\",\"MBB_GameMode\"]}"
             }
           ]
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:water_bucket",
+          "name": "minecraft:soul_campfire",
           "conditions": [
             {
               "condition": "minecraft:entity_scores",
               "entity": "this",
               "scores": {
-                "MBB_KeepInve": 1
+                "MBB_GameMode": 2
               }
             }
           ],
@@ -48,11 +60,23 @@
               "name": [
                 [
                   "",
-                  {"text":"Keep inventory ","color":"white","bold":false,"italic":false},
-                  {"text":"TRUE","color":"green","bold":true,"italic":false},
+                  {"text":"Game Mode","color":"white","bold":false,"italic":false}
+                ]
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                [
+                  "",
+                  {"text":"Time Attack Mode","color":"aqua","bold":true,"italic":false},
                   {"text":" selected","color":"white","bold":false,"italic":false}
                 ]
               ]
+            },
+            {
+              "function":"minecraft:set_nbt",
+              "tag":"{HideFlags:63,Tags:[\"MBB_SettingItem\",\"MBB_GameMode\"]}"
             }
           ]
         }

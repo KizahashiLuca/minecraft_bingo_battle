@@ -6,13 +6,13 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:campfire",
+          "name": "minecraft:lava_bucket",
           "conditions": [
             {
               "condition": "minecraft:entity_scores",
               "entity": "this",
               "scores": {
-                "MBB_GameMode": 1
+                "MBB_KeepInve": 0
               }
             }
           ],
@@ -22,22 +22,35 @@
               "name": [
                 [
                   "",
-                  {"text":"Score Attack Mode","color":"light_purple","bold":true,"italic":false},
+                  {"text":"Keep inventory","color":"white","bold":false,"italic":false}
+                ]
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                [
+                  "",
+                  {"text":"FALSE","color":"red","bold":true,"italic":false},
                   {"text":" selected","color":"white","bold":false,"italic":false}
                 ]
               ]
+            },
+            {
+              "function":"minecraft:set_nbt",
+              "tag":"{HideFlags:63,Tags:[\"MBB_SettingItem\",\"MBB_KeepInventory\"]}"
             }
           ]
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:soul_campfire",
+          "name": "minecraft:water_bucket",
           "conditions": [
             {
               "condition": "minecraft:entity_scores",
               "entity": "this",
               "scores": {
-                "MBB_GameMode": 2
+                "MBB_KeepInve": 1
               }
             }
           ],
@@ -47,10 +60,23 @@
               "name": [
                 [
                   "",
-                  {"text":"Time Attack Mode","color":"aqua","bold":true,"italic":false},
+                  {"text":"Keep inventory","color":"white","bold":false,"italic":false}
+                ]
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                [
+                  "",
+                  {"text":"TRUE","color":"green","bold":true,"italic":false},
                   {"text":" selected","color":"white","bold":false,"italic":false}
                 ]
               ]
+            },
+            {
+              "function":"minecraft:set_nbt",
+              "tag":"{HideFlags:63,Tags:[\"MBB_SettingItem\",\"MBB_KeepInventory\"]}"
             }
           ]
         }

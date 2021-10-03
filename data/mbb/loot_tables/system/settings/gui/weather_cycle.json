@@ -6,13 +6,13 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:ender_pearl",
+          "name": "minecraft:dead_fire_coral_block",
           "conditions": [
             {
               "condition": "minecraft:entity_scores",
               "entity": "this",
               "scores": {
-                "MBB_GameGroup": 1
+                "MBB_WeatherCycle": 0
               }
             }
           ],
@@ -22,22 +22,35 @@
               "name": [
                 [
                   "",
-                  {"text":"Individual Battle","color":"green","bold":true,"italic":false},
+                  {"text":"Weather Cycle","color":"white","bold":false,"italic":false}
+                ]
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                [
+                  "",
+                  {"text":"FALSE","color":"red","bold":true,"italic":false},
                   {"text":" selected","color":"white","bold":false,"italic":false}
                 ]
               ]
+            },
+            {
+              "function":"minecraft:set_nbt",
+              "tag":"{HideFlags:63,Tags:[\"MBB_SettingItem\",\"MBB_WeatherCycle\"]}"
             }
           ]
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:ender_eye",
+          "name": "minecraft:fire_coral_block",
           "conditions": [
             {
               "condition": "minecraft:entity_scores",
               "entity": "this",
               "scores": {
-                "MBB_GameGroup": 2
+                "MBB_WeatherCycle": 1
               }
             }
           ],
@@ -47,10 +60,23 @@
               "name": [
                 [
                   "",
-                  {"text":"Team Battle","color":"red","bold":true,"italic":false},
+                  {"text":"Weather Cycle","color":"white","bold":false,"italic":false}
+                ]
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                [
+                  "",
+                  {"text":"TRUE","color":"green","bold":true,"italic":false},
                   {"text":" selected","color":"white","bold":false,"italic":false}
                 ]
               ]
+            },
+            {
+              "function":"minecraft:set_nbt",
+              "tag":"{HideFlags:63,Tags:[\"MBB_SettingItem\",\"MBB_WeatherCycle\"]}"
             }
           ]
         }

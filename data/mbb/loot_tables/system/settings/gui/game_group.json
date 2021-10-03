@@ -6,13 +6,13 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:lava_bucket",
+          "name": "minecraft:ender_pearl",
           "conditions": [
             {
               "condition": "minecraft:entity_scores",
               "entity": "this",
               "scores": {
-                "MBB_WeatherCycle": 0
+                "MBB_GameGroup": 1
               }
             }
           ],
@@ -22,23 +22,26 @@
               "name": [
                 [
                   "",
-                  {"text":"Weather Cycle ","color":"white","bold":false,"italic":false},
-                  {"text":"FALSE","color":"red","bold":true,"italic":false},
+                  {"text":"Individual Battle","color":"green","bold":true,"italic":false},
                   {"text":" selected","color":"white","bold":false,"italic":false}
                 ]
               ]
+            },
+            {
+              "function":"minecraft:set_nbt",
+              "tag":"{HideFlags:63,Tags:[\"MBB_SettingItem\",\"MBB_GameGroup\"]}"
             }
           ]
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:water_bucket",
+          "name": "minecraft:ender_eye",
           "conditions": [
             {
               "condition": "minecraft:entity_scores",
               "entity": "this",
               "scores": {
-                "MBB_WeatherCycle": 1
+                "MBB_GameGroup": 2
               }
             }
           ],
@@ -48,11 +51,14 @@
               "name": [
                 [
                   "",
-                  {"text":"Weather Cycle ","color":"white","bold":false,"italic":false},
-                  {"text":"TRUE","color":"green","bold":true,"italic":false},
+                  {"text":"Team Battle","color":"red","bold":true,"italic":false},
                   {"text":" selected","color":"white","bold":false,"italic":false}
                 ]
               ]
+            },
+            {
+              "function":"minecraft:set_nbt",
+              "tag":"{HideFlags:63,Tags:[\"MBB_SettingItem\",\"MBB_GameGroup\"]}"
             }
           ]
         }

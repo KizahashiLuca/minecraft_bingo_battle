@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:lava_bucket",
+          "name": "minecraft:dead_horn_coral_block",
           "conditions": [
             {
               "condition": "minecraft:entity_scores",
@@ -22,17 +22,29 @@
               "name": [
                 [
                   "",
-                  {"text":"Daylight Cycle ","color":"white","bold":false,"italic":false},
+                  {"text":"Daylight Cycle","color":"white","bold":false,"italic":false}
+                ]
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                [
+                  "",
                   {"text":"FALSE","color":"red","bold":true,"italic":false},
                   {"text":" selected","color":"white","bold":false,"italic":false}
                 ]
               ]
+            },
+            {
+              "function":"minecraft:set_nbt",
+              "tag":"{HideFlags:63,Tags:[\"MBB_SettingItem\",\"MBB_DaylightCycle\"]}"
             }
           ]
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:water_bucket",
+          "name": "minecraft:horn_coral_block",
           "conditions": [
             {
               "condition": "minecraft:entity_scores",
@@ -48,11 +60,23 @@
               "name": [
                 [
                   "",
-                  {"text":"Daylight Cycle ","color":"white","bold":false,"italic":false},
+                  {"text":"Daylight Cycle","color":"white","bold":false,"italic":false}
+                ]
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                [
+                  "",
                   {"text":"TRUE","color":"green","bold":true,"italic":false},
                   {"text":" selected","color":"white","bold":false,"italic":false}
                 ]
               ]
+            },
+            {
+              "function":"minecraft:set_nbt",
+              "tag":"{HideFlags:63,Tags:[\"MBB_SettingItem\",\"MBB_DaylightCycle\"]}"
             }
           ]
         }

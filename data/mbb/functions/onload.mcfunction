@@ -11,7 +11,7 @@ gamerule maxCommandChainLength 65536
 gamerule doMobSpawning false
 gamerule doFireTick false
 
-## Send Title Message
+## Send messages
 function mbb:system/common/message_begin
 tellraw @a ["",{"text":"  Thank you for Downloading!","color":"white"}]
 tellraw @a ["",{"text":"-----------------------------","color":"white"}]
