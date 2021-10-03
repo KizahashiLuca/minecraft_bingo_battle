@@ -1,0 +1,114 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:stone_sword",
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "MBB_Difficulty": 1
+              }
+            }
+          ],
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                [
+                  "",
+                  {"text":"Difficulty ","color":"white","bold":false,"italic":false},
+                  {"text":"Easy","color":"blue","bold":true,"italic":false},
+                  {"text":" selected","color":"white","bold":false,"italic":false}
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:iron_sword",
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "MBB_Difficulty": 2
+              }
+            }
+          ],
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                [
+                  "",
+                  {"text":"Difficulty ","color":"white","bold":false,"italic":false},
+                  {"text":"Normal","color":"lime","bold":true,"italic":false},
+                  {"text":" selected","color":"white","bold":false,"italic":false}
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond_sword",
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "MBB_Difficulty": 3
+              }
+            }
+          ],
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                [
+                  "",
+                  {"text":"Difficulty ","color":"white","bold":false,"italic":false},
+                  {"text":"Hard","color":"yellow","bold":true,"italic":false},
+                  {"text":" selected","color":"white","bold":false,"italic":false}
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_sword",
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "MBB_Difficulty": 4
+              }
+            }
+          ],
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                [
+                  "",
+                  {"text":"Difficulty ","color":"white","bold":false,"italic":false},
+                  {"text":"HardCore","color":"red","bold":true,"italic":false},
+                  {"text":" selected","color":"white","bold":false,"italic":false}
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

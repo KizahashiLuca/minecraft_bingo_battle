@@ -1,0 +1,139 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "MBB_GameMode": 1
+          }
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:clock",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_scores",
+                  "entity": "this",
+                  "scores": {
+                    "MBB_GameTime": 10
+                  }
+                }
+              ],
+              "name": [
+                [
+                  "",
+                  {"text":"10 min.","color":"green","bold":false,"italic":false},
+                  {"text":" selected","color":"white","bold":false,"italic":false}
+                ]
+              ]
+            },
+            {
+              "function": "minecraft:set_name",
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_scores",
+                  "entity": "this",
+                  "scores": {
+                    "MBB_GameTime": 20
+                  }
+                }
+              ],
+              "name": [
+                [
+                  "",
+                  {"text":"20 min.","color":"green","bold":false,"italic":false},
+                  {"text":" selected","color":"white","bold":false,"italic":false}
+                ]
+              ]
+            },
+            {
+              "function": "minecraft:set_name",
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_scores",
+                  "entity": "this",
+                  "scores": {
+                    "MBB_GameTime": 30
+                  }
+                }
+              ],
+              "name": [
+                [
+                  "",
+                  {"text":"30 min.","color":"green","bold":false,"italic":false},
+                  {"text":" selected","color":"white","bold":false,"italic":false}
+                ]
+              ]
+            },
+            {
+              "function": "minecraft:set_name",
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_scores",
+                  "entity": "this",
+                  "scores": {
+                    "MBB_GameTime": 40
+                  }
+                }
+              ],
+              "name": [
+                [
+                  "",
+                  {"text":"40 min.","color":"green","bold":false,"italic":false},
+                  {"text":" selected","color":"white","bold":false,"italic":false}
+                ]
+              ]
+            },
+            {
+              "function": "minecraft:set_name",
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_scores",
+                  "entity": "this",
+                  "scores": {
+                    "MBB_GameTime": 50
+                  }
+                }
+              ],
+              "name": [
+                [
+                  "",
+                  {"text":"50 min.","color":"green","bold":false,"italic":false},
+                  {"text":" selected","color":"white","bold":false,"italic":false}
+                ]
+              ]
+            },
+            {
+              "function": "minecraft:set_name",
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_scores",
+                  "entity": "this",
+                  "scores": {
+                    "MBB_GameTime": 60
+                  }
+                }
+              ],
+              "name": [
+                [
+                  "",
+                  {"text":"60 min.","color":"green","bold":false,"italic":false},
+                  {"text":" selected","color":"white","bold":false,"italic":false}
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

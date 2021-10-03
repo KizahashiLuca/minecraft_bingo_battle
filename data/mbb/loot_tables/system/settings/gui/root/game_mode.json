@@ -1,0 +1,60 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:campfire",
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "MBB_GameMode": 1
+              }
+            }
+          ],
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                [
+                  "",
+                  {"text":"Score Attack Mode","color":"light_purple","bold":true,"italic":false},
+                  {"text":" selected","color":"white","bold":false,"italic":false}
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:soul_campfire",
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "MBB_GameMode": 2
+              }
+            }
+          ],
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                [
+                  "",
+                  {"text":"Time Attack Mode","color":"aqua","bold":true,"italic":false},
+                  {"text":" selected","color":"white","bold":false,"italic":false}
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

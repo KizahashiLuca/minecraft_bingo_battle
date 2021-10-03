@@ -1,0 +1,60 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:ender_pearl",
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "MBB_GameGroup": 1
+              }
+            }
+          ],
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                [
+                  "",
+                  {"text":"Individual Battle","color":"green","bold":true,"italic":false},
+                  {"text":" selected","color":"white","bold":false,"italic":false}
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:ender_eye",
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "MBB_GameGroup": 2
+              }
+            }
+          ],
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                [
+                  "",
+                  {"text":"Team Battle","color":"red","bold":true,"italic":false},
+                  {"text":" selected","color":"white","bold":false,"italic":false}
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

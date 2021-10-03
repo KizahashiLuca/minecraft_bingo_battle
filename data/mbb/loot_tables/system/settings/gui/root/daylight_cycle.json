@@ -1,0 +1,62 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:lava_bucket",
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "MBB_DayligtCycle": 0
+              }
+            }
+          ],
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                [
+                  "",
+                  {"text":"Daylight Cycle ","color":"white","bold":false,"italic":false},
+                  {"text":"FALSE","color":"red","bold":true,"italic":false},
+                  {"text":" selected","color":"white","bold":false,"italic":false}
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:water_bucket",
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "MBB_DayligtCycle": 1
+              }
+            }
+          ],
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                [
+                  "",
+                  {"text":"Daylight Cycle ","color":"white","bold":false,"italic":false},
+                  {"text":"TRUE","color":"green","bold":true,"italic":false},
+                  {"text":" selected","color":"white","bold":false,"italic":false}
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
