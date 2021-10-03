@@ -8,14 +8,14 @@
 
 ## Reset game
 function mbb:system/common/reset_gamerules
-function mbb:system/common/reset_worlds
 function mbb:system/common/reset_tags
+function mbb:system/common/reset_worlds
 
 ## Initialize game
 function mbb:system/setting/initialize/set_gamerules
+function mbb:system/setting/initialize/set_tags
 function mbb:system/setting/initialize/set_entities
 function mbb:system/setting/initialize/set_worlds
-function mbb:system/setting/initialize/set_tags
 
 ## Add scoreboards
 function mbb:system/setting/initialize/add_scoreboards

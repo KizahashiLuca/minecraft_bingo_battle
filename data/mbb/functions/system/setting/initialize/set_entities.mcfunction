@@ -8,6 +8,7 @@
 
 ## Set gamemode
 gamemode adventure @a[gamemode=!spectator]
+gamemode adventure @p[tag=MBB_Host]
 
 ## Set effect
 effect clear @a

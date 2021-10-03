@@ -10,6 +10,16 @@
 ### Gamesystem
 scoreboard objectives remove MBB_NumPlayer
 scoreboard objectives remove MBB_GamePhase
+### GameGroup - 1:Individual, 2:Team
+scoreboard objectives remove MBB_GameGroup
+### WeatherCycle - 0:FALSE, 1:TRUE
+scoreboard objectives remove MBB_WeatherCycle
+### DaylightCycle - 0:FALSE, 1:TRUE
+scoreboard objectives remove MBB_DayligtCycle
+### KeepInventory - 0:FALSE, 1:TRUE
+scoreboard objectives remove MBB_KeepInve
+### TeamNumber (TeamBattle only)
+scoreboard objectives remove MBB_NumTeam
 ### Gamemode - 1:ScoreAttack, 2:TimeAttack
 scoreboard objectives remove MBB_GameMode
 ### Gamearea
@@ -18,14 +28,6 @@ scoreboard objectives remove MBB_GameArea
 scoreboard objectives remove MBB_GameTime
 ### Difficulty - 1:easy, 2:normal, 3:hard, 4:hardcore
 scoreboard objectives remove MBB_Difficulty
-### WeatherCycle - 0:FALSE, 1:TRUE
-scoreboard objectives remove MBB_WeatherCycle
-### DaylightCycle - 0:FALSE, 1:TRUE
-scoreboard objectives remove MBB_DayligtCycle
-### KeepInventory - 0:FALSE, 1:TRUE
-scoreboard objectives remove MBB_KeepInve
-### GameGroup - 1:Individual, 2:Team
-scoreboard objectives remove MBB_GameGroup
 ### Sheet
 scoreboard objectives remove MBB_Sheet00
 scoreboard objectives remove MBB_Sheet01

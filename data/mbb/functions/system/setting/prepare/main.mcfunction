@@ -15,7 +15,6 @@ execute if score #mbb MBB_GamePhase matches 90 as @p[tag=MBB_Host,predicate=mbb:
 execute if score #mbb MBB_GamePhase matches 90 as @p[tag=MBB_Host,predicate=mbb:system/settings/gui/weather_cycle] run function mbb:system/setting/gui/weather_cycle
 execute if score #mbb MBB_GamePhase matches 90 as @p[tag=MBB_Host,predicate=mbb:system/settings/gui/daylight_cycle] run function mbb:system/setting/gui/daylight_cycle
 execute if score #mbb MBB_GamePhase matches 90 as @p[tag=MBB_Host,predicate=mbb:system/settings/gui/keep_inventory] run function mbb:system/setting/gui/keep_inventory
-execute if score #mbb MBB_GamePhase matches 90 as @p[tag=MBB_Host,predicate=mbb:system/settings/gui/team_number] run function mbb:system/setting/gui/team_number
 execute if score #mbb MBB_GamePhase matches 90 as @p[tag=MBB_Host,predicate=mbb:system/settings/gui/game_mode] run function mbb:system/setting/gui/game_mode
 execute if score #mbb MBB_GamePhase matches 90 as @p[tag=MBB_Host,predicate=mbb:system/settings/gui/game_area] run function mbb:system/setting/gui/game_area
 execute if score #mbb MBB_GamePhase matches 90 as @p[tag=MBB_Host,predicate=mbb:system/settings/gui/game_time] run function mbb:system/setting/gui/game_time

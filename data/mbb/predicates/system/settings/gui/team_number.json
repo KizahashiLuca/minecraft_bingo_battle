@@ -3,7 +3,7 @@
     "condition": "minecraft:entity_scores",
     "entity": "this",
     "scores": {
-      "MBB_GameMode": 1
+      "MBB_GameGroup": 2
     }
   },
   {
@@ -12,7 +12,7 @@
       "condition": "minecraft:entity_properties",
       "entity": "this",
       "predicate": {
-        "nbt": "{Inventory:[{Slot:22b,tag:{Tags:[\"MBB_SettingItem\",\"MBB_GameTime\"]}}]}"
+        "nbt": "{Inventory:[{Slot:16b,tag:{Tags:[\"MBB_SettingItem\",\"MBB_TeamNumber\"]}}]}"
       }
     }
   }

@@ -4,7 +4,7 @@
     "condition": "minecraft:entity_properties",
     "entity": "this",
     "predicate": {
-      "nbt": "{Inventory:[{Slot:26b,tag:{Tags:[\"MBB_SettingItem\",\"MBB_GameGroup\"]}}]}"
+      "nbt": "{Inventory:[{Slot:9b,tag:{Tags:[\"MBB_SettingItem\",\"MBB_GameGroup\"]}}]}"
     }
   }
 }
