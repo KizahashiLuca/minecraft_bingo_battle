@@ -7,18 +7,20 @@
 #####################################
 
 ## Reset game
-function mbb:system/common/reset_gamerules
-function mbb:system/common/reset_tags
-function mbb:system/common/reset_worlds
+function mbb:system/common/reset_game/reset_gamerules
+function mbb:system/common/reset_game/reset_tags
+function mbb:system/common/reset_game/reset_worlds
+function mbb:system/common/reset_game/reset_bossbar
 
 ## Initialize game
 function mbb:system/setting/initialize/set_gamerules
 function mbb:system/setting/initialize/set_tags
 function mbb:system/setting/initialize/set_entities
 function mbb:system/setting/initialize/set_worlds
+function mbb:system/setting/initialize/set_bossbar
 
 ## Add scoreboards
-function mbb:system/setting/initialize/add_scoreboards
+function mbb:system/setting/initialize/set_scoreboards
 
 ## Count players
 function mbb:system/common/count_players

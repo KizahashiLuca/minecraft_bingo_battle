@@ -21,5 +21,8 @@ clear @a
 experience set @a 0 levels
 experience set @a 0 points
 
-## Remove advancements
+## Reset advancements
 advancement revoke @a everything
+
+## Reset recipes
+recipe take @a *

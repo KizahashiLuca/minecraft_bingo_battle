@@ -6,8 +6,11 @@
 ## Version   : α-1.0
 #####################################
 
-## Send messages
-function mbb:system/finish/quit_messages
+## Leave team
+team leave @s
 
-## Reset game
-function mbb:system/common/reset_game/main
+## Set spectator
+gamemode spectator @s
+
+## Set tag
+tag @s add MBB_Spectator

@@ -28,6 +28,16 @@ scoreboard objectives add MBB_GameArea dummy
 scoreboard objectives add MBB_GameTime dummy
 ### Difficulty - 1:easy, 2:normal, 3:hard, 4:hardcore
 scoreboard objectives add MBB_Difficulty dummy
+### Position
+scoreboard objectives add MBB_PosX dummy
+scoreboard objectives add MBB_PosY dummy
+scoreboard objectives add MBB_PosZ dummy
+scoreboard objectives add MBB_Angle dummy
+scoreboard objectives add MBB_45 dummy
+### Timer
+scoreboard objectives add MBB_Tick dummy
+scoreboard objectives add MBB_Second dummy
+scoreboard objectives add MBB_Minute dummy
 ### Sheet
 scoreboard objectives add MBB_Sheet00 dummy
 scoreboard objectives add MBB_Sheet01 dummy
@@ -58,3 +68,5 @@ scoreboard players set @p[tag=MBB_Host] MBB_GameArea 1000
 scoreboard players set @p[tag=MBB_Host] MBB_GameTime 10
 ### Difficulty - 1:easy, 2:normal, 3:hard, 4:hardcore
 scoreboard players set @p[tag=MBB_Host] MBB_Difficulty 2
+### Position
+scoreboard players set #mbb MBB_45 45

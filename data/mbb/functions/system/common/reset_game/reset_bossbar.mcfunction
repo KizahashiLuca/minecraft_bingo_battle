@@ -6,8 +6,5 @@
 ## Version   : α-1.0
 #####################################
 
-## Send messages
-function mbb:system/finish/quit_messages
-
-## Reset game
-function mbb:system/common/reset_game/main
+## Reset bossbar
+bossbar remove mbb:bossbar

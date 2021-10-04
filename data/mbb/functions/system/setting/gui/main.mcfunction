@@ -23,3 +23,6 @@ execute if score #mbb MBB_GamePhase matches 90 as @p[tag=MBB_Host,predicate=mbb:
 
 execute if score #mbb MBB_GamePhase matches 90 as @p[tag=MBB_Host,predicate=mbb:system/settings/gui/cancel] run function mbb:system/setting/gui/cancel
 execute if score #mbb MBB_GamePhase matches 90 as @p[tag=MBB_Host,predicate=mbb:system/settings/gui/ok] run function mbb:system/setting/gui/ok
+
+## Count players
+function mbb:system/common/count_players
