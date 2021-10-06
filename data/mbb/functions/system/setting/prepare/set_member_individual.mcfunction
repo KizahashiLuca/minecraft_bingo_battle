@@ -6,10 +6,8 @@
 ## Version   : α-1.0
 #####################################
 
-## Remove tags
-tag @a remove MBB_Host
-tag @a remove MBB_Player
-tag @a remove MBB_Spectator
-tag @a remove MBB_TeamLeader
-tag @a remove MBB_SetMemberMessage
-tag @a remove MBB_PlayerNotSetTeam
+## Send messages
+tellraw @a ["",{"text":"   - ","color":"white","bold":false},{"selector":"@s"}]
+
+## Add a tag
+tag @s add MBB_SetMemberMessage

@@ -6,9 +6,9 @@
 ## Version   : α-1.0
 #####################################
 
-## Calculate time every tick
-execute if score #mbb MBB_Tick matches 0 run scoreboard players set #mbb MBB_Tick 20
-scoreboard players remove #mbb MBB_Tick 1
-
 ## Calculate time every second
-execute if score #mbb MBB_Tick matches 0 run function mbb:system/setting/prepare/count_down/second
+execute if score #mbb MBB_Tick matches 0 run function mbb:system/ongame/count_down/second
+
+## Calculate time every tick
+scoreboard players remove #mbb MBB_Tick 1
+execute if score #mbb MBB_Tick matches -1 run scoreboard players set #mbb MBB_Tick 19

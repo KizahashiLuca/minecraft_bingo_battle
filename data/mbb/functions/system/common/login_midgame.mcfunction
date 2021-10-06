@@ -14,3 +14,9 @@ gamemode spectator @s
 
 ## Set tag
 tag @s add MBB_Spectator
+
+## Set effect
+effect clear @s
+effect give @s minecraft:night_vision 1000000 1 true
+effect give @s minecraft:invisibility 1000000 1 true
+effect give @s minecraft:resistance 1000000 1 true

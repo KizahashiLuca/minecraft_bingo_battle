@@ -8,6 +8,7 @@
 
 ## Calculate time
 scoreboard players remove #mbb MBB_Second 1
+execute if score #mbb MBB_Second matches -1 run scoreboard players set #mbb MBB_Second 0
 
 ## Send title message
 title @a title ["",{"score":{"name":"#mbb","objective":"MBB_Second"}}]

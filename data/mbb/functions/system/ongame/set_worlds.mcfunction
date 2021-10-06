@@ -6,10 +6,8 @@
 ## Version   : α-1.0
 #####################################
 
-## Remove tags
-tag @a remove MBB_Host
-tag @a remove MBB_Player
-tag @a remove MBB_Spectator
-tag @a remove MBB_TeamLeader
-tag @a remove MBB_SetMemberMessage
-tag @a remove MBB_PlayerNotSetTeam
+## Set time
+time set day
+
+## Set weather
+weather clear

@@ -6,26 +6,30 @@
 ## Version   : α-1.0
 #####################################
 
-## Change phase
-scoreboard players set #mbb MBB_GamePhase 96
+## Set gamemode
+gamemode survival @a[tag=MBB_Player]
 
-## Set gamerules
-function mbb:system/setting/descend/set_gamerules
-
-## Set time
-time set day
-
-## Set weather
-weather clear
-
-## Set spectator
+## Set effect - spectator
 gamemode spectator @a[tag=MBB_Spectator]
 effect give @a[tag=MBB_Spectator] minecraft:night_vision 1000000 1 true
+effect give @a[tag=MBB_Spectator] minecraft:invisibility 1000000 1 true
 effect give @a[tag=MBB_Spectator] minecraft:resistance 1000000 1 true
 
-## Set player effect
+## Set effect - player
 effect clear @a[tag=MBB_Player]
 effect give @a[tag=MBB_Player] minecraft:slow_falling 1000000 1 true
+effect give @a[tag=MBB_Player] minecraft:invisibility 1000000 1 true
 effect give @a[tag=MBB_Player] minecraft:resistance 1000000 1 true
 
-## Teleport randomly
+## Clear inventory
+clear @a
+
+## Set experience
+experience set @a 0 levels
+experience set @a 0 points
+
+## Reset advancements
+advancement revoke @a everything
+
+## Reset recipes
+recipe take @a *

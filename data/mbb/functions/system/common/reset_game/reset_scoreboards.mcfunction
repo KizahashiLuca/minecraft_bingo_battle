@@ -18,7 +18,7 @@ scoreboard objectives remove MBB_WeatherCycle
 scoreboard objectives remove MBB_DayligtCycle
 ### KeepInventory - 0:FALSE, 1:TRUE
 scoreboard objectives remove MBB_KeepInve
-### TeamNumber (TeamBattle only)
+### TeamNumber (TeamMatch only)
 scoreboard objectives remove MBB_NumTeam
 ### Gamemode - 1:ScoreAttack, 2:TimeAttack
 scoreboard objectives remove MBB_GameMode
@@ -28,6 +28,18 @@ scoreboard objectives remove MBB_GameArea
 scoreboard objectives remove MBB_GameTime
 ### Difficulty - 1:easy, 2:normal, 3:hard, 4:hardcore
 scoreboard objectives remove MBB_Difficulty
+### Position
+scoreboard objectives remove MBB_PosX
+scoreboard objectives remove MBB_PosY
+scoreboard objectives remove MBB_PosZ
+scoreboard objectives remove MBB_Angle
+scoreboard objectives remove MBB_45
+### Timer
+scoreboard objectives remove MBB_Tick
+scoreboard objectives remove MBB_Second
+scoreboard objectives remove MBB_Minute
+scoreboard objectives remove MBB_TotalSecond
+scoreboard objectives remove MBB_60
 ### Sheet
 scoreboard objectives remove MBB_Sheet00
 scoreboard objectives remove MBB_Sheet01

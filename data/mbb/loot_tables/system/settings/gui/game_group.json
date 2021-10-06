@@ -22,7 +22,7 @@
               "name": [
                 [
                   "",
-                  {"text":"Individual Battle","color":"green","bold":true,"italic":false},
+                  {"text":"Individual Match","color":"green","bold":true,"italic":false},
                   {"text":" selected","color":"white","bold":false,"italic":false}
                 ]
               ]
@@ -51,7 +51,7 @@
               "name": [
                 [
                   "",
-                  {"text":"Team Battle","color":"red","bold":true,"italic":false},
+                  {"text":"Team Match","color":"red","bold":true,"italic":false},
                   {"text":" selected","color":"white","bold":false,"italic":false}
                 ]
               ]

@@ -22,7 +22,7 @@ execute if score #mbb MBB_GamePhase matches 90 as @p[tag=MBB_Host,predicate=mbb:
 execute if score #mbb MBB_GamePhase matches 90 as @p[tag=MBB_Host,predicate=mbb:system/settings/gui/difficulty] run function mbb:system/setting/gui/difficulty
 
 execute if score #mbb MBB_GamePhase matches 90 as @p[tag=MBB_Host,predicate=mbb:system/settings/gui/cancel] run function mbb:system/setting/gui/cancel
-execute if score #mbb MBB_GamePhase matches 90 as @p[tag=MBB_Host,predicate=mbb:system/settings/gui/ok] run function mbb:system/setting/gui/ok
+execute if score #mbb MBB_GamePhase matches 90 as @p[tag=MBB_Host,predicate=mbb:system/settings/gui/ok] run function mbb:system/setting/prepare/change_to
 
 ## Count players
 function mbb:system/common/count_players

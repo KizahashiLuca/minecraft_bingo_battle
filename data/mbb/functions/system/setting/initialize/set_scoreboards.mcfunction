@@ -18,7 +18,7 @@ scoreboard objectives add MBB_WeatherCycle dummy
 scoreboard objectives add MBB_DayligtCycle dummy
 ### KeepInventory - 0:FALSE, 1:TRUE
 scoreboard objectives add MBB_KeepInve dummy
-### TeamNumber (TeamBattle only)
+### TeamNumber (TeamMatch only)
 scoreboard objectives add MBB_NumTeam dummy
 ### Gamemode - 1:ScoreAttack, 2:TimeAttack
 scoreboard objectives add MBB_GameMode dummy
@@ -38,6 +38,8 @@ scoreboard objectives add MBB_45 dummy
 scoreboard objectives add MBB_Tick dummy
 scoreboard objectives add MBB_Second dummy
 scoreboard objectives add MBB_Minute dummy
+scoreboard objectives add MBB_TotalSecond dummy
+scoreboard objectives add MBB_60 dummy
 ### Sheet
 scoreboard objectives add MBB_Sheet00 dummy
 scoreboard objectives add MBB_Sheet01 dummy
@@ -58,7 +60,7 @@ scoreboard players set @p[tag=MBB_Host] MBB_WeatherCycle 1
 scoreboard players set @p[tag=MBB_Host] MBB_DayligtCycle 1
 ### KeepInventory - 0:FALSE, 1:TRUE
 scoreboard players set @p[tag=MBB_Host] MBB_KeepInve 0
-### TeamNumber (TeamBattle only)
+### TeamNumber (TeamMatch only)
 scoreboard players set @p[tag=MBB_Host] MBB_NumTeam 1
 ### Gamemode - 1:ScoreAttack, 2:TimeAttack
 scoreboard players set @p[tag=MBB_Host] MBB_GameMode 1 
@@ -70,3 +72,5 @@ scoreboard players set @p[tag=MBB_Host] MBB_GameTime 10
 scoreboard players set @p[tag=MBB_Host] MBB_Difficulty 2
 ### Position
 scoreboard players set #mbb MBB_45 45
+### Timer
+scoreboard players set #mbb MBB_60 60

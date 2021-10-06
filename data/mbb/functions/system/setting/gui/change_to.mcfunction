@@ -21,7 +21,7 @@ loot replace entity @p[tag=MBB_Host] inventory.3 loot mbb:system/settings/gui/we
 loot replace entity @p[tag=MBB_Host] inventory.4 loot mbb:system/settings/gui/daylight_cycle
 ### KeepInventory
 loot replace entity @p[tag=MBB_Host] inventory.5 loot mbb:system/settings/gui/keep_inventory
-### TeamNumber (TeamBattle only)
+### TeamNumber (TeamMatch only)
 loot replace entity @p[tag=MBB_Host] inventory.7 loot mbb:system/settings/gui/team_number
 ### Gamemode - 1:ScoreAttack, 2:TimeAttack
 loot replace entity @p[tag=MBB_Host] inventory.9 loot mbb:system/settings/gui/game_mode
