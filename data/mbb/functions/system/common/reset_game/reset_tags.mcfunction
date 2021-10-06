@@ -13,3 +13,6 @@ tag @a remove MBB_Spectator
 tag @a remove MBB_TeamLeader
 tag @a remove MBB_SetMemberMessage
 tag @a remove MBB_PlayerNotSetTeam
+tag @a remove MBB_BeforeDescend
+tag @a remove MBB_Descending
+tag @a remove MBB_AfterDescend

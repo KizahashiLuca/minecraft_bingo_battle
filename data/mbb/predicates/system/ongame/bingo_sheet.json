@@ -1,0 +1,10 @@
+{
+  "condition": "minecraft:inverted",
+  "term": {
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+      "nbt": "{EnderItems:[{Slot:0b,tag:{Tags:[\"MBB_EnderChestItem\"]}},{Slot:1b,tag:{Tags:[\"MBB_EnderChestItem\"]}},{Slot:2b,tag:{Tags:[\"MBB_EnderChestItem\"]}},{Slot:3b,tag:{Tags:[\"MBB_EnderChestItem\"]}},{Slot:4b,tag:{Tags:[\"MBB_EnderChestItem\"]}},{Slot:5b,tag:{Tags:[\"MBB_EnderChestItem\"]}},{Slot:9b,tag:{Tags:[\"MBB_EnderChestItem\"]}},{Slot:10b,tag:{Tags:[\"MBB_EnderChestItem\"]}},{Slot:11b,tag:{Tags:[\"MBB_EnderChestItem\"]}},{Slot:12b,tag:{Tags:[\"MBB_EnderChestItem\"]}},{Slot:13b,tag:{Tags:[\"MBB_EnderChestItem\"]}},{Slot:14b,tag:{Tags:[\"MBB_EnderChestItem\"]}},{Slot:18b,tag:{Tags:[\"MBB_EnderChestItem\"]}},{Slot:19b,tag:{Tags:[\"MBB_EnderChestItem\"]}},{Slot:20b,tag:{Tags:[\"MBB_EnderChestItem\"]}},{Slot:21b,tag:{Tags:[\"MBB_EnderChestItem\"]}},{Slot:22b,tag:{Tags:[\"MBB_EnderChestItem\"]}},{Slot:23b,tag:{Tags:[\"MBB_EnderChestItem\"]}}]}"
+    }
+  }
+}

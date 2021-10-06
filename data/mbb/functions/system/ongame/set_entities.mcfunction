@@ -28,6 +28,9 @@ clear @a
 experience set @a 0 levels
 experience set @a 0 points
 
+## Set a tag
+tag @a[tag=MBB_Player] add MBB_BeforeDescend
+
 ## Reset advancements
 advancement revoke @a everything
 

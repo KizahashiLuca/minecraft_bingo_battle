@@ -1,5 +1,9 @@
 #!/bin/bash
 
+## Set path
+items_json=data/mbb/loot_tables/system/ongame/items.json
+bingo_items_json=data/mbb/tags/items/bingo_items.json
+
 ## Detect whether jar command exists
 hash jar >/dev/null 2>&1 
 if [ $? -eq 1 ]; then
@@ -11,8 +15,7 @@ fi
 ## Read .minecraft folder path
 echo Write .minecraft folder path \(in WSL\)
 echo \ \ e.g. \/mnt\/c\/Users\/User\/AppData\/Roaming\/.minecraft
-#read -ep ">>> " path
-path=/mnt/c/Users/Luca/AppData/Roaming/.minecraft
+read -ep ">>> " path
 
 echo \ \ \- read ${path}
 
@@ -30,7 +33,7 @@ fi
 path_array=(`jar tf ${jarpath} | grep -e assets/minecraft/textures/block -e assets/minecraft/textures/item`)
 
 ## Add common lines
-cat << EOX > items.json
+cat << EOX > ${items_json}
 {
   "type": "generic",
   "pools":[
@@ -50,6 +53,12 @@ cat << EOX > items.json
         }
       ],
       "entries":[
+EOX
+
+cat << EOX > ${bingo_items_json}
+{
+  "replace": false,
+  "values": [
 EOX
 
 declare -a temp_array=()
@@ -101,7 +110,7 @@ done
 item_array=("${!temp2_array[@]}")
 
 for f in "${item_array[@]}"; do
-  cat << EOK >> items.json
+  cat << EOK >> ${items_json}
         {
           "type":"minecraft:item",
           "name":"minecraft:${f}",
@@ -119,19 +128,30 @@ for f in "${item_array[@]}"; do
           ]
         },
 EOK
+  cat << EOK >> ${bingo_items_json}
+    "minecraft:${f}",
+EOK
 done
 
 ## Delete last line
-sed -i -e '$d' items.json
-cat << EOL >> items.json
+sed -i -e '$d' ${items_json}
+cat << EOL >> ${items_json}
         }
+EOL
+cat << EOL >> ${bingo_items_json}
+    "minecraft:stone"
 EOL
 
 
 ## Add brakets
-cat << EOJ >> items.json
+cat << EOJ >> ${items_json}
       ]
     }
+  ]
+}
+EOJ
+
+cat << EOJ >> ${bingo_items_json}
   ]
 }
 EOJ
