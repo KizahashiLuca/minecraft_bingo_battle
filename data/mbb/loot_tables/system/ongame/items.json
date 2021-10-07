@@ -99,22 +99,6 @@
         },
         {
           "type":"minecraft:item",
-          "name":"minecraft:barrier",
-          "conditions": [
-            {
-              "condition": "minecraft:inverted",
-              "term": {
-                "condition": "minecraft:entity_properties",
-                "entity": "this",
-                "predicate": {
-                  "nbt": "{EnderItems:[{id:\"minecraft:barrier\"}]}"
-                }
-              }
-            }
-          ]
-        },
-        {
-          "type":"minecraft:item",
           "name":"minecraft:light_blue_glazed_terracotta",
           "conditions": [
             {
@@ -3443,22 +3427,6 @@
         },
         {
           "type":"minecraft:item",
-          "name":"minecraft:budding_amethyst",
-          "conditions": [
-            {
-              "condition": "minecraft:inverted",
-              "term": {
-                "condition": "minecraft:entity_properties",
-                "entity": "this",
-                "predicate": {
-                  "nbt": "{EnderItems:[{id:\"minecraft:budding_amethyst\"}]}"
-                }
-              }
-            }
-          ]
-        },
-        {
-          "type":"minecraft:item",
           "name":"minecraft:chiseled_sandstone",
           "conditions": [
             {
@@ -3843,22 +3811,6 @@
         },
         {
           "type":"minecraft:item",
-          "name":"minecraft:lingering_potion",
-          "conditions": [
-            {
-              "condition": "minecraft:inverted",
-              "term": {
-                "condition": "minecraft:entity_properties",
-                "entity": "this",
-                "predicate": {
-                  "nbt": "{EnderItems:[{id:\"minecraft:lingering_potion\"}]}"
-                }
-              }
-            }
-          ]
-        },
-        {
-          "type":"minecraft:item",
           "name":"minecraft:cooked_chicken",
           "conditions": [
             {
@@ -3916,22 +3868,6 @@
                 "entity": "this",
                 "predicate": {
                   "nbt": "{EnderItems:[{id:\"minecraft:quartz_block\"}]}"
-                }
-              }
-            }
-          ]
-        },
-        {
-          "type":"minecraft:item",
-          "name":"minecraft:farmland",
-          "conditions": [
-            {
-              "condition": "minecraft:inverted",
-              "term": {
-                "condition": "minecraft:entity_properties",
-                "entity": "this",
-                "predicate": {
-                  "nbt": "{EnderItems:[{id:\"minecraft:farmland\"}]}"
                 }
               }
             }
@@ -4691,22 +4627,6 @@
         },
         {
           "type":"minecraft:item",
-          "name":"minecraft:bedrock",
-          "conditions": [
-            {
-              "condition": "minecraft:inverted",
-              "term": {
-                "condition": "minecraft:entity_properties",
-                "entity": "this",
-                "predicate": {
-                  "nbt": "{EnderItems:[{id:\"minecraft:bedrock\"}]}"
-                }
-              }
-            }
-          ]
-        },
-        {
-          "type":"minecraft:item",
           "name":"minecraft:weathered_cut_copper",
           "conditions": [
             {
@@ -4924,22 +4844,6 @@
                 "entity": "this",
                 "predicate": {
                   "nbt": "{EnderItems:[{id:\"minecraft:jungle_sign\"}]}"
-                }
-              }
-            }
-          ]
-        },
-        {
-          "type":"minecraft:item",
-          "name":"minecraft:potion",
-          "conditions": [
-            {
-              "condition": "minecraft:inverted",
-              "term": {
-                "condition": "minecraft:entity_properties",
-                "entity": "this",
-                "predicate": {
-                  "nbt": "{EnderItems:[{id:\"minecraft:potion\"}]}"
                 }
               }
             }
@@ -7379,22 +7283,6 @@
         },
         {
           "type":"minecraft:item",
-          "name":"minecraft:spawner",
-          "conditions": [
-            {
-              "condition": "minecraft:inverted",
-              "term": {
-                "condition": "minecraft:entity_properties",
-                "entity": "this",
-                "predicate": {
-                  "nbt": "{EnderItems:[{id:\"minecraft:spawner\"}]}"
-                }
-              }
-            }
-          ]
-        },
-        {
-          "type":"minecraft:item",
           "name":"minecraft:mossy_cobblestone",
           "conditions": [
             {
@@ -8540,22 +8428,6 @@
                 "entity": "this",
                 "predicate": {
                   "nbt": "{EnderItems:[{id:\"minecraft:beetroot_soup\"}]}"
-                }
-              }
-            }
-          ]
-        },
-        {
-          "type":"minecraft:item",
-          "name":"minecraft:tall_grass",
-          "conditions": [
-            {
-              "condition": "minecraft:inverted",
-              "term": {
-                "condition": "minecraft:entity_properties",
-                "entity": "this",
-                "predicate": {
-                  "nbt": "{EnderItems:[{id:\"minecraft:tall_grass\"}]}"
                 }
               }
             }
@@ -9779,22 +9651,6 @@
         },
         {
           "type":"minecraft:item",
-          "name":"minecraft:splash_potion",
-          "conditions": [
-            {
-              "condition": "minecraft:inverted",
-              "term": {
-                "condition": "minecraft:entity_properties",
-                "entity": "this",
-                "predicate": {
-                  "nbt": "{EnderItems:[{id:\"minecraft:splash_potion\"}]}"
-                }
-              }
-            }
-          ]
-        },
-        {
-          "type":"minecraft:item",
           "name":"minecraft:end_rod",
           "conditions": [
             {
@@ -10332,22 +10188,6 @@
                 "entity": "this",
                 "predicate": {
                   "nbt": "{EnderItems:[{id:\"minecraft:lime_dye\"}]}"
-                }
-              }
-            }
-          ]
-        },
-        {
-          "type":"minecraft:item",
-          "name":"minecraft:knowledge_book",
-          "conditions": [
-            {
-              "condition": "minecraft:inverted",
-              "term": {
-                "condition": "minecraft:entity_properties",
-                "entity": "this",
-                "predicate": {
-                  "nbt": "{EnderItems:[{id:\"minecraft:knowledge_book\"}]}"
                 }
               }
             }

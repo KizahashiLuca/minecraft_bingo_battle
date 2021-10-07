@@ -18,3 +18,6 @@ tag @s remove MBB_Descending
 
 ## Give items
 loot give @s loot mbb:system/ongame/carrot_on_a_stick
+
+## Set spawnpoint
+spawnpoint @s ~ ~ ~

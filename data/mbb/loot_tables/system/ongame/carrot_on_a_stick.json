@@ -23,6 +23,12 @@
             {
               "function":"minecraft:set_nbt",
               "tag":"{Unbreakable:1b,HideFlags:63,Tags:[\"MBB_CarrotOnAStick\"]}"
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:vanishing_curse": 1
+              }
             }
           ]
         }

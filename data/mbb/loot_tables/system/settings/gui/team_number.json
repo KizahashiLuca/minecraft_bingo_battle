@@ -22,7 +22,7 @@
               "name": [
                 [
                   "",
-                  {"text":"Team Number","color":"white","bold":false,"italic":false}
+                  {"text":"Number of teams","color":"white","bold":false,"italic":false}
                 ]
               ]
             },

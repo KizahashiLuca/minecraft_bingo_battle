@@ -41,6 +41,8 @@ scoreboard objectives add MBB_Minute dummy
 scoreboard objectives add MBB_DummySecond dummy
 scoreboard objectives add MBB_TotalSecond dummy
 scoreboard objectives add MBB_60 dummy
+### Death
+scoreboard objectives add MBB_Death minecraft.custom:minecraft.deaths
 ### EnderChest
 scoreboard objectives add MBB_UUID0 dummy
 scoreboard objectives add MBB_UUID1 dummy
@@ -91,3 +93,5 @@ execute as @a[tag=MBB_Player] store result score @s MBB_UUID1 run data get entit
 execute as @a[tag=MBB_Player] store result score @s MBB_UUID2 run data get entity @s UUID[2]
 execute as @a[tag=MBB_Player] store result score @s MBB_UUID3 run data get entity @s UUID[3]
 scoreboard players set @a[tag=MBB_Player] MBB_SpawnChest 0
+### Death
+scoreboard players set @a[tag=MBB_Player] MBB_Death 0
