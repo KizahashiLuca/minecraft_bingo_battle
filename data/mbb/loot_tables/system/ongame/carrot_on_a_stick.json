@@ -1,0 +1,32 @@
+{
+  "type": "generic",
+  "pools":[
+    {
+      "rolls":1,
+      "entries":[
+        {
+          "type":"minecraft:item",
+          "name":"minecraft:carrot_on_a_stick",
+          "functions":[
+            {
+              "function":"minecraft:set_name",
+              "name": [
+                ["",{"text":"Summon an Ender Chest","color":"aqua","italic":false}]
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                ["",{"text":"Right Click","color":"dark_purple","italic":false}]
+              ]
+            },
+            {
+              "function":"minecraft:set_nbt",
+              "tag":"{Unbreakable:1b,HideFlags:63,Tags:[\"MBB_CarrotOnAStick\"]}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

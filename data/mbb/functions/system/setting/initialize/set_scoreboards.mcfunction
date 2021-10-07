@@ -38,8 +38,19 @@ scoreboard objectives add MBB_45 dummy
 scoreboard objectives add MBB_Tick dummy
 scoreboard objectives add MBB_Second dummy
 scoreboard objectives add MBB_Minute dummy
+scoreboard objectives add MBB_DummySecond dummy
 scoreboard objectives add MBB_TotalSecond dummy
 scoreboard objectives add MBB_60 dummy
+### EnderChest
+scoreboard objectives add MBB_UUID0 dummy
+scoreboard objectives add MBB_UUID1 dummy
+scoreboard objectives add MBB_UUID2 dummy
+scoreboard objectives add MBB_UUID3 dummy
+scoreboard objectives add MBB_OwnerUUID0 dummy
+scoreboard objectives add MBB_OwnerUUID1 dummy
+scoreboard objectives add MBB_OwnerUUID2 dummy
+scoreboard objectives add MBB_OwnerUUID3 dummy
+scoreboard objectives add MBB_SpawnChest minecraft.used:minecraft.carrot_on_a_stick
 ### Sheet
 scoreboard objectives add MBB_Sheet00 dummy
 scoreboard objectives add MBB_Sheet01 dummy
@@ -74,3 +85,9 @@ scoreboard players set @p[tag=MBB_Host] MBB_Difficulty 2
 scoreboard players set #mbb MBB_45 45
 ### Timer
 scoreboard players set #mbb MBB_60 60
+### EnderChest
+execute as @a[tag=MBB_Player] store result score @s MBB_UUID0 run data get entity @s UUID[0]
+execute as @a[tag=MBB_Player] store result score @s MBB_UUID1 run data get entity @s UUID[1]
+execute as @a[tag=MBB_Player] store result score @s MBB_UUID2 run data get entity @s UUID[2]
+execute as @a[tag=MBB_Player] store result score @s MBB_UUID3 run data get entity @s UUID[3]
+scoreboard players set @a[tag=MBB_Player] MBB_SpawnChest 0

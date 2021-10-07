@@ -16,4 +16,5 @@ tag @s add MBB_AfterDescend
 tag @s remove MBB_BeforeDescend
 tag @s remove MBB_Descending
 
-tellraw @a ["",{"text":"切れた"}]
+## Give items
+loot give @s loot mbb:system/ongame/carrot_on_a_stick

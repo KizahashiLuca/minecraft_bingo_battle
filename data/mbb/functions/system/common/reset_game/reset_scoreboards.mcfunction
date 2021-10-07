@@ -38,8 +38,19 @@ scoreboard objectives remove MBB_45
 scoreboard objectives remove MBB_Tick
 scoreboard objectives remove MBB_Second
 scoreboard objectives remove MBB_Minute
+scoreboard objectives remove MBB_DummySecond
 scoreboard objectives remove MBB_TotalSecond
 scoreboard objectives remove MBB_60
+### EnderChest
+scoreboard objectives remove MBB_UUID0
+scoreboard objectives remove MBB_UUID1
+scoreboard objectives remove MBB_UUID2
+scoreboard objectives remove MBB_UUID3
+scoreboard objectives remove MBB_OwnerUUID0
+scoreboard objectives remove MBB_OwnerUUID1
+scoreboard objectives remove MBB_OwnerUUID2
+scoreboard objectives remove MBB_OwnerUUID3
+scoreboard objectives remove MBB_SpawnChest
 ### Sheet
 scoreboard objectives remove MBB_Sheet00
 scoreboard objectives remove MBB_Sheet01
