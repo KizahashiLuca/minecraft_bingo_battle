@@ -28,3 +28,4 @@ function mbb:system/ongame/detect_ender_chest/main
 
 ## Change phase
 execute if score #mbb MBB_GameMode matches 1 if score #mbb MBB_Minute matches 0 if score #mbb MBB_Second matches 0 if score #mbb MBB_Tick matches 0 run function mbb:system/finish/change_to
+#execute if score #mbb MBB_GameMode matches 2 run function mbb:system/finish/change_to

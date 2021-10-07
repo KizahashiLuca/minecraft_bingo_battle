@@ -20,3 +20,5 @@ scoreboard players set @a[tag=MBB_Player] MBB_SpawnChest 0
 
 ## Detect owner leaves enderchest
 execute as @e[type=minecraft:area_effect_cloud,tag=MBB_SpawnChest] at @s run function mbb:system/ongame/detect_ender_chest/detect_player
+
+## Detect bingo
