@@ -6,8 +6,5 @@
 ## Version   : α-1.0
 #####################################
 
-## Calculate time every tick
-scoreboard players add #mbb MBB_Tick 1
-
-## Calculate time every second
-execute if score #mbb MBB_Tick matches 20 run function mbb:system/ongame/count_up/second
+## Set scoreboard
+scoreboard players set @s MBB_BingoRow2 1

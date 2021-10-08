@@ -8,7 +8,7 @@
 
 ## Detect enderchest item thrown
 execute as @a[predicate=mbb:system/ongame/bingo_sheet] at @e[predicate=mbb:system/common/world_spawn] run function mbb:system/ongame/detect_ender_chest/set_enderchest
-kill @e[tag=MBB_EnderChestItem]
+kill @e[nbt={Item:{tag:{Tags:["MBB_EnderChestItem"]}}}]
 
 ## Clear items
 clear @a #mbb:bingo_items{Tags:["MBB_EnderChestItem"]}
@@ -20,5 +20,3 @@ scoreboard players set @a[tag=MBB_Player] MBB_SpawnChest 0
 
 ## Detect owner leaves enderchest
 execute as @e[type=minecraft:area_effect_cloud,tag=MBB_SpawnChest] at @s run function mbb:system/ongame/detect_ender_chest/detect_player
-
-## Detect bingo

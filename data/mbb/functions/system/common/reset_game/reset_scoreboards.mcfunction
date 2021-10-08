@@ -41,6 +41,8 @@ scoreboard objectives remove MBB_Minute
 scoreboard objectives remove MBB_DummySecond
 scoreboard objectives remove MBB_TotalSecond
 scoreboard objectives remove MBB_60
+### Death
+scoreboard objectives remove MBB_Death
 ### EnderChest
 scoreboard objectives remove MBB_UUID0
 scoreboard objectives remove MBB_UUID1
@@ -61,6 +63,18 @@ scoreboard objectives remove MBB_Sheet12
 scoreboard objectives remove MBB_Sheet20
 scoreboard objectives remove MBB_Sheet21
 scoreboard objectives remove MBB_Sheet22
+scoreboard objectives remove MBB_SheetTmp1
+scoreboard objectives remove MBB_SheetTmp2
+scoreboard objectives remove MBB_SheetTmp3
+### Bingo
+scoreboard objectives remove MBB_BingoRow0
+scoreboard objectives remove MBB_BingoRow1
+scoreboard objectives remove MBB_BingoRow2
+scoreboard objectives remove MBB_BingoCol0
+scoreboard objectives remove MBB_BingoCol1
+scoreboard objectives remove MBB_BingoCol2
+scoreboard objectives remove MBB_Diagonal
+scoreboard objectives remove MBB_AntiDiagonal
 
 ## Reset players
 scoreboard players reset #mbb

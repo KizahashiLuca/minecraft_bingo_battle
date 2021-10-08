@@ -1,0 +1,22 @@
+[
+  {
+    "condition": "minecraft:inverted",
+    "term":  {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "nbt": "{EnderItems:[{Slot:6b,tag:{Tags:[\"MBB_EnderChestItem\"]}}]}"
+      }
+    }
+  },
+  {
+    "condition": "minecraft:entity_scores",
+    "entity": "this",
+    "scores": {
+      "MBB_Sheet00": {
+        "min": 1,
+        "max": 1
+      }
+    }
+  }
+]

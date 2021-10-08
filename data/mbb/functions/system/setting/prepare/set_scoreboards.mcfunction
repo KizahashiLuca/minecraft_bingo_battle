@@ -19,3 +19,22 @@ scoreboard players operation #mbb MBB_Difficulty = @p[tag=MBB_Host] MBB_Difficul
 
 ## Reset scoreboards
 scoreboard players reset @a
+### Sheet
+scoreboard players set @a MBB_Sheet00 0
+scoreboard players set @a MBB_Sheet01 0
+scoreboard players set @a MBB_Sheet02 0
+scoreboard players set @a MBB_Sheet10 0
+scoreboard players set @a MBB_Sheet11 0
+scoreboard players set @a MBB_Sheet12 0
+scoreboard players set @a MBB_Sheet20 0
+scoreboard players set @a MBB_Sheet21 0
+scoreboard players set @a MBB_Sheet22 0
+### Bingo
+scoreboard players set @a MBB_BingoRow0 0
+scoreboard players set @a MBB_BingoRow1 0
+scoreboard players set @a MBB_BingoRow2 0
+scoreboard players set @a MBB_BingoCol0 0
+scoreboard players set @a MBB_BingoCol1 0
+scoreboard players set @a MBB_BingoCol2 0
+scoreboard players set @a MBB_Diagonal 0
+scoreboard players set @a MBB_AntiDiagonal 0

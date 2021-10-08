@@ -16,3 +16,8 @@ tag @a remove MBB_PlayerNotSetTeam
 tag @a remove MBB_BeforeDescend
 tag @a remove MBB_Descending
 tag @a remove MBB_AfterDescend
+tag @a remove MBB_ChestOwner
+tag @a remove MBB_DetectChest
+tag @a remove MBB_DetectChestOwner
+tag @a remove MBB_CompareSheet
+tag @a remove MBB_DetectBingo

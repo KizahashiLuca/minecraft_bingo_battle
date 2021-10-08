@@ -6,12 +6,12 @@
 ## Version   : α-1.0
 #####################################
 
-## Calculate time every minute
-execute if score #mbb MBB_Second matches 60 run function mbb:system/ongame/count_up/minute
-
 ## Calculate time every second
 scoreboard players set #mbb MBB_Tick 0
 scoreboard players add #mbb MBB_Second 1
+
+## Calculate time every minute
+execute if score #mbb MBB_Second matches 60 run function mbb:system/ongame/count_up/minute
 
 ## Set scoreboards
 execute if score #mbb MBB_Second matches 0..9 run scoreboard players set #mbb MBB_DummySecond 0

@@ -20,3 +20,7 @@ kill @e[type=minecraft:item]
 kill @e[type=minecraft:arrow]
 kill @e[type=minecraft:spectral_arrow]
 kill @e[type=minecraft:area_effect_cloud]
+
+## Set world border & cloud
+worldborder center 0 0
+worldborder set 59999968

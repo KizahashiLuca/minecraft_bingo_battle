@@ -63,6 +63,18 @@ scoreboard objectives add MBB_Sheet12 dummy
 scoreboard objectives add MBB_Sheet20 dummy
 scoreboard objectives add MBB_Sheet21 dummy
 scoreboard objectives add MBB_Sheet22 dummy
+scoreboard objectives add MBB_SheetTmp1 dummy
+scoreboard objectives add MBB_SheetTmp2 dummy
+scoreboard objectives add MBB_SheetTmp3 dummy
+### Bingo
+scoreboard objectives add MBB_BingoRow0 dummy
+scoreboard objectives add MBB_BingoRow1 dummy
+scoreboard objectives add MBB_BingoRow2 dummy
+scoreboard objectives add MBB_BingoCol0 dummy
+scoreboard objectives add MBB_BingoCol1 dummy
+scoreboard objectives add MBB_BingoCol2 dummy
+scoreboard objectives add MBB_Diagonal dummy
+scoreboard objectives add MBB_AntiDiagonal dummy
 
 ## Set scoreboards
 ### GameGroup - 1:Individual, 2:Team
@@ -87,11 +99,30 @@ scoreboard players set @p[tag=MBB_Host] MBB_Difficulty 2
 scoreboard players set #mbb MBB_45 45
 ### Timer
 scoreboard players set #mbb MBB_60 60
+### Death
+scoreboard players set @a[tag=MBB_Player] MBB_Death 0
 ### EnderChest
 execute as @a[tag=MBB_Player] store result score @s MBB_UUID0 run data get entity @s UUID[0]
 execute as @a[tag=MBB_Player] store result score @s MBB_UUID1 run data get entity @s UUID[1]
 execute as @a[tag=MBB_Player] store result score @s MBB_UUID2 run data get entity @s UUID[2]
 execute as @a[tag=MBB_Player] store result score @s MBB_UUID3 run data get entity @s UUID[3]
 scoreboard players set @a[tag=MBB_Player] MBB_SpawnChest 0
-### Death
-scoreboard players set @a[tag=MBB_Player] MBB_Death 0
+### Sheet
+scoreboard players set @a MBB_Sheet00 0
+scoreboard players set @a MBB_Sheet01 0
+scoreboard players set @a MBB_Sheet02 0
+scoreboard players set @a MBB_Sheet10 0
+scoreboard players set @a MBB_Sheet11 0
+scoreboard players set @a MBB_Sheet12 0
+scoreboard players set @a MBB_Sheet20 0
+scoreboard players set @a MBB_Sheet21 0
+scoreboard players set @a MBB_Sheet22 0
+### Bingo
+scoreboard players set @a MBB_BingoRow0 0
+scoreboard players set @a MBB_BingoRow1 0
+scoreboard players set @a MBB_BingoRow2 0
+scoreboard players set @a MBB_BingoCol0 0
+scoreboard players set @a MBB_BingoCol1 0
+scoreboard players set @a MBB_BingoCol2 0
+scoreboard players set @a MBB_Diagonal 0
+scoreboard players set @a MBB_AntiDiagonal 0
