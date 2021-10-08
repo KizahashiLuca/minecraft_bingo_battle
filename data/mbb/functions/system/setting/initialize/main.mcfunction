@@ -9,6 +9,7 @@
 ## Reset game
 function mbb:system/common/reset_game/reset_gamerules
 function mbb:system/common/reset_game/reset_tags
+function mbb:system/common/reset_game/reset_teams
 function mbb:system/common/reset_game/reset_worlds
 function mbb:system/common/reset_game/reset_bossbar
 
