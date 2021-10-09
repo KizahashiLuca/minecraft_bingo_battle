@@ -38,8 +38,10 @@ scoreboard objectives remove MBB_45
 scoreboard objectives remove MBB_Tick
 scoreboard objectives remove MBB_Second
 scoreboard objectives remove MBB_Minute
+scoreboard objectives remove MBB_DummyTick
 scoreboard objectives remove MBB_DummySecond
 scoreboard objectives remove MBB_TotalSecond
+scoreboard objectives remove MBB_5
 scoreboard objectives remove MBB_60
 ### Death
 scoreboard objectives remove MBB_Death
@@ -66,7 +68,10 @@ scoreboard objectives remove MBB_Sheet22
 scoreboard objectives remove MBB_SheetTmp1
 scoreboard objectives remove MBB_SheetTmp2
 scoreboard objectives remove MBB_SheetTmp3
+scoreboard objectives remove MBB_SheetTmp4
 ### Bingo
+scoreboard objectives remove MBB_NumBingo
+scoreboard objectives remove MBB_ScoreWinner
 scoreboard objectives remove MBB_BingoRow0
 scoreboard objectives remove MBB_BingoRow1
 scoreboard objectives remove MBB_BingoRow2

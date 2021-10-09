@@ -6,6 +6,9 @@
 ## Version   : α-1.0
 #####################################
 
+## Add a tag
+tag @s add MBB_ExchangeItems
+
 ## Set world spawn chest
 item replace entity @s enderchest.0 from block ~ 0 ~ container.0
 item replace entity @s enderchest.1 from block ~ 0 ~ container.1
@@ -36,3 +39,6 @@ item replace entity @s enderchest.23 from block ~ 0 ~ container.23
 item replace entity @s[scores={MBB_Sheet20=1}] enderchest.24 from entity @s enderchest.18 mbb:system/ongame/detect_ender_chest/set_enchant
 item replace entity @s[scores={MBB_Sheet21=1}] enderchest.25 from entity @s enderchest.19 mbb:system/ongame/detect_ender_chest/set_enchant
 item replace entity @s[scores={MBB_Sheet22=1}] enderchest.26 from entity @s enderchest.20 mbb:system/ongame/detect_ender_chest/set_enchant
+
+## Remove a tag
+tag @s remove MBB_ExchangeItems

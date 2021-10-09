@@ -21,3 +21,4 @@ tag @a remove MBB_DetectChest
 tag @a remove MBB_DetectChestOwner
 tag @a remove MBB_CompareSheet
 tag @a remove MBB_DetectBingo
+tag @a remove MBB_ExchangeItems

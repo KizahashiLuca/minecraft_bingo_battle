@@ -10,6 +10,7 @@
 scoreboard players set @p[tag=MBB_CompareSheet] MBB_SheetTmp1 1
 scoreboard players set @p[tag=MBB_CompareSheet] MBB_SheetTmp2 1
 scoreboard players set @p[tag=MBB_CompareSheet] MBB_SheetTmp3 0
+scoreboard players set @p[tag=MBB_CompareSheet] MBB_SheetTmp4 0
 
 ## Set item data
 data modify entity @s Item.id set from entity @p[tag=MBB_CompareSheet] EnderItems[{Slot:18b}].id
@@ -22,8 +23,8 @@ data remove entity @s Item.tag.HideFlags
 execute store success score @p[tag=MBB_CompareSheet] MBB_SheetTmp1 run data modify entity @s Item.id set from entity @p[tag=MBB_CompareSheet] EnderItems[{Slot:24b}].id
 execute store success score @p[tag=MBB_CompareSheet] MBB_SheetTmp2 run data modify entity @s Item.tag set from entity @p[tag=MBB_CompareSheet] EnderItems[{Slot:24b}].tag
 execute store result score @p[tag=MBB_CompareSheet] MBB_SheetTmp3 run data get entity @p[tag=MBB_CompareSheet] EnderItems[{Slot:24b}].Count
-scoreboard players remove @p[tag=MBB_CompareSheet,scores={MBB_SheetTmp1=0,MBB_SheetTmp2=0}] MBB_SheetTmp3 1
-scoreboard players set @p[tag=MBB_CompareSheet,scores={MBB_SheetTmp1=0,MBB_SheetTmp2=0}] MBB_Sheet20 1
+execute as @p[tag=MBB_CompareSheet,scores={MBB_SheetTmp1=0,MBB_SheetTmp2=0}] run function mbb:system/ongame/detect_bingo_sheet/compare_items/set_team
+scoreboard players operation @p[tag=MBB_CompareSheet] MBB_Sheet20 = @p[tag=MBB_CompareSheet] MBB_SheetTmp4
 
 ## Copy item
 execute if entity @p[tag=MBB_CompareSheet,scores={MBB_Sheet20=0}] run data modify entity @s Item.Count set from entity @p[tag=MBB_CompareSheet] EnderItems[{Slot:24b}].Count

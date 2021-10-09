@@ -1,0 +1,94 @@
+[
+  {
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+      "nbt": "{Tags:[\"MBB_Player\"]}"
+    }
+  },
+  {
+    "condition": "minecraft:alternative",
+    "terms": [
+      {
+        "condition": "minecraft:entity_scores",
+        "entity": "this",
+        "scores": {
+          "MBB_BingoRow0": {
+            "min": 1,
+            "max": 1
+          }
+        }
+      },
+      {
+        "condition": "minecraft:entity_scores",
+        "entity": "this",
+        "scores": {
+          "MBB_BingoRow1": {
+            "min": 1,
+            "max": 1
+          }
+        }
+      },
+      {
+        "condition": "minecraft:entity_scores",
+        "entity": "this",
+        "scores": {
+          "MBB_BingoRow2": {
+            "min": 1,
+            "max": 1
+          }
+        }
+      },
+      {
+        "condition": "minecraft:entity_scores",
+        "entity": "this",
+        "scores": {
+          "MBB_BingoCol0": {
+            "min": 1,
+            "max": 1
+          }
+        }
+      },
+      {
+        "condition": "minecraft:entity_scores",
+        "entity": "this",
+        "scores": {
+          "MBB_BingoCol1": {
+            "min": 1,
+            "max": 1
+          }
+        }
+      },
+      {
+        "condition": "minecraft:entity_scores",
+        "entity": "this",
+        "scores": {
+          "MBB_BingoCol2": {
+            "min": 1,
+            "max": 1
+          }
+        }
+      },
+      {
+        "condition": "minecraft:entity_scores",
+        "entity": "this",
+        "scores": {
+          "MBB_Diagonal": {
+            "min": 1,
+            "max": 1
+          }
+        }
+      },
+      {
+        "condition": "minecraft:entity_scores",
+        "entity": "this",
+        "scores": {
+          "MBB_AntiDiagonal": {
+            "min": 1,
+            "max": 1
+          }
+        }
+      }
+    ]
+  }
+]

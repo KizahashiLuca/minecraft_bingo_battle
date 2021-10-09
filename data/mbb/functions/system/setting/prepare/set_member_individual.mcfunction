@@ -7,7 +7,7 @@
 #####################################
 
 ## Send messages
-tellraw @a ["",{"text":"   - ","color":"white","bold":false},{"selector":"@s"}]
+tellraw @a ["",{"text":"    - ","color":"white","bold":false},{"selector":"@s"}]
 
 ## Add a tag
 tag @s add MBB_SetMemberMessage

@@ -10403,22 +10403,6 @@
         },
         {
           "type":"minecraft:item",
-          "name":"minecraft:jigsaw",
-          "conditions": [
-            {
-              "condition": "minecraft:inverted",
-              "term": {
-                "condition": "minecraft:entity_properties",
-                "entity": "this",
-                "predicate": {
-                  "nbt": "{EnderItems:[{id:\"minecraft:jigsaw\"}]}"
-                }
-              }
-            }
-          ]
-        },
-        {
-          "type":"minecraft:item",
           "name":"minecraft:cyan_stained_glass",
           "conditions": [
             {
