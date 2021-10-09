@@ -30,7 +30,7 @@ execute if entity @p[tag=MBB_CompareSheet,scores={MBB_Sheet01=0}] run data modif
 execute as @p[tag=MBB_CompareSheet,scores={MBB_Sheet01=0}] run item replace entity @p[tag=MBB_CompareSheet] enderchest.7 with minecraft:air
 
 execute if entity @p[tag=MBB_CompareSheet,scores={MBB_Sheet01=1,MBB_SheetTmp3=1..}] store result entity @s Item.Count int 1.0 run scoreboard players get @p[tag=MBB_CompareSheet] MBB_SheetTmp3
-execute as @p[tag=MBB_CompareSheet,scores={MBB_Sheet01=1}] run item replace entity @s enderchest.7 from entity @s enderchest.1
+execute as @p[tag=MBB_CompareSheet,scores={MBB_Sheet01=1}] run item replace entity @s enderchest.7 from entity @s enderchest.1 mbb:system/ongame/detect_ender_chest/set_enchant
 
 ## Kill item
 execute if entity @p[tag=MBB_CompareSheet,scores={MBB_SheetTmp3=0}] run kill @s
