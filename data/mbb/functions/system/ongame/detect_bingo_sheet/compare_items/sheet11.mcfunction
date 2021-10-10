@@ -20,9 +20,15 @@ data remove entity @s Item.tag.Tags
 data remove entity @s Item.tag.HideFlags
 
 ## Compare item data
+### id
 execute store success score @p[tag=MBB_CompareSheet] MBB_SheetTmp1 run data modify entity @s Item.id set from entity @p[tag=MBB_CompareSheet] EnderItems[{Slot:16b}].id
-execute store success score @p[tag=MBB_CompareSheet] MBB_SheetTmp2 run data modify entity @s Item.tag set from entity @p[tag=MBB_CompareSheet] EnderItems[{Slot:16b}].tag
+### tag
+execute store success score @p[tag=MBB_CompareSheet] MBB_SheetTmp2 if data entity @p[tag=MBB_CompareSheet] EnderItems[{Slot:16b}].tag run data modify entity @s Item.tag set from entity @p[tag=MBB_CompareSheet] EnderItems[{Slot:16b}].tag
+execute unless data entity @p[tag=MBB_CompareSheet] EnderItems[{Slot:16b}].tag run scoreboard players set @p[tag=MBB_CompareSheet] MBB_SheetTmp2 0
+execute unless data entity @p[tag=MBB_CompareSheet] EnderItems[{Slot:16b}].tag run data remove entity @s Item.tag
+### item count
 execute store result score @p[tag=MBB_CompareSheet] MBB_SheetTmp3 run data get entity @p[tag=MBB_CompareSheet] EnderItems[{Slot:16b}].Count
+### Compare id & tag
 execute as @p[tag=MBB_CompareSheet,scores={MBB_SheetTmp1=0,MBB_SheetTmp2=0}] run function mbb:system/ongame/detect_bingo_sheet/compare_items/set_team
 scoreboard players operation @p[tag=MBB_CompareSheet] MBB_Sheet11 = @p[tag=MBB_CompareSheet] MBB_SheetTmp4
 

@@ -9,6 +9,9 @@
 ## Add a tag
 tag @s add MBB_ExchangeItems
 
+## Spawn an exchanged items 
+execute unless data entity @s EnderItems[{Slot:0b}].tag.Tags run tellraw @a ["",{"text":"unless"}]
+
 ## Set world spawn chest
 item replace entity @s enderchest.0 from block ~ 0 ~ container.0
 item replace entity @s enderchest.1 from block ~ 0 ~ container.1
