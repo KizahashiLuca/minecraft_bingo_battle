@@ -68,7 +68,6 @@ scoreboard objectives remove MBB_Sheet22
 scoreboard objectives remove MBB_SheetTmp1
 scoreboard objectives remove MBB_SheetTmp2
 scoreboard objectives remove MBB_SheetTmp3
-scoreboard objectives remove MBB_SheetTmp4
 ### Bingo
 scoreboard objectives remove MBB_NumBingo
 scoreboard objectives remove MBB_ScoreWinner

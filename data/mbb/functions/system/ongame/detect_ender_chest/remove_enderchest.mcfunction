@@ -8,7 +8,6 @@
 
 ## Remove a tag
 tag @a[tag=MBB_DetectChestOwner] remove MBB_ChestOwner
-tag @a[tag=MBB_DetectChestOwner] remove MBB_DetectChestOwner
 
 ## Remove ender chest
 kill @s

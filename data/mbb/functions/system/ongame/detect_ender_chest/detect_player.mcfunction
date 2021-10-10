@@ -14,5 +14,6 @@ execute as @a[tag=MBB_ChestOwner] if score @s MBB_UUID0 = @e[tag=MBB_DetectChest
 
 execute at @s if entity @p[tag=MBB_DetectChestOwner,distance=2..] run function mbb:system/ongame/detect_ender_chest/remove_enderchest
 
-## Remove a tag
+## Remove tags
+tag @a[tag=MBB_DetectChestOwner] remove MBB_DetectChestOwner
 tag @s remove MBB_DetectChest

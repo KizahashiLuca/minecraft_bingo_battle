@@ -68,7 +68,6 @@ scoreboard objectives add MBB_Sheet22 dummy
 scoreboard objectives add MBB_SheetTmp1 dummy
 scoreboard objectives add MBB_SheetTmp2 dummy
 scoreboard objectives add MBB_SheetTmp3 dummy
-scoreboard objectives add MBB_SheetTmp4 dummy
 ### Bingo
 scoreboard objectives add MBB_NumBingo dummy
 scoreboard objectives add MBB_ScoreWinner dummy
@@ -95,9 +94,9 @@ scoreboard players set @p[tag=MBB_Host] MBB_NumTeam 1
 ### Gamemode - 1:ScoreAttack, 2:TimeAttack
 scoreboard players set @p[tag=MBB_Host] MBB_GameMode 1 
 ### Gamearea
-scoreboard players set @p[tag=MBB_Host] MBB_GameArea 1000
+scoreboard players set @p[tag=MBB_Host] MBB_GameArea 0
 ### Gametime (ScoreAttack mode only)
-scoreboard players set @p[tag=MBB_Host] MBB_GameTime 10
+scoreboard players set @p[tag=MBB_Host] MBB_GameTime 60
 ### Difficulty - 1:easy, 2:normal, 3:hard, 4:hardcore
 scoreboard players set @p[tag=MBB_Host] MBB_Difficulty 2
 ### Position
@@ -108,10 +107,6 @@ scoreboard players set #mbb MBB_60 60
 ### Death
 scoreboard players set @a[tag=MBB_Player] MBB_Death 0
 ### EnderChest
-execute as @a[tag=MBB_Player] store result score @s MBB_UUID0 run data get entity @s UUID[0]
-execute as @a[tag=MBB_Player] store result score @s MBB_UUID1 run data get entity @s UUID[1]
-execute as @a[tag=MBB_Player] store result score @s MBB_UUID2 run data get entity @s UUID[2]
-execute as @a[tag=MBB_Player] store result score @s MBB_UUID3 run data get entity @s UUID[3]
 scoreboard players set @a[tag=MBB_Player] MBB_SpawnChest 0
 ### Sheet
 scoreboard players set @a MBB_Sheet00 0

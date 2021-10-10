@@ -19,6 +19,11 @@ scoreboard players operation #mbb MBB_Difficulty = @p[tag=MBB_Host] MBB_Difficul
 
 ## Reset scoreboards
 scoreboard players reset @a
+### Enderchest
+execute as @a[tag=MBB_Player] store result score @s MBB_UUID0 run data get entity @s UUID[0]
+execute as @a[tag=MBB_Player] store result score @s MBB_UUID1 run data get entity @s UUID[1]
+execute as @a[tag=MBB_Player] store result score @s MBB_UUID2 run data get entity @s UUID[2]
+execute as @a[tag=MBB_Player] store result score @s MBB_UUID3 run data get entity @s UUID[3]
 ### Sheet
 scoreboard players set @a MBB_Sheet00 0
 scoreboard players set @a MBB_Sheet01 0
