@@ -45,6 +45,7 @@ scoreboard objectives remove MBB_5
 scoreboard objectives remove MBB_60
 ### Death
 scoreboard objectives remove MBB_Death
+scoreboard objectives remove MBB_LiveTime
 ### EnderChest
 scoreboard objectives remove MBB_UUID0
 scoreboard objectives remove MBB_UUID1

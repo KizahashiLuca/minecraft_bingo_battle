@@ -18,7 +18,7 @@ tag @a[predicate=mbb:system/ongame/not_on_ground] add MBB_Descending
 execute as @a[predicate=mbb:system/ongame/on_ground] run function mbb:system/ongame/on_ground
 
 ## Detect death
-execute as @a[tag=MBB_Player,scores={MBB_Death=1..}] run function mbb:system/ongame/detect_death/main
+execute as @a[tag=MBB_Player,scores={MBB_Death=1,MBB_LiveTime=10..}] run function mbb:system/ongame/detect_death/main
 
 ## Set position
 execute as @a run function mbb:system/common/position/main

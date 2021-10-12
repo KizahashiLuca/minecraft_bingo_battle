@@ -45,6 +45,7 @@ scoreboard objectives add MBB_5 dummy
 scoreboard objectives add MBB_60 dummy
 ### Death
 scoreboard objectives add MBB_Death minecraft.custom:minecraft.deaths
+scoreboard objectives add MBB_LiveTime minecraft.custom:minecraft.time_since_death
 ### EnderChest
 scoreboard objectives add MBB_UUID0 dummy
 scoreboard objectives add MBB_UUID1 dummy
@@ -104,26 +105,3 @@ scoreboard players set #mbb MBB_45 45
 ### Timer
 scoreboard players set #mbb MBB_5 5
 scoreboard players set #mbb MBB_60 60
-### Death
-scoreboard players set @a[tag=MBB_Player] MBB_Death 0
-### EnderChest
-scoreboard players set @a[tag=MBB_Player] MBB_SpawnChest 0
-### Sheet
-scoreboard players set @a MBB_Sheet00 0
-scoreboard players set @a MBB_Sheet01 0
-scoreboard players set @a MBB_Sheet02 0
-scoreboard players set @a MBB_Sheet10 0
-scoreboard players set @a MBB_Sheet11 0
-scoreboard players set @a MBB_Sheet12 0
-scoreboard players set @a MBB_Sheet20 0
-scoreboard players set @a MBB_Sheet21 0
-scoreboard players set @a MBB_Sheet22 0
-### Bingo
-scoreboard players set @a MBB_BingoRow0 0
-scoreboard players set @a MBB_BingoRow1 0
-scoreboard players set @a MBB_BingoRow2 0
-scoreboard players set @a MBB_BingoCol0 0
-scoreboard players set @a MBB_BingoCol1 0
-scoreboard players set @a MBB_BingoCol2 0
-scoreboard players set @a MBB_Diagonal 0
-scoreboard players set @a MBB_AntiDiagonal 0
