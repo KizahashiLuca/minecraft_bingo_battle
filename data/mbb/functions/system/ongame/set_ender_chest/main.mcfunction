@@ -2,8 +2,8 @@
 ## Minecraft Bingo Battle
 ## MC-Version: JE 1.17
 ## Author    : @KizahashiLuca
-## Date      : 03 Oct 2021
-## Version   : α-1.0
+## Date      : 14 Oct 2021
+## Version   : β-1.0
 #####################################
 
 ## Set ender chest - Host
