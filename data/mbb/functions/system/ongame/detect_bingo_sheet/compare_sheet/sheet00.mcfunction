@@ -11,8 +11,8 @@ tag @s add MBB_CompareSheet
 
 ## Compare bingo sheet
 ### Sheet00
-summon minecraft:item ~ ~ ~ {Item:{id:"minecraft:structure_void",Count:1b},Tags:["MBB_CompareSheet"],PickupDelay:32767s}
-execute as @e[type=minecraft:item,nbt={Item:{id:"minecraft:structure_void",Count:1b},Tags:["MBB_CompareSheet"]},limit=1] run function mbb:system/ongame/detect_bingo_sheet/compare_items/sheet00
+summon minecraft:item ~ ~ ~ {Item:{id:"minecraft:structure_void",Count:1b,tag:{Tags:["MBB_CompareSheet"]}},PickupDelay:32767s}
+execute as @e[type=minecraft:item,nbt={Item:{id:"minecraft:structure_void",Count:1b,tag:{Tags:["MBB_CompareSheet"]}}},limit=1] run function mbb:system/ongame/detect_bingo_sheet/compare_items/sheet00
 
 ## Remove a tag
 tag @s remove MBB_CompareSheet

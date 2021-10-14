@@ -1,0 +1,19 @@
+[
+  {
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+      "nbt": "{EnderItems:[{Slot:25b}],Tags:[\"MBB_Player\"]}"
+    }
+  },
+  {
+    "condition": "minecraft:entity_scores",
+    "entity": "this",
+    "scores": {
+      "MBB_Sheet21": {
+        "min": 1,
+        "max": 1
+      }
+    }
+  }
+]
