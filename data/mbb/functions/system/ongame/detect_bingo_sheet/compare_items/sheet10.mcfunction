@@ -25,6 +25,7 @@ execute store success score @p[tag=MBB_CompareSheet] MBB_SheetTmp1 run data modi
 execute store success score @p[tag=MBB_CompareSheet] MBB_SheetTmp2 if data entity @p[tag=MBB_CompareSheet] EnderItems[{Slot:15b}].tag run data modify entity @s Item.tag set from entity @p[tag=MBB_CompareSheet] EnderItems[{Slot:15b}].tag
 execute unless data entity @p[tag=MBB_CompareSheet] EnderItems[{Slot:15b}].tag run scoreboard players set @p[tag=MBB_CompareSheet] MBB_SheetTmp2 0
 execute unless data entity @p[tag=MBB_CompareSheet] EnderItems[{Slot:15b}].tag run data remove entity @s Item.tag
+scoreboard players set @p[predicate=mbb:system/ongame/compare_items/sheet10] MBB_SheetTmp2 0
 ### item count
 execute store result score @p[tag=MBB_CompareSheet] MBB_SheetTmp3 run data get entity @p[tag=MBB_CompareSheet] EnderItems[{Slot:15b}].Count
 ### Compare id & tag

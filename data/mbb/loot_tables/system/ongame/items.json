@@ -12772,6 +12772,14 @@
         {
           "type":"minecraft:item",
           "name":"minecraft:enchanted_book",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                ["",{"text":"Any Enchanted Book","italic":false}]
+              ]
+            }
+          ],
           "conditions": [
             {
               "condition": "minecraft:inverted",
@@ -13044,6 +13052,14 @@
         {
           "type":"minecraft:item",
           "name":"minecraft:potion",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                ["",{"text":"Any Potion","italic":false}]
+              ]
+            }
+          ],
           "conditions": [
             {
               "condition": "minecraft:inverted",
@@ -13060,6 +13076,14 @@
         {
           "type":"minecraft:item",
           "name":"minecraft:splash_potion",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                ["",{"text":"Any Splash Potion","italic":false}]
+              ]
+            }
+          ],
           "conditions": [
             {
               "condition": "minecraft:inverted",
@@ -13076,6 +13100,14 @@
         {
           "type":"minecraft:item",
           "name":"minecraft:lingering_potion",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                ["",{"text":"Any Lingering Potion","italic":false}]
+              ]
+            }
+          ],
           "conditions": [
             {
               "condition": "minecraft:inverted",
