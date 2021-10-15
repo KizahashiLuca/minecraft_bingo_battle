@@ -8,79 +8,59 @@
 
 ## Compare ender chest
 ### Enderchest00
-execute as @a[predicate=mbb:system/ongame/detect_exchange_sheet/enderchest00] at @s unless data entity @s EnderItems[{Slot:0b}].tag.Tags run function mbb:system/ongame/detect_bingo_sheet/detect_exchange_sheet/enderchest00
+execute as @a[predicate=mbb:system/ongame/detect_enderchest/enderchest00] at @s run function mbb:system/ongame/detect_bingo_sheet/detect_enderchest/enderchest00
 ### Enderchest01
-execute as @a[predicate=mbb:system/ongame/detect_exchange_sheet/enderchest01] at @s unless data entity @s EnderItems[{Slot:1b}].tag.Tags run function mbb:system/ongame/detect_bingo_sheet/detect_exchange_sheet/enderchest01
+execute as @a[predicate=mbb:system/ongame/detect_enderchest/enderchest01] at @s run function mbb:system/ongame/detect_bingo_sheet/detect_enderchest/enderchest01
 ### Enderchest02
-execute as @a[predicate=mbb:system/ongame/detect_exchange_sheet/enderchest02] at @s unless data entity @s EnderItems[{Slot:2b}].tag.Tags run function mbb:system/ongame/detect_bingo_sheet/detect_exchange_sheet/enderchest02
+execute as @a[predicate=mbb:system/ongame/detect_enderchest/enderchest02] at @s run function mbb:system/ongame/detect_bingo_sheet/detect_enderchest/enderchest02
 ### Enderchest03
-execute as @a[predicate=mbb:system/ongame/detect_exchange_sheet/enderchest03] at @s unless data entity @s EnderItems[{Slot:3b}].tag.Tags run function mbb:system/ongame/detect_bingo_sheet/detect_exchange_sheet/enderchest03
+execute as @a[predicate=mbb:system/ongame/detect_enderchest/enderchest03] at @s run function mbb:system/ongame/detect_bingo_sheet/detect_enderchest/enderchest03
 ### Enderchest04
-execute as @a[predicate=mbb:system/ongame/detect_exchange_sheet/enderchest04] at @s unless data entity @s EnderItems[{Slot:4b}].tag.Tags run function mbb:system/ongame/detect_bingo_sheet/detect_exchange_sheet/enderchest04
+execute as @a[predicate=mbb:system/ongame/detect_enderchest/enderchest04] at @s run function mbb:system/ongame/detect_bingo_sheet/detect_enderchest/enderchest04
 ### Enderchest05
-execute as @a[predicate=mbb:system/ongame/detect_exchange_sheet/enderchest05] at @s unless data entity @s EnderItems[{Slot:5b}].tag.Tags run function mbb:system/ongame/detect_bingo_sheet/detect_exchange_sheet/enderchest05
+execute as @a[predicate=mbb:system/ongame/detect_enderchest/enderchest05] at @s run function mbb:system/ongame/detect_bingo_sheet/detect_enderchest/enderchest05
 ### Enderchest06
-execute as @a[predicate=mbb:system/ongame/detect_exchange_sheet/enderchest06] at @s unless data entity @s EnderItems[{Slot:6b}].tag.Tags run function mbb:system/ongame/detect_bingo_sheet/detect_exchange_sheet/enderchest06
+execute as @a[predicate=mbb:system/ongame/detect_enderchest/enderchest06] at @s run function mbb:system/ongame/detect_bingo_sheet/detect_enderchest/enderchest06
 ### Enderchest07
-execute as @a[predicate=mbb:system/ongame/detect_exchange_sheet/enderchest07] at @s unless data entity @s EnderItems[{Slot:7b}].tag.Tags run function mbb:system/ongame/detect_bingo_sheet/detect_exchange_sheet/enderchest07
+execute as @a[predicate=mbb:system/ongame/detect_enderchest/enderchest07] at @s run function mbb:system/ongame/detect_bingo_sheet/detect_enderchest/enderchest07
 ### Enderchest08
-execute as @a[predicate=mbb:system/ongame/detect_exchange_sheet/enderchest08] at @s unless data entity @s EnderItems[{Slot:8b}].tag.Tags run function mbb:system/ongame/detect_bingo_sheet/detect_exchange_sheet/enderchest08
+execute as @a[predicate=mbb:system/ongame/detect_enderchest/enderchest08] at @s run function mbb:system/ongame/detect_bingo_sheet/detect_enderchest/enderchest08
 ### Enderchest09
-execute as @a[predicate=mbb:system/ongame/detect_exchange_sheet/enderchest09] at @s unless data entity @s EnderItems[{Slot:9b}].tag.Tags run function mbb:system/ongame/detect_bingo_sheet/detect_exchange_sheet/enderchest09
+execute as @a[predicate=mbb:system/ongame/detect_enderchest/enderchest09] at @s run function mbb:system/ongame/detect_bingo_sheet/detect_enderchest/enderchest09
 ### Enderchest10
-execute as @a[predicate=mbb:system/ongame/detect_exchange_sheet/enderchest10] at @s unless data entity @s EnderItems[{Slot:10b}].tag.Tags run function mbb:system/ongame/detect_bingo_sheet/detect_exchange_sheet/enderchest10
+execute as @a[predicate=mbb:system/ongame/detect_enderchest/enderchest10] at @s run function mbb:system/ongame/detect_bingo_sheet/detect_enderchest/enderchest10
 ### Enderchest11
-execute as @a[predicate=mbb:system/ongame/detect_exchange_sheet/enderchest11] at @s unless data entity @s EnderItems[{Slot:11b}].tag.Tags run function mbb:system/ongame/detect_bingo_sheet/detect_exchange_sheet/enderchest11
+execute as @a[predicate=mbb:system/ongame/detect_enderchest/enderchest11] at @s run function mbb:system/ongame/detect_bingo_sheet/detect_enderchest/enderchest11
 ### Enderchest12
-execute as @a[predicate=mbb:system/ongame/detect_exchange_sheet/enderchest12] at @s unless data entity @s EnderItems[{Slot:12b}].tag.Tags run function mbb:system/ongame/detect_bingo_sheet/detect_exchange_sheet/enderchest12
+execute as @a[predicate=mbb:system/ongame/detect_enderchest/enderchest12] at @s run function mbb:system/ongame/detect_bingo_sheet/detect_enderchest/enderchest12
 ### Enderchest13
-execute as @a[predicate=mbb:system/ongame/detect_exchange_sheet/enderchest13] at @s unless data entity @s EnderItems[{Slot:13b}].tag.Tags run function mbb:system/ongame/detect_bingo_sheet/detect_exchange_sheet/enderchest13
+execute as @a[predicate=mbb:system/ongame/detect_enderchest/enderchest13] at @s run function mbb:system/ongame/detect_bingo_sheet/detect_enderchest/enderchest13
 ### Enderchest14
-execute as @a[predicate=mbb:system/ongame/detect_exchange_sheet/enderchest14] at @s unless data entity @s EnderItems[{Slot:14b}].tag.Tags run function mbb:system/ongame/detect_bingo_sheet/detect_exchange_sheet/enderchest14
+execute as @a[predicate=mbb:system/ongame/detect_enderchest/enderchest14] at @s run function mbb:system/ongame/detect_bingo_sheet/detect_enderchest/enderchest14
 ### Enderchest15
-execute as @a[predicate=mbb:system/ongame/detect_exchange_sheet/enderchest15] at @s unless data entity @s EnderItems[{Slot:15b}].tag.Tags run function mbb:system/ongame/detect_bingo_sheet/detect_exchange_sheet/enderchest15
+execute as @a[predicate=mbb:system/ongame/detect_enderchest/enderchest15] at @s run function mbb:system/ongame/detect_bingo_sheet/detect_enderchest/enderchest15
 ### Enderchest16
-execute as @a[predicate=mbb:system/ongame/detect_exchange_sheet/enderchest16] at @s unless data entity @s EnderItems[{Slot:16b}].tag.Tags run function mbb:system/ongame/detect_bingo_sheet/detect_exchange_sheet/enderchest16
+execute as @a[predicate=mbb:system/ongame/detect_enderchest/enderchest16] at @s run function mbb:system/ongame/detect_bingo_sheet/detect_enderchest/enderchest16
 ### Enderchest17
-execute as @a[predicate=mbb:system/ongame/detect_exchange_sheet/enderchest17] at @s unless data entity @s EnderItems[{Slot:17b}].tag.Tags run function mbb:system/ongame/detect_bingo_sheet/detect_exchange_sheet/enderchest17
+execute as @a[predicate=mbb:system/ongame/detect_enderchest/enderchest17] at @s run function mbb:system/ongame/detect_bingo_sheet/detect_enderchest/enderchest17
 ### Enderchest18
-execute as @a[predicate=mbb:system/ongame/detect_exchange_sheet/enderchest18] at @s unless data entity @s EnderItems[{Slot:18b}].tag.Tags run function mbb:system/ongame/detect_bingo_sheet/detect_exchange_sheet/enderchest18
+execute as @a[predicate=mbb:system/ongame/detect_enderchest/enderchest18] at @s run function mbb:system/ongame/detect_bingo_sheet/detect_enderchest/enderchest18
 ### Enderchest19
-execute as @a[predicate=mbb:system/ongame/detect_exchange_sheet/enderchest19] at @s unless data entity @s EnderItems[{Slot:19b}].tag.Tags run function mbb:system/ongame/detect_bingo_sheet/detect_exchange_sheet/enderchest19
+execute as @a[predicate=mbb:system/ongame/detect_enderchest/enderchest19] at @s run function mbb:system/ongame/detect_bingo_sheet/detect_enderchest/enderchest19
 ### Enderchest20
-execute as @a[predicate=mbb:system/ongame/detect_exchange_sheet/enderchest20] at @s unless data entity @s EnderItems[{Slot:20b}].tag.Tags run function mbb:system/ongame/detect_bingo_sheet/detect_exchange_sheet/enderchest20
+execute as @a[predicate=mbb:system/ongame/detect_enderchest/enderchest20] at @s run function mbb:system/ongame/detect_bingo_sheet/detect_enderchest/enderchest20
 ### Enderchest21
-execute as @a[predicate=mbb:system/ongame/detect_exchange_sheet/enderchest21] at @s unless data entity @s EnderItems[{Slot:21b}].tag.Tags run function mbb:system/ongame/detect_bingo_sheet/detect_exchange_sheet/enderchest21
+execute as @a[predicate=mbb:system/ongame/detect_enderchest/enderchest21] at @s run function mbb:system/ongame/detect_bingo_sheet/detect_enderchest/enderchest21
 ### Enderchest22
-execute as @a[predicate=mbb:system/ongame/detect_exchange_sheet/enderchest22] at @s unless data entity @s EnderItems[{Slot:22b}].tag.Tags run function mbb:system/ongame/detect_bingo_sheet/detect_exchange_sheet/enderchest22
+execute as @a[predicate=mbb:system/ongame/detect_enderchest/enderchest22] at @s run function mbb:system/ongame/detect_bingo_sheet/detect_enderchest/enderchest22
 ### Enderchest23
-execute as @a[predicate=mbb:system/ongame/detect_exchange_sheet/enderchest23] at @s unless data entity @s EnderItems[{Slot:23b}].tag.Tags run function mbb:system/ongame/detect_bingo_sheet/detect_exchange_sheet/enderchest23
+execute as @a[predicate=mbb:system/ongame/detect_enderchest/enderchest23] at @s run function mbb:system/ongame/detect_bingo_sheet/detect_enderchest/enderchest23
 ### Enderchest24
-execute as @a[predicate=mbb:system/ongame/detect_exchange_sheet/enderchest24] at @s unless data entity @s EnderItems[{Slot:24b}].tag.Tags run function mbb:system/ongame/detect_bingo_sheet/detect_exchange_sheet/enderchest24
+execute as @a[predicate=mbb:system/ongame/detect_enderchest/enderchest24] at @s run function mbb:system/ongame/detect_bingo_sheet/detect_enderchest/enderchest24
 ### Enderchest25
-execute as @a[predicate=mbb:system/ongame/detect_exchange_sheet/enderchest25] at @s unless data entity @s EnderItems[{Slot:25b}].tag.Tags run function mbb:system/ongame/detect_bingo_sheet/detect_exchange_sheet/enderchest25
+execute as @a[predicate=mbb:system/ongame/detect_enderchest/enderchest25] at @s run function mbb:system/ongame/detect_bingo_sheet/detect_enderchest/enderchest25
 ### Enderchest26
-execute as @a[predicate=mbb:system/ongame/detect_exchange_sheet/enderchest26] at @s unless data entity @s EnderItems[{Slot:26b}].tag.Tags run function mbb:system/ongame/detect_bingo_sheet/detect_exchange_sheet/enderchest26
-
-## Compare bingo sheet
-### Sheet00
-execute as @a[predicate=mbb:system/ongame/compare_sheet/sheet00] at @s run function mbb:system/ongame/detect_bingo_sheet/compare_sheet/sheet00
-### Sheet01
-execute as @a[predicate=mbb:system/ongame/compare_sheet/sheet01] at @s run function mbb:system/ongame/detect_bingo_sheet/compare_sheet/sheet01
-### Sheet02
-execute as @a[predicate=mbb:system/ongame/compare_sheet/sheet02] at @s run function mbb:system/ongame/detect_bingo_sheet/compare_sheet/sheet02
-### Sheet10
-execute as @a[predicate=mbb:system/ongame/compare_sheet/sheet10] at @s run function mbb:system/ongame/detect_bingo_sheet/compare_sheet/sheet10
-### Sheet11
-execute as @a[predicate=mbb:system/ongame/compare_sheet/sheet11] at @s run function mbb:system/ongame/detect_bingo_sheet/compare_sheet/sheet11
-### Sheet12
-execute as @a[predicate=mbb:system/ongame/compare_sheet/sheet12] at @s run function mbb:system/ongame/detect_bingo_sheet/compare_sheet/sheet12
-### Sheet20
-execute as @a[predicate=mbb:system/ongame/compare_sheet/sheet20] at @s run function mbb:system/ongame/detect_bingo_sheet/compare_sheet/sheet20
-### Sheet21
-execute as @a[predicate=mbb:system/ongame/compare_sheet/sheet21] at @s run function mbb:system/ongame/detect_bingo_sheet/compare_sheet/sheet21
-### Sheet22
-execute as @a[predicate=mbb:system/ongame/compare_sheet/sheet22] at @s run function mbb:system/ongame/detect_bingo_sheet/compare_sheet/sheet22
+execute as @a[predicate=mbb:system/ongame/detect_enderchest/enderchest26] at @s run function mbb:system/ongame/detect_bingo_sheet/detect_enderchest/enderchest26
 
 ## Detect bingo
 ### Row 0

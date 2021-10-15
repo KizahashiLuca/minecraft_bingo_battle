@@ -10,4 +10,3 @@
 ### Enderchest08
 summon minecraft:item ~ ~ ~ {Item:{id:"minecraft:structure_void",Count:1b,tag:{Tags:["MBB_DetectExchangeItems"]}},PickupDelay:10s}
 data modify entity @e[type=minecraft:item,nbt={Item:{id:"minecraft:structure_void",Count:1b,tag:{Tags:["MBB_DetectExchangeItems"]}}},sort=nearest,limit=1] Item set from entity @s EnderItems[{Slot:8b}]
-item replace entity @s enderchest.8 with minecraft:air

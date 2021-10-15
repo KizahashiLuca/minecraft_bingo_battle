@@ -1,0 +1,20 @@
+[
+  {
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+      "nbt": "{Tags:[\"MBB_Player\"]}"
+    }
+  },
+  {
+    "condition": "minecraft:inverted",
+    "entity": "this",
+    "term": {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "nbt": "{EnderItems:[{Slot:25b}]}"
+      }
+    }
+  }
+]

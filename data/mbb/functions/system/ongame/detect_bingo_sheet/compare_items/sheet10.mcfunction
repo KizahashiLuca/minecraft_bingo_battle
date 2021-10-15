@@ -29,17 +29,8 @@ execute unless data entity @p[tag=MBB_CompareSheet] EnderItems[{Slot:15b}].tag r
 execute store result score @p[tag=MBB_CompareSheet] MBB_SheetTmp3 run data get entity @p[tag=MBB_CompareSheet] EnderItems[{Slot:15b}].Count
 ### Compare id & tag
 execute as @p[tag=MBB_CompareSheet,scores={MBB_SheetTmp1=0,MBB_SheetTmp2=0}] run scoreboard players remove @s MBB_SheetTmp3 1
-scoreboard players set @p[tag=MBB_CompareSheet,scores={MBB_SheetTmp1=0,MBB_SheetTmp2=0}] MBB_Sheet10 1
-execute as @p[team=MBB_TeamA,tag=MBB_CompareSheet,scores={MBB_SheetTmp1=0,MBB_SheetTmp2=0}] run scoreboard players set @a[team=MBB_TeamA] MBB_Sheet10 1
-execute as @p[team=MBB_TeamB,tag=MBB_CompareSheet,scores={MBB_SheetTmp1=0,MBB_SheetTmp2=0}] run scoreboard players set @a[team=MBB_TeamB] MBB_Sheet10 1
-execute as @p[team=MBB_TeamC,tag=MBB_CompareSheet,scores={MBB_SheetTmp1=0,MBB_SheetTmp2=0}] run scoreboard players set @a[team=MBB_TeamC] MBB_Sheet10 1
-execute as @p[team=MBB_TeamD,tag=MBB_CompareSheet,scores={MBB_SheetTmp1=0,MBB_SheetTmp2=0}] run scoreboard players set @a[team=MBB_TeamD] MBB_Sheet10 1
-execute as @p[team=MBB_TeamE,tag=MBB_CompareSheet,scores={MBB_SheetTmp1=0,MBB_SheetTmp2=0}] run scoreboard players set @a[team=MBB_TeamE] MBB_Sheet10 1
-execute as @p[team=MBB_TeamF,tag=MBB_CompareSheet,scores={MBB_SheetTmp1=0,MBB_SheetTmp2=0}] run scoreboard players set @a[team=MBB_TeamF] MBB_Sheet10 1
-execute as @p[team=MBB_TeamG,tag=MBB_CompareSheet,scores={MBB_SheetTmp1=0,MBB_SheetTmp2=0}] run scoreboard players set @a[team=MBB_TeamG] MBB_Sheet10 1
-execute as @p[team=MBB_TeamH,tag=MBB_CompareSheet,scores={MBB_SheetTmp1=0,MBB_SheetTmp2=0}] run scoreboard players set @a[team=MBB_TeamH] MBB_Sheet10 1
-execute as @p[team=MBB_TeamI,tag=MBB_CompareSheet,scores={MBB_SheetTmp1=0,MBB_SheetTmp2=0}] run scoreboard players set @a[team=MBB_TeamI] MBB_Sheet10 1
-execute as @p[team=MBB_TeamJ,tag=MBB_CompareSheet,scores={MBB_SheetTmp1=0,MBB_SheetTmp2=0}] run scoreboard players set @a[team=MBB_TeamJ] MBB_Sheet10 1
+execute if score #mbb MBB_GameGroup matches 1 run scoreboard players set @p[tag=MBB_CompareSheet,scores={MBB_SheetTmp1=0,MBB_SheetTmp2=0}] MBB_Sheet10 1
+execute if score #mbb MBB_GameGroup matches 2 run function mbb:system/ongame/detect_bingo_sheet/set_sheet/sheet10
 
 ## Copy item
 execute if entity @p[tag=MBB_CompareSheet,scores={MBB_Sheet10=0}] run data modify entity @s Item.Count set from entity @p[tag=MBB_CompareSheet] EnderItems[{Slot:15b}].Count

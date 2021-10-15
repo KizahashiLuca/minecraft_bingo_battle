@@ -7,7 +7,6 @@
 #####################################
 
 ## Detect enderchest item thrown
-execute as @a[predicate=mbb:system/ongame/bingo_sheet] at @e[predicate=mbb:system/common/world_spawn] run function mbb:system/ongame/detect_ender_chest/set_enderchest
 kill @e[nbt={Item:{tag:{Tags:["MBB_EnderChestItem"]}}}]
 
 ## Clear items
