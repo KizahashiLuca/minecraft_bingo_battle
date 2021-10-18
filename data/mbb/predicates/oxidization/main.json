@@ -1,0 +1,53 @@
+{
+  "condition": "minecraft:alternative",
+  "terms": [
+    {
+      "condition": "minecraft:reference",
+      "name": "mbb:oxidization/items/copper_block"
+    },
+    {
+      "condition": "minecraft:reference",
+      "name": "mbb:oxidization/items/exposed_copper"
+    },
+    {
+      "condition": "minecraft:reference",
+      "name": "mbb:oxidization/items/weathered_copper"
+    },
+    {
+      "condition": "minecraft:reference",
+      "name": "mbb:oxidization/items/cut_copper"
+    },
+    {
+      "condition": "minecraft:reference",
+      "name": "mbb:oxidization/items/exposed_cut_copper"
+    },
+    {
+      "condition": "minecraft:reference",
+      "name": "mbb:oxidization/items/weathered_cut_copper"
+    },
+    {
+      "condition": "minecraft:reference",
+      "name": "mbb:oxidization/items/cut_copper_stairs"
+    },
+    {
+      "condition": "minecraft:reference",
+      "name": "mbb:oxidization/items/exposed_cut_copper_stairs"
+    },
+    {
+      "condition": "minecraft:reference",
+      "name": "mbb:oxidization/items/weathered_cut_copper_stairs"
+    },
+    {
+      "condition": "minecraft:reference",
+      "name": "mbb:oxidization/items/cut_copper_slab"
+    },
+    {
+      "condition": "minecraft:reference",
+      "name": "mbb:oxidization/items/exposed_cut_copper_slab"
+    },
+    {
+      "condition": "minecraft:reference",
+      "name": "mbb:oxidization/items/weathered_cut_copper_slab"
+    }
+  ]
+}
