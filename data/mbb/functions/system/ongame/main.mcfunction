@@ -23,11 +23,14 @@ execute as @a[tag=MBB_Player,scores={MBB_Death=1,MBB_LiveTime=10..}] run functio
 ## Set position
 execute as @a run function mbb:system/common/position/main
 
-## Detect bingo
-function mbb:system/ongame/detect_bingo_sheet/main
+## Compare ender chest
+execute as @a[predicate=mbb:system/ongame/detect_enderchest/main] at @s run function mbb:system/ongame/detect_bingo_sheet/detect_enderchest/main
 
-## Detect ender chest
-function mbb:system/ongame/detect_ender_chest/main
+## Detect bingo
+execute as @a[predicate=mbb:system/ongame/detect_bingo/main] at @s run function mbb:system/ongame/detect_bingo_sheet/detect_bingo/main
+
+## Spawn ender chest
+function mbb:system/ongame/spawn_enderchest/main
 
 ## Change phase
 execute if score #mbb MBB_GameMode matches 1 if score #mbb MBB_Minute matches 0 if score #mbb MBB_Second matches 0 if score #mbb MBB_Tick matches 0 run function mbb:system/finish/score_attack/main

@@ -1,0 +1,37 @@
+{
+  "condition": "minecraft:alternative",
+  "terms": [
+    {
+      "condition": "minecraft:reference",
+      "name": "mbb:system/ongame/detect_bingo/row0"
+    },
+    {
+      "condition": "minecraft:reference",
+      "name": "mbb:system/ongame/detect_bingo/row1"
+    },
+    {
+      "condition": "minecraft:reference",
+      "name": "mbb:system/ongame/detect_bingo/row2"
+    },
+    {
+      "condition": "minecraft:reference",
+      "name": "mbb:system/ongame/detect_bingo/col0"
+    },
+    {
+      "condition": "minecraft:reference",
+      "name": "mbb:system/ongame/detect_bingo/col1"
+    },
+    {
+      "condition": "minecraft:reference",
+      "name": "mbb:system/ongame/detect_bingo/col2"
+    },
+    {
+      "condition": "minecraft:reference",
+      "name": "mbb:system/ongame/detect_bingo/diagonal"
+    },
+    {
+      "condition": "minecraft:reference",
+      "name": "mbb:system/ongame/detect_bingo/anti_diagonal"
+    }
+  ]
+}
