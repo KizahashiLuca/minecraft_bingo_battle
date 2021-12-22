@@ -7,8 +7,8 @@
 #####################################
 
 ## Change game time
-scoreboard players add @p[tag=MBB_Host] MBB_GameTime 10
-scoreboard players set @p[tag=MBB_Host,scores={MBB_GameTime=70..}] MBB_GameTime 10
+scoreboard players add #mbb MBB_GameTime 10
+execute if score #mbb MBB_GameTime matches 70.. run scoreboard players set #mbb MBB_GameTime 10
 
 ## Change to root
 function mbb:system/setting/gui/change_to

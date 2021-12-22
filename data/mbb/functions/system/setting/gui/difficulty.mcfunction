@@ -7,8 +7,8 @@
 #####################################
 
 ## Change difficulty
-scoreboard players add @p[tag=MBB_Host] MBB_Difficulty 1
-scoreboard players set @p[tag=MBB_Host,scores={MBB_Difficulty=5..}] MBB_Difficulty 1
+scoreboard players add #mbb MBB_Difficulty 1
+execute if score #mbb MBB_Difficulty matches 5.. run scoreboard players set #mbb MBB_Difficulty 1
 
 ## Change to root
 function mbb:system/setting/gui/change_to

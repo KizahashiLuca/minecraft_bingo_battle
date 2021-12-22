@@ -5,10 +5,19 @@
       "rolls": 1,
       "conditions": [
         {
-          "condition": "minecraft:entity_scores",
-          "entity": "this",
-          "scores": {
-            "MBB_GameMode": 1
+          "condition": "minecraft:value_check",
+          "value": {
+            "type": "minecraft:score",
+            "target": {
+              "type": "minecraft:fixed",
+              "name": "#mbb"
+            },
+            "score": "MBB_GameMode",
+            "scale": 1
+          },
+          "range": {
+            "min": 1,
+            "max": 1
           }
         }
       ],
@@ -19,6 +28,7 @@
           "functions": [
             {
               "function": "minecraft:set_name",
+              "entity": "this",
               "name": [
                 [
                   "",
@@ -28,114 +38,12 @@
             },
             {
               "function": "minecraft:set_lore",
-              "conditions": [
-                {
-                  "condition": "minecraft:entity_scores",
-                  "entity": "this",
-                  "scores": {
-                    "MBB_GameTime": 10
-                  }
-                }
-              ],
+              "entity": "this",
               "lore": [
                 [
                   "",
-                  {"text":"10 min.","color":"green","bold":true,"italic":false},
-                  {"text":" selected","color":"white","bold":false,"italic":false}
-                ]
-              ]
-            },
-            {
-              "function": "minecraft:set_lore",
-              "conditions": [
-                {
-                  "condition": "minecraft:entity_scores",
-                  "entity": "this",
-                  "scores": {
-                    "MBB_GameTime": 20
-                  }
-                }
-              ],
-              "lore": [
-                [
-                  "",
-                  {"text":"20 min.","color":"green","bold":true,"italic":false},
-                  {"text":" selected","color":"white","bold":false,"italic":false}
-                ]
-              ]
-            },
-            {
-              "function": "minecraft:set_lore",
-              "conditions": [
-                {
-                  "condition": "minecraft:entity_scores",
-                  "entity": "this",
-                  "scores": {
-                    "MBB_GameTime": 30
-                  }
-                }
-              ],
-              "lore": [
-                [
-                  "",
-                  {"text":"30 min.","color":"green","bold":true,"italic":false},
-                  {"text":" selected","color":"white","bold":false,"italic":false}
-                ]
-              ]
-            },
-            {
-              "function": "minecraft:set_lore",
-              "conditions": [
-                {
-                  "condition": "minecraft:entity_scores",
-                  "entity": "this",
-                  "scores": {
-                    "MBB_GameTime": 40
-                  }
-                }
-              ],
-              "lore": [
-                [
-                  "",
-                  {"text":"40 min.","color":"green","bold":true,"italic":false},
-                  {"text":" selected","color":"white","bold":false,"italic":false}
-                ]
-              ]
-            },
-            {
-              "function": "minecraft:set_lore",
-              "conditions": [
-                {
-                  "condition": "minecraft:entity_scores",
-                  "entity": "this",
-                  "scores": {
-                    "MBB_GameTime": 50
-                  }
-                }
-              ],
-              "lore": [
-                [
-                  "",
-                  {"text":"50 min.","color":"green","bold":true,"italic":false},
-                  {"text":" selected","color":"white","bold":false,"italic":false}
-                ]
-              ]
-            },
-            {
-              "function": "minecraft:set_lore",
-              "conditions": [
-                {
-                  "condition": "minecraft:entity_scores",
-                  "entity": "this",
-                  "scores": {
-                    "MBB_GameTime": 60
-                  }
-                }
-              ],
-              "lore": [
-                [
-                  "",
-                  {"text":"60 min.","color":"green","bold":true,"italic":false},
+                  {"score":{"name":"#mbb","objective":"MBB_GameTime"},"color":"green","bold":true,"italic":false},
+                  {"text":" min.","color":"green","bold":true,"italic":false},
                   {"text":" selected","color":"white","bold":false,"italic":false}
                 ]
               ]

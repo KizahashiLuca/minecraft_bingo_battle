@@ -12775,8 +12775,12 @@
           "functions": [
             {
               "function": "minecraft:set_name",
+              "entity": "this",
               "name": [
-                ["",{"text":"Any Enchanted Book","italic":false}]
+                [
+                  "",
+                  {"text":"Any Enchanted Book","italic":false}
+                ]
               ]
             }
           ],
@@ -13055,8 +13059,12 @@
           "functions": [
             {
               "function": "minecraft:set_name",
+              "entity": "this",
               "name": [
-                ["",{"text":"Any Potion","italic":false}]
+                [
+                  "",
+                  {"text":"Any Potion","italic":false}
+                ]
               ]
             }
           ],
@@ -13079,8 +13087,12 @@
           "functions": [
             {
               "function": "minecraft:set_name",
+              "entity": "this",
               "name": [
-                ["",{"text":"Any Splash Potion","italic":false}]
+                [
+                  "",
+                  {"text":"Any Splash Potion","italic":false}
+                ]
               ]
             }
           ],
@@ -13103,8 +13115,12 @@
           "functions": [
             {
               "function": "minecraft:set_name",
+              "entity": "this",
               "name": [
-                ["",{"text":"Any Lingering Potion","italic":false}]
+                [
+                  "",
+                  {"text":"Any Lingering Potion","italic":false}
+                ]
               ]
             }
           ],

@@ -83,23 +83,23 @@ scoreboard objectives add MBB_AntiDiagonal dummy
 
 ## Set scoreboards
 ### GameGroup - 1:Individual, 2:Team
-scoreboard players set @p[tag=MBB_Host] MBB_GameGroup 1
+scoreboard players set #mbb MBB_GameGroup 1
 ### WeatherCycle - 0:FALSE, 1:TRUE
-scoreboard players set @p[tag=MBB_Host] MBB_WeatherCycle 1
+scoreboard players set #mbb MBB_WeatherCycle 1
 ### DaylightCycle - 0:FALSE, 1:TRUE
-scoreboard players set @p[tag=MBB_Host] MBB_DayligtCycle 1
+scoreboard players set #mbb MBB_DayligtCycle 1
 ### KeepInventory - 0:FALSE, 1:TRUE
-scoreboard players set @p[tag=MBB_Host] MBB_KeepInve 0
+scoreboard players set #mbb MBB_KeepInve 0
 ### TeamNumber (TeamMatch only)
-scoreboard players set @p[tag=MBB_Host] MBB_NumTeam 1
+scoreboard players set #mbb MBB_NumTeam 1
 ### Gamemode - 1:ScoreAttack, 2:TimeAttack
-scoreboard players set @p[tag=MBB_Host] MBB_GameMode 1 
+scoreboard players set #mbb MBB_GameMode 1 
 ### Gamearea
-scoreboard players set @p[tag=MBB_Host] MBB_GameArea 0
+scoreboard players set #mbb MBB_GameArea 0
 ### Gametime (ScoreAttack mode only)
-scoreboard players set @p[tag=MBB_Host] MBB_GameTime 60
+scoreboard players set #mbb MBB_GameTime 60
 ### Difficulty - 1:easy, 2:normal, 3:hard, 4:hardcore
-scoreboard players set @p[tag=MBB_Host] MBB_Difficulty 2
+scoreboard players set #mbb MBB_Difficulty 2
 ### Position
 scoreboard players set #mbb MBB_45 45
 ### Timer

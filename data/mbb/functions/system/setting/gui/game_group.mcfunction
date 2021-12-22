@@ -7,8 +7,8 @@
 #####################################
 
 ## Change game group
-scoreboard players add @p[tag=MBB_Host] MBB_GameGroup 1
-scoreboard players set @p[tag=MBB_Host,scores={MBB_GameGroup=3..}] MBB_GameGroup 1
+scoreboard players add #mbb MBB_GameGroup 1
+execute if score #mbb MBB_GameGroup matches 3.. run scoreboard players set #mbb MBB_GameGroup 1
 
 ## Change to root
 function mbb:system/setting/gui/change_to

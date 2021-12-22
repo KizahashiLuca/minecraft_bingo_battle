@@ -7,8 +7,8 @@
 #####################################
 
 ## Change game area
-scoreboard players add @p[tag=MBB_Host] MBB_GameArea 500
-scoreboard players set @p[tag=MBB_Host,scores={MBB_GameArea=2500..}] MBB_GameArea 0
+scoreboard players add #mbb MBB_GameArea 500
+execute if score #mbb MBB_GameArea matches 2500.. run scoreboard players set #mbb MBB_GameArea 0
 
 ## Change to root
 function mbb:system/setting/gui/change_to

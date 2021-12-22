@@ -28,7 +28,7 @@ loot replace entity @p[tag=MBB_Host] inventory.9 loot mbb:system/settings/gui/ga
 ### Gamearea
 loot replace entity @p[tag=MBB_Host] inventory.12 loot mbb:system/settings/gui/game_area
 ### Gametime (ScoreAttack mode only)
-loot replace entity @p[tag=MBB_Host,scores={MBB_GameMode=1}] inventory.13 loot mbb:system/settings/gui/game_time
+loot replace entity @p[tag=MBB_Host] inventory.13 loot mbb:system/settings/gui/game_time
 ### Difficulty - 1:easy, 2:normal, 3:hard, 4:hardcore
 loot replace entity @p[tag=MBB_Host] inventory.14 loot mbb:system/settings/gui/difficulty
 ### Cancel

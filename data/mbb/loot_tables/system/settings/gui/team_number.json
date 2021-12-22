@@ -5,10 +5,19 @@
       "rolls":1,
       "conditions": [
         {
-          "condition": "minecraft:entity_scores",
-          "entity": "this",
-          "scores": {
-            "MBB_GameGroup": 2
+          "condition": "minecraft:value_check",
+          "value": {
+            "type": "minecraft:score",
+            "target": {
+              "type": "minecraft:fixed",
+              "name": "#mbb"
+            },
+            "score": "MBB_GameGroup",
+            "scale": 1
+          },
+          "range": {
+            "min": 2,
+            "max": 2
           }
         }
       ],
@@ -19,6 +28,7 @@
           "functions":[
             {
               "function":"minecraft:set_name",
+              "entity": "this",
               "name": [
                 [
                   "",
@@ -28,12 +38,22 @@
             },
             {
               "function":"minecraft:set_lore",
+              "entity": "this",
               "conditions": [
                 {
-                  "condition": "minecraft:entity_scores",
-                  "entity": "this",
-                  "scores": {
-                    "MBB_NumTeam": 1
+                  "condition": "minecraft:value_check",
+                  "value": {
+                    "type": "minecraft:score",
+                    "target": {
+                      "type": "minecraft:fixed",
+                      "name": "#mbb"
+                    },
+                    "score": "MBB_NumTeam",
+                    "scale": 1
+                  },
+                  "range": {
+                    "min": 1,
+                    "max": 1
                   }
                 }
               ],
@@ -46,301 +66,250 @@
               ]
             },
             {
+              "function":"minecraft:set_lore",
+              "entity": "this",
+              "conditions": [
+                {
+                  "condition": "minecraft:value_check",
+                  "value": {
+                    "type": "minecraft:score",
+                    "target": {
+                      "type": "minecraft:fixed",
+                      "name": "#mbb"
+                    },
+                    "score": "MBB_NumTeam",
+                    "scale": 1
+                  },
+                  "range": {
+                    "min": 2,
+                    "max": 10
+                  }
+                }
+              ],
+              "lore": [
+                [
+                  "",
+                  {"score":{"name":"#mbb","objective":"MBB_NumTeam"},"color":"green","bold":true,"italic":false},
+                  {"text":" teams","color":"green","bold":true,"italic":false},
+                  {"text":" selected","color":"white","bold":false,"italic":false}
+                ]
+              ]
+            },
+            {
               "function":"minecraft:set_nbt",
               "conditions": [
                 {
-                  "condition": "minecraft:entity_scores",
-                  "entity": "this",
-                  "scores": {
-                    "MBB_NumTeam": 1
+                  "condition": "minecraft:value_check",
+                  "value": {
+                    "type": "minecraft:score",
+                    "target": {
+                      "type": "minecraft:fixed",
+                      "name": "#mbb"
+                    },
+                    "score": "MBB_NumTeam",
+                    "scale": 1
+                  },
+                  "range": {
+                    "min": 1,
+                    "max": 1
                   }
                 }
               ],
               "tag":"{BlockEntityTag:{Patterns:[{Pattern:tl,Color:15},{Pattern:cs,Color:15},{Pattern:bs,Color:15},{Pattern:bo,Color:0}]},HideFlags:63,Tags:[\"MBB_SettingItem\",\"MBB_TeamNumber\"]}"
             },
             {
-              "function":"minecraft:set_lore",
-              "conditions": [
-                {
-                  "condition": "minecraft:entity_scores",
-                  "entity": "this",
-                  "scores": {
-                    "MBB_NumTeam": 2
-                  }
-                }
-              ],
-              "lore": [
-                [
-                  "",
-                  {"text":"2 teams","color":"green","bold":true,"italic":false},
-                  {"text":" selected","color":"white","bold":false,"italic":false}
-                ]
-              ]
-            },
-            {
               "function":"minecraft:set_nbt",
               "conditions": [
                 {
-                  "condition": "minecraft:entity_scores",
-                  "entity": "this",
-                  "scores": {
-                    "MBB_NumTeam": 2
+                  "condition": "minecraft:value_check",
+                  "value": {
+                    "type": "minecraft:score",
+                    "target": {
+                      "type": "minecraft:fixed",
+                      "name": "#mbb"
+                    },
+                    "score": "MBB_NumTeam",
+                    "scale": 1
+                  },
+                  "range": {
+                    "min": 2,
+                    "max": 2
                   }
                 }
               ],
               "tag":"{BlockEntityTag:{Patterns:[{Pattern:ts,Color:15},{Pattern:mr,Color:0},{Pattern:bs,Color:15},{Pattern:dls,Color:15},{Pattern:bo,Color:0}]},HideFlags:63,Tags:[\"MBB_SettingItem\",\"MBB_TeamNumber\"]}"
             },
             {
-              "function":"minecraft:set_lore",
-              "conditions": [
-                {
-                  "condition": "minecraft:entity_scores",
-                  "entity": "this",
-                  "scores": {
-                    "MBB_NumTeam": 3
-                  }
-                }
-              ],
-              "lore": [
-                [
-                  "",
-                  {"text":"3 teams","color":"green","bold":true,"italic":false},
-                  {"text":" selected","color":"white","bold":false,"italic":false}
-                ]
-              ]
-            },
-            {
               "function":"minecraft:set_nbt",
               "conditions": [
                 {
-                  "condition": "minecraft:entity_scores",
-                  "entity": "this",
-                  "scores": {
-                    "MBB_NumTeam": 3
+                  "condition": "minecraft:value_check",
+                  "value": {
+                    "type": "minecraft:score",
+                    "target": {
+                      "type": "minecraft:fixed",
+                      "name": "#mbb"
+                    },
+                    "score": "MBB_NumTeam",
+                    "scale": 1
+                  },
+                  "range": {
+                    "min": 3,
+                    "max": 3
                   }
                 }
               ],
               "tag":"{BlockEntityTag:{Patterns:[{Pattern:ts,Color:15},{Pattern:rs,Color:15},{Pattern:bs,Color:15},{Pattern:ms,Color:15},{Pattern:bo,Color:0}]},HideFlags:63,Tags:[\"MBB_SettingItem\",\"MBB_TeamNumber\"]}"
             },
             {
-              "function":"minecraft:set_lore",
-              "conditions": [
-                {
-                  "condition": "minecraft:entity_scores",
-                  "entity": "this",
-                  "scores": {
-                    "MBB_NumTeam": 4
-                  }
-                }
-              ],
-              "lore": [
-                [
-                  "",
-                  {"text":"4 teams","color":"green","bold":true,"italic":false},
-                  {"text":" selected","color":"white","bold":false,"italic":false}
-                ]
-              ]
-            },
-            {
               "function":"minecraft:set_nbt",
               "conditions": [
                 {
-                  "condition": "minecraft:entity_scores",
-                  "entity": "this",
-                  "scores": {
-                    "MBB_NumTeam": 4
+                  "condition": "minecraft:value_check",
+                  "value": {
+                    "type": "minecraft:score",
+                    "target": {
+                      "type": "minecraft:fixed",
+                      "name": "#mbb"
+                    },
+                    "score": "MBB_NumTeam",
+                    "scale": 1
+                  },
+                  "range": {
+                    "min": 4,
+                    "max": 4
                   }
                 }
               ],
               "tag":"{BlockEntityTag:{Patterns:[{Pattern:hh,Color:15},{Pattern:cs,Color:0},{Pattern:ms,Color:15},{Pattern:rs,Color:15},{Pattern:bo,Color:0}]},HideFlags:63,Tags:[\"MBB_SettingItem\",\"MBB_TeamNumber\"]}"
             },
             {
-              "function":"minecraft:set_lore",
-              "conditions": [
-                {
-                  "condition": "minecraft:entity_scores",
-                  "entity": "this",
-                  "scores": {
-                    "MBB_NumTeam": 5
-                  }
-                }
-              ],
-              "lore": [
-                [
-                  "",
-                  {"text":"5 teams","color":"green","bold":true,"italic":false},
-                  {"text":" selected","color":"white","bold":false,"italic":false}
-                ]
-              ]
-            },
-            {
               "function":"minecraft:set_nbt",
               "conditions": [
                 {
-                  "condition": "minecraft:entity_scores",
-                  "entity": "this",
-                  "scores": {
-                    "MBB_NumTeam": 5
+                  "condition": "minecraft:value_check",
+                  "value": {
+                    "type": "minecraft:score",
+                    "target": {
+                      "type": "minecraft:fixed",
+                      "name": "#mbb"
+                    },
+                    "score": "MBB_NumTeam",
+                    "scale": 1
+                  },
+                  "range": {
+                    "min": 5,
+                    "max": 5
                   }
                 }
               ],
               "tag":"{BlockEntityTag:{Patterns:[{Pattern:bs,Color:15},{Pattern:mr,Color:0},{Pattern:ts,Color:15},{Pattern:drs,Color:15},{Pattern:bo,Color:0}]},HideFlags:63,Tags:[\"MBB_SettingItem\",\"MBB_TeamNumber\"]}"
             },
             {
-              "function":"minecraft:set_lore",
-              "conditions": [
-                {
-                  "condition": "minecraft:entity_scores",
-                  "entity": "this",
-                  "scores": {
-                    "MBB_NumTeam": 6
-                  }
-                }
-              ],
-              "lore": [
-                [
-                  "",
-                  {"text":"6 teams","color":"green","bold":true,"italic":false},
-                  {"text":" selected","color":"white","bold":false,"italic":false}
-                ]
-              ]
-            },
-            {
               "function":"minecraft:set_nbt",
               "conditions": [
                 {
-                  "condition": "minecraft:entity_scores",
-                  "entity": "this",
-                  "scores": {
-                    "MBB_NumTeam": 6
+                  "condition": "minecraft:value_check",
+                  "value": {
+                    "type": "minecraft:score",
+                    "target": {
+                      "type": "minecraft:fixed",
+                      "name": "#mbb"
+                    },
+                    "score": "MBB_NumTeam",
+                    "scale": 1
+                  },
+                  "range": {
+                    "min": 6,
+                    "max": 6
                   }
                 }
               ],
               "tag":"{BlockEntityTag:{Patterns:[{Pattern:rs,Color:15},{Pattern:hh,Color:0},{Pattern:ms,Color:15},{Pattern:ls,Color:15},{Pattern:ts,Color:15},{Pattern:bs,Color:15},{Pattern:bo,Color:0}]},HideFlags:63,Tags:[\"MBB_SettingItem\",\"MBB_TeamNumber\"]}"
             },
             {
-              "function":"minecraft:set_lore",
-              "conditions": [
-                {
-                  "condition": "minecraft:entity_scores",
-                  "entity": "this",
-                  "scores": {
-                    "MBB_NumTeam": 7
-                  }
-                }
-              ],
-              "lore": [
-                [
-                  "",
-                  {"text":"7 teams","color":"green","bold":true,"italic":false},
-                  {"text":" selected","color":"white","bold":false,"italic":false}
-                ]
-              ]
-            },
-            {
               "function":"minecraft:set_nbt",
               "conditions": [
                 {
-                  "condition": "minecraft:entity_scores",
-                  "entity": "this",
-                  "scores": {
-                    "MBB_NumTeam": 7
+                  "condition": "minecraft:value_check",
+                  "value": {
+                    "type": "minecraft:score",
+                    "target": {
+                      "type": "minecraft:fixed",
+                      "name": "#mbb"
+                    },
+                    "score": "MBB_NumTeam",
+                    "scale": 1
+                  },
+                  "range": {
+                    "min": 7,
+                    "max": 7
                   }
                 }
               ],
               "tag":"{BlockEntityTag:{Patterns:[{Pattern:rs,Color:15},{Pattern:ts,Color:15},{Pattern:bo,Color:0}]},HideFlags:63,Tags:[\"MBB_SettingItem\",\"MBB_TeamNumber\"]}"
             },
             {
-              "function":"minecraft:set_lore",
-              "conditions": [
-                {
-                  "condition": "minecraft:entity_scores",
-                  "entity": "this",
-                  "scores": {
-                    "MBB_NumTeam": 8
-                  }
-                }
-              ],
-              "lore": [
-                [
-                  "",
-                  {"text":"8 teams","color":"green","bold":true,"italic":false},
-                  {"text":" selected","color":"white","bold":false,"italic":false}
-                ]
-              ]
-            },
-            {
               "function":"minecraft:set_nbt",
               "conditions": [
                 {
-                  "condition": "minecraft:entity_scores",
-                  "entity": "this",
-                  "scores": {
-                    "MBB_NumTeam": 8
+                  "condition": "minecraft:value_check",
+                  "value": {
+                    "type": "minecraft:score",
+                    "target": {
+                      "type": "minecraft:fixed",
+                      "name": "#mbb"
+                    },
+                    "score": "MBB_NumTeam",
+                    "scale": 1
+                  },
+                  "range": {
+                    "min": 8,
+                    "max": 8
                   }
                 }
               ],
               "tag":"{BlockEntityTag:{Patterns:[{Pattern:ts,Color:15},{Pattern:ls,Color:15},{Pattern:ms,Color:15},{Pattern:bs,Color:15},{Pattern:rs,Color:15},{Pattern:bo,Color:0}]},HideFlags:63,Tags:[\"MBB_SettingItem\",\"MBB_TeamNumber\"]}"
             },
             {
-              "function":"minecraft:set_lore",
-              "conditions": [
-                {
-                  "condition": "minecraft:entity_scores",
-                  "entity": "this",
-                  "scores": {
-                    "MBB_NumTeam": 9
-                  }
-                }
-              ],
-              "lore": [
-                [
-                  "",
-                  {"text":"9 teams","color":"green","bold":true,"italic":false},
-                  {"text":" selected","color":"white","bold":false,"italic":false}
-                ]
-              ]
-            },
-            {
               "function":"minecraft:set_nbt",
               "conditions": [
                 {
-                  "condition": "minecraft:entity_scores",
-                  "entity": "this",
-                  "scores": {
-                    "MBB_NumTeam": 9
+                  "condition": "minecraft:value_check",
+                  "value": {
+                    "type": "minecraft:score",
+                    "target": {
+                      "type": "minecraft:fixed",
+                      "name": "#mbb"
+                    },
+                    "score": "MBB_NumTeam",
+                    "scale": 1
+                  },
+                  "range": {
+                    "min": 9,
+                    "max": 9
                   }
                 }
               ],
               "tag":"{BlockEntityTag:{Patterns:[{Pattern:ls,Color:15},{Pattern:hhb,Color:0},{Pattern:ms,Color:15},{Pattern:ts,Color:15},{Pattern:rs,Color:15},{Pattern:bs,Color:15},{Pattern:bo,Color:0}]},HideFlags:63,Tags:[\"MBB_SettingItem\",\"MBB_TeamNumber\"]}"
             },
             {
-              "function":"minecraft:set_lore",
-              "conditions": [
-                {
-                  "condition": "minecraft:entity_scores",
-                  "entity": "this",
-                  "scores": {
-                    "MBB_NumTeam": 10
-                  }
-                }
-              ],
-              "lore": [
-                [
-                  "",
-                  {"text":"10 teams","color":"green","bold":true,"italic":false},
-                  {"text":" selected","color":"white","bold":false,"italic":false}
-                ]
-              ]
-            },
-            {
               "function":"minecraft:set_nbt",
               "conditions": [
                 {
-                  "condition": "minecraft:entity_scores",
-                  "entity": "this",
-                  "scores": {
-                    "MBB_NumTeam": 10
+                  "condition": "minecraft:value_check",
+                  "value": {
+                    "type": "minecraft:score",
+                    "target": {
+                      "type": "minecraft:fixed",
+                      "name": "#mbb"
+                    },
+                    "score": "MBB_NumTeam",
+                    "scale": 1
+                  },
+                  "range": {
+                    "min": 10,
+                    "max": 10
                   }
                 }
               ],

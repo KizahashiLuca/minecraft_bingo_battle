@@ -10,6 +10,7 @@
           "functions": [
             {
               "function": "minecraft:set_name",
+              "entity": "this",
               "name": [
                 [
                   "",
@@ -19,12 +20,22 @@
             },
             {
               "function": "minecraft:set_lore",
+              "entity": "this",
               "conditions": [
                 {
-                  "condition": "minecraft:entity_scores",
-                  "entity": "this",
-                  "scores": {
-                    "MBB_GameArea": 0
+                  "condition": "minecraft:value_check",
+                  "value": {
+                    "type": "minecraft:score",
+                    "target": {
+                      "type": "minecraft:fixed",
+                      "name": "#mbb"
+                    },
+                    "score": "MBB_GameArea",
+                    "scale": 1
+                  },
+                  "range": {
+                    "min": 0,
+                    "max": 0
                   }
                 }
               ],
@@ -38,76 +49,30 @@
             },
             {
               "function": "minecraft:set_lore",
+              "entity": "this",
               "conditions": [
                 {
-                  "condition": "minecraft:entity_scores",
-                  "entity": "this",
-                  "scores": {
-                    "MBB_GameArea": 500
+                  "condition": "minecraft:value_check",
+                  "value": {
+                    "type": "minecraft:score",
+                    "target": {
+                      "type": "minecraft:fixed",
+                      "name": "#mbb"
+                    },
+                    "score": "MBB_GameArea",
+                    "scale": 1
+                  },
+                  "range": {
+                    "min": 1,
+                    "max": 2147483647
                   }
                 }
               ],
               "lore": [
                 [
                   "",
-                  {"text":"500m square","color":"green","bold":true,"italic":false},
-                  {"text":" selected","color":"white","bold":false,"italic":false}
-                ]
-              ]
-            },
-            {
-              "function": "minecraft:set_lore",
-              "conditions": [
-                {
-                  "condition": "minecraft:entity_scores",
-                  "entity": "this",
-                  "scores": {
-                    "MBB_GameArea": 1000
-                  }
-                }
-              ],
-              "lore": [
-                [
-                  "",
-                  {"text":"1000m square","color":"green","bold":true,"italic":false},
-                  {"text":" selected","color":"white","bold":false,"italic":false}
-                ]
-              ]
-            },
-            {
-              "function": "minecraft:set_lore",
-              "conditions": [
-                {
-                  "condition": "minecraft:entity_scores",
-                  "entity": "this",
-                  "scores": {
-                    "MBB_GameArea": 1500
-                  }
-                }
-              ],
-              "lore": [
-                [
-                  "",
-                  {"text":"1500m square","color":"green","bold":true,"italic":false},
-                  {"text":" selected","color":"white","bold":false,"italic":false}
-                ]
-              ]
-            },
-            {
-              "function": "minecraft:set_lore",
-              "conditions": [
-                {
-                  "condition": "minecraft:entity_scores",
-                  "entity": "this",
-                  "scores": {
-                    "MBB_GameArea": 2000
-                  }
-                }
-              ],
-              "lore": [
-                [
-                  "",
-                  {"text":"2000m square","color":"green","bold":true,"italic":false},
+                  {"score":{"name":"#mbb","objective":"MBB_GameArea"},"color":"green","bold":true,"italic":false},
+                  {"text":"m square","color":"green","bold":true,"italic":false},
                   {"text":" selected","color":"white","bold":false,"italic":false}
                 ]
               ]

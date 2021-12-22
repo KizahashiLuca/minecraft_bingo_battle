@@ -21,7 +21,7 @@ execute as @a[predicate=mbb:system/ongame/on_ground] run function mbb:system/ong
 execute as @a[tag=MBB_Player,scores={MBB_Death=1,MBB_LiveTime=10..}] run function mbb:system/ongame/detect_death/main
 
 ## Set position
-execute as @a run function mbb:system/common/position/main
+# execute as @a run function mbb:system/common/position/main
 
 ## Compare ender chest
 execute as @a[predicate=mbb:system/ongame/detect_enderchest/main] at @s run function mbb:system/ongame/detect_bingo_sheet/detect_enderchest/main

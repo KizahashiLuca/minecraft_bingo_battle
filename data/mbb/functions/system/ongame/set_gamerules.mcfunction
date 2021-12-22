@@ -14,12 +14,13 @@ execute if score #mbb MBB_Difficulty matches 4 run difficulty hard
 
 ## Set gamerules
 gamerule spectatorsGenerateChunks true
+gamerule announceAdvancements false
 gamerule sendCommandFeedback false
 gamerule doImmediateRespawn true
 gamerule doLimitedCrafting false
 execute if score #mbb MBB_GameGroup matches 1 run gamerule showDeathMessages false
 execute if score #mbb MBB_GameGroup matches 2 run gamerule showDeathMessages true
-gamerule reducedDebugInfo true
+gamerule reducedDebugInfo false
 execute if score #mbb MBB_DayligtCycle matches 0 run gamerule doDaylightCycle false
 execute if score #mbb MBB_DayligtCycle matches 1 run gamerule doDaylightCycle true
 execute if score #mbb MBB_WeatherCycle matches 0 run gamerule doWeatherCycle false

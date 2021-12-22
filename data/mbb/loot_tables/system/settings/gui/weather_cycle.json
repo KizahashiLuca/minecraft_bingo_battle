@@ -9,16 +9,26 @@
           "name": "minecraft:dead_fire_coral_block",
           "conditions": [
             {
-              "condition": "minecraft:entity_scores",
-              "entity": "this",
-              "scores": {
-                "MBB_WeatherCycle": 0
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "#mbb"
+                },
+                "score": "MBB_WeatherCycle",
+                "scale": 1
+              },
+              "range": {
+                "min": 0,
+                "max": 0
               }
             }
           ],
           "functions": [
             {
               "function": "minecraft:set_name",
+              "entity": "this",
               "name": [
                 [
                   "",
@@ -28,6 +38,7 @@
             },
             {
               "function": "minecraft:set_lore",
+              "entity": "this",
               "lore": [
                 [
                   "",
@@ -47,16 +58,26 @@
           "name": "minecraft:fire_coral_block",
           "conditions": [
             {
-              "condition": "minecraft:entity_scores",
-              "entity": "this",
-              "scores": {
-                "MBB_WeatherCycle": 1
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "#mbb"
+                },
+                "score": "MBB_WeatherCycle",
+                "scale": 1
+              },
+              "range": {
+                "min": 1,
+                "max": 1
               }
             }
           ],
           "functions": [
             {
               "function": "minecraft:set_name",
+              "entity": "this",
               "name": [
                 [
                   "",
@@ -66,6 +87,7 @@
             },
             {
               "function": "minecraft:set_lore",
+              "entity": "this",
               "lore": [
                 [
                   "",

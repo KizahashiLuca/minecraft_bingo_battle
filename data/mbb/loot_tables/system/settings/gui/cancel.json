@@ -10,8 +10,12 @@
           "functions":[
             {
               "function":"minecraft:set_name",
+              "entity": "this",
               "name": [
-                ["",{"text":"Cancel","color":"white","bold":false,"italic":false}]
+                [
+                  "",
+                  {"text":"Cancel","color":"white","bold":false,"italic":false}
+                ]
               ]
             },{
               "function":"minecraft:set_nbt",

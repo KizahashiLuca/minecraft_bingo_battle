@@ -7,8 +7,8 @@
 #####################################
 
 ## Change daylight cycle
-scoreboard players add @p[tag=MBB_Host] MBB_DayligtCycle 1
-scoreboard players set @p[tag=MBB_Host,scores={MBB_DayligtCycle=2..}] MBB_DayligtCycle 0
+scoreboard players add #mbb MBB_DayligtCycle 1
+execute if score #mbb MBB_DayligtCycle matches 2.. run scoreboard players set #mbb MBB_DayligtCycle 0
 
 ## Change to root
 function mbb:system/setting/gui/change_to

@@ -11,9 +11,11 @@ difficulty peaceful
 
 ## Set gamerules
 gamerule spectatorsGenerateChunks true
+gamerule announceAdvancements false
 gamerule sendCommandFeedback false
 gamerule doImmediateRespawn true
 gamerule doLimitedCrafting true
+gamerule reducedDebugInfo false
 gamerule doDaylightCycle false
 gamerule doWeatherCycle false
 gamerule doMobSpawning false

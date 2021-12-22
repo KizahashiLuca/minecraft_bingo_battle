@@ -9,3 +9,4 @@
 ## Reset scoreboard
 scoreboard players set #mbb MBB_NumPlayer 0
 execute as @a[tag=MBB_Player] run scoreboard players add #mbb MBB_NumPlayer 1
+execute as @p[tag=MBB_test] run scoreboard players set #mbb MBB_NumPlayer 10

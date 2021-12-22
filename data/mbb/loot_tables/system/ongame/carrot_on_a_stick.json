@@ -10,14 +10,22 @@
           "functions":[
             {
               "function":"minecraft:set_name",
+              "entity": "this",
               "name": [
-                ["",{"text":"Summon an Ender Chest","color":"aqua","italic":false}]
+                [
+                  "",
+                  {"text":"Summon an Ender Chest","color":"aqua","italic":false}
+                ]
               ]
             },
             {
               "function": "minecraft:set_lore",
+              "entity": "this",
               "lore": [
-                ["",{"text":"Right Click","color":"dark_purple","italic":false}]
+                [
+                  "",
+                  {"text":"Right Click","color":"dark_purple","italic":false}
+                ]
               ]
             },
             {

@@ -7,9 +7,9 @@
 #####################################
 
 ## Change team number
-scoreboard players add @p[tag=MBB_Host] MBB_NumTeam 1
-execute if score @p[tag=MBB_Host] MBB_NumTeam > #mbb MBB_NumPlayer run scoreboard players set @p[tag=MBB_Host] MBB_NumTeam 1
-scoreboard players set @p[tag=MBB_Host,scores={MBB_NumTeam=11..}] MBB_NumTeam 1
+scoreboard players add #mbb MBB_NumTeam 1
+execute if score #mbb MBB_NumTeam > #mbb MBB_NumPlayer run scoreboard players set #mbb MBB_NumTeam 1
+execute if score #mbb MBB_NumTeam matches 11.. run scoreboard players set #mbb MBB_NumTeam 1
 
 ## Change to root
 function mbb:system/setting/gui/change_to

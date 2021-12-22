@@ -7,8 +7,8 @@
 #####################################
 
 ## Change game mode
-scoreboard players add @p[tag=MBB_Host] MBB_GameMode 1
-scoreboard players set @p[tag=MBB_Host,scores={MBB_GameMode=3..}] MBB_GameMode 1
+scoreboard players add #mbb MBB_GameMode 1
+execute if score #mbb MBB_GameMode matches 3.. run scoreboard players set #mbb MBB_GameMode 1
 
 ## Change to root
 function mbb:system/setting/gui/change_to

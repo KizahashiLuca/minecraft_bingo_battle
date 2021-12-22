@@ -9,16 +9,26 @@
           "name": "minecraft:wooden_sword",
           "conditions": [
             {
-              "condition": "minecraft:entity_scores",
-              "entity": "this",
-              "scores": {
-                "MBB_Difficulty": 1
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "#mbb"
+                },
+                "score": "MBB_Difficulty",
+                "scale": 1
+              },
+              "range": {
+                "min": 1,
+                "max": 1
               }
             }
           ],
           "functions": [
             {
               "function": "minecraft:set_name",
+              "entity": "this",
               "name": [
                 [
                   "",
@@ -28,6 +38,7 @@
             },
             {
               "function": "minecraft:set_lore",
+              "entity": "this",
               "lore": [
                 [
                   "",
@@ -47,16 +58,26 @@
           "name": "minecraft:stone_sword",
           "conditions": [
             {
-              "condition": "minecraft:entity_scores",
-              "entity": "this",
-              "scores": {
-                "MBB_Difficulty": 2
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "#mbb"
+                },
+                "score": "MBB_Difficulty",
+                "scale": 1
+              },
+              "range": {
+                "min": 2,
+                "max": 2
               }
             }
           ],
           "functions": [
             {
               "function": "minecraft:set_name",
+              "entity": "this",
               "name": [
                 [
                   "",
@@ -66,6 +87,7 @@
             },
             {
               "function": "minecraft:set_lore",
+              "entity": "this",
               "lore": [
                 [
                   "",
@@ -85,16 +107,26 @@
           "name": "minecraft:iron_sword",
           "conditions": [
             {
-              "condition": "minecraft:entity_scores",
-              "entity": "this",
-              "scores": {
-                "MBB_Difficulty": 3
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "#mbb"
+                },
+                "score": "MBB_Difficulty",
+                "scale": 1
+              },
+              "range": {
+                "min": 3,
+                "max": 3
               }
             }
           ],
           "functions": [
             {
               "function": "minecraft:set_name",
+              "entity": "this",
               "name": [
                 [
                   "",
@@ -104,6 +136,7 @@
             },
             {
               "function": "minecraft:set_lore",
+              "entity": "this",
               "lore": [
                 [
                   "",
@@ -123,16 +156,26 @@
           "name": "minecraft:diamond_sword",
           "conditions": [
             {
-              "condition": "minecraft:entity_scores",
-              "entity": "this",
-              "scores": {
-                "MBB_Difficulty": 4
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "#mbb"
+                },
+                "score": "MBB_Difficulty",
+                "scale": 1
+              },
+              "range": {
+                "min": 4,
+                "max": 4
               }
             }
           ],
           "functions": [
             {
               "function": "minecraft:set_name",
+              "entity": "this",
               "name": [
                 [
                   "",
@@ -142,6 +185,7 @@
             },
             {
               "function": "minecraft:set_lore",
+              "entity": "this",
               "lore": [
                 [
                   "",

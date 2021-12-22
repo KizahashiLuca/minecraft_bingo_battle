@@ -1,9 +1,26 @@
 [
   {
-    "condition": "minecraft:entity_scores",
+    "condition": "minecraft:value_check",
+    "value": {
+      "type": "minecraft:score",
+      "score": "MBB_GameGroup",
+      "target": {
+        "type": "minecraft:fixed",
+        "name": "#mbb"
+      },
+      "scale": 1
+    },
+    "range": {
+      "min": 2,
+      "max": 2
+    }
+  },
+  {
+    "condition": "minecraft:entity_properties",
     "entity": "this",
-    "scores": {
-      "MBB_GameGroup": 2
+    "predicate": {
+      "type": "minecraft:player",
+      "nbt": "{Tags:[\"MBB_Host\"]}"
     }
   },
   {

@@ -1,9 +1,42 @@
 [
   {
-    "condition": "minecraft:entity_scores",
+    "condition": "minecraft:value_check",
+    "value": {
+      "type": "minecraft:score",
+      "score": "MBB_GamePhase",
+      "target": {
+        "type": "minecraft:fixed",
+        "name": "#mbb"
+      },
+      "scale": 1
+    },
+    "range": {
+      "min": 90,
+      "max": 90
+    }
+  },
+  {
+    "condition": "minecraft:entity_properties",
     "entity": "this",
-    "scores": {
-      "MBB_GameMode": 1
+    "predicate": {
+      "type": "minecraft:player",
+      "nbt": "{Tags:[\"MBB_Host\"]}"
+    }
+  },
+  {
+    "condition": "minecraft:value_check",
+    "value": {
+      "type": "minecraft:score",
+      "score": "MBB_GameMode",
+      "target": {
+        "type": "minecraft:fixed",
+        "name": "#mbb"
+      },
+      "scale": 1
+    },
+    "range": {
+      "min": 1,
+      "max": 1
     }
   },
   {
