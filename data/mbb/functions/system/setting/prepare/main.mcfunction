@@ -13,7 +13,7 @@ execute as @a[tag=!MBB_Player,gamemode=!spectator] run function mbb:system/commo
 function mbb:system/setting/prepare/count_down/tick
 
 ## Set position
-execute as @a run function mbb:system/common/position/main
+# execute as @a run function mbb:system/common/position/main
 
 ## Change phase
 execute if score #mbb MBB_Second matches 0 if score #mbb MBB_Tick matches 0 run function mbb:system/ongame/change_to
