@@ -1,0 +1,8 @@
+{
+  "condition": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "team": "MBB_TeamH",
+    "nbt": "{Tags:[\"MBB_TeamLeader\"]}"
+  }
+}
