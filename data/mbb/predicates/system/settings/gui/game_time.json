@@ -24,20 +24,8 @@
     }
   },
   {
-    "condition": "minecraft:value_check",
-    "value": {
-      "type": "minecraft:score",
-      "score": "MBB_GameMode",
-      "target": {
-        "type": "minecraft:fixed",
-        "name": "#mbb"
-      },
-      "scale": 1
-    },
-    "range": {
-      "min": 1,
-      "max": 1
-    }
+    "condition": "minecraft:reference",
+    "name": "mbb:system/common/gamemode/score_attack"
   },
   {
     "condition": "minecraft:inverted",
@@ -45,7 +33,7 @@
       "condition": "minecraft:entity_properties",
       "entity": "this",
       "predicate": {
-        "nbt": "{Inventory:[{Slot:22b,tag:{Tags:[\"MBB_SettingItem\",\"MBB_GameTime\"]}}]}"
+        "nbt": "{Inventory:[{Slot:25b,tag:{Tags:[\"MBB_SettingItem\",\"MBB_GameTime\"]}}]}"
       }
     }
   }

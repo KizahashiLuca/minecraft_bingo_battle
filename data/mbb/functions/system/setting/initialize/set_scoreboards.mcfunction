@@ -10,24 +10,22 @@
 ### Gamesystem
 scoreboard objectives add MBB_NumPlayer dummy
 scoreboard objectives add MBB_GamePhase dummy
-### GameGroup - 1:Individual, 2:Team
-scoreboard objectives add MBB_GameGroup dummy
 ### WeatherCycle - 0:FALSE, 1:TRUE
 scoreboard objectives add MBB_WeatherCycle dummy
 ### DaylightCycle - 0:FALSE, 1:TRUE
 scoreboard objectives add MBB_DayligtCycle dummy
 ### KeepInventory - 0:FALSE, 1:TRUE
 scoreboard objectives add MBB_KeepInve dummy
-### TeamNumber (TeamMatch only)
-scoreboard objectives add MBB_NumTeam dummy
-### Gamemode - 1:ScoreAttack, 2:TimeAttack
+### GameRule - 0:Individual, 1:Team
+scoreboard objectives add MBB_GameRule dummy
+### GameMode - 0:ScoreAttack, 1:TimeAttack
 scoreboard objectives add MBB_GameMode dummy
-### Gamearea
-scoreboard objectives add MBB_GameArea dummy
-### Gametime (ScoreAttack mode only)
-scoreboard objectives add MBB_GameTime dummy
 ### Difficulty - 1:easy, 2:normal, 3:hard, 4:hardcore
 scoreboard objectives add MBB_Difficulty dummy
+### TeamNumber (TeamMatch only)
+scoreboard objectives add MBB_NumTeam dummy
+### Gametime (ScoreAttack mode only)
+scoreboard objectives add MBB_GameTime dummy
 ### Position
 scoreboard objectives add MBB_PosX dummy
 scoreboard objectives add MBB_PosY dummy
@@ -82,24 +80,22 @@ scoreboard objectives add MBB_Diagonal dummy
 scoreboard objectives add MBB_AntiDiagonal dummy
 
 ## Set scoreboards
-### GameGroup - 1:Individual, 2:Team
-scoreboard players set #mbb MBB_GameGroup 1
 ### WeatherCycle - 0:FALSE, 1:TRUE
-scoreboard players set #mbb MBB_WeatherCycle 1
+scoreboard players set #mbb MBB_WeatherCycle 0
 ### DaylightCycle - 0:FALSE, 1:TRUE
-scoreboard players set #mbb MBB_DayligtCycle 1
+scoreboard players set #mbb MBB_DayligtCycle 0
 ### KeepInventory - 0:FALSE, 1:TRUE
 scoreboard players set #mbb MBB_KeepInve 0
-### TeamNumber (TeamMatch only)
-scoreboard players set #mbb MBB_NumTeam 1
-### Gamemode - 1:ScoreAttack, 2:TimeAttack
-scoreboard players set #mbb MBB_GameMode 1 
-### Gamearea
-scoreboard players set #mbb MBB_GameArea 0
-### Gametime (ScoreAttack mode only)
-scoreboard players set #mbb MBB_GameTime 60
+### GameRule - 0:Individual, 1:Team
+scoreboard players set #mbb MBB_GameRule 1
+### GameMode - 0:ScoreAttack, 1:TimeAttack
+scoreboard players set #mbb MBB_GameMode 0
 ### Difficulty - 1:easy, 2:normal, 3:hard, 4:hardcore
 scoreboard players set #mbb MBB_Difficulty 2
+### TeamNumber (TeamMatch only)
+scoreboard players set #mbb MBB_NumTeam 1
+### Gametime (ScoreAttack mode only)
+scoreboard players set #mbb MBB_GameTime 60
 ### Position
 scoreboard players set #mbb MBB_45 45
 ### Timer

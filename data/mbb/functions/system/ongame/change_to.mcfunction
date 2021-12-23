@@ -26,6 +26,6 @@ execute as @a[tag=MBB_Player] at @s run tp @s ~ 160 ~
 
 ## Send title messages
 title @a title ["",{"text":"Game start","color":"white"}]
-execute if score #mbb MBB_GameMode matches 1 run title @a subtitle ["",{"text":"As many as possible within ","color":"white"},{"score":{"name":"#mbb","objective":"MBB_GameTime"},"color":"white"},{"text":" min.!!","color":"white"}]
-execute if score #mbb MBB_GameMode matches 2 run title @a subtitle ["",{"text":"As soon as possible!!","color":"white"}]
+execute if predicate mbb:system/common/gamemode/score_attack run title @a subtitle ["",{"text":"As many as possible within ","color":"white"},{"score":{"name":"#mbb","objective":"MBB_GameTime"},"color":"white"},{"text":" min.!!","color":"white"}]
+execute if predicate mbb:system/common/gamemode/time_attack run title @a subtitle ["",{"text":"As soon as possible!!","color":"white"}]
 title @a times 20 80 20

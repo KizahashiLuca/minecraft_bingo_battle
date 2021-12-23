@@ -1,0 +1,16 @@
+{
+  "condition": "minecraft:value_check",
+  "value": {
+    "type": "minecraft:score",
+    "score": "MBB_Difficulty",
+    "target": {
+      "type": "minecraft:fixed",
+      "name": "#mbb"
+    },
+    "scale": 1
+  },
+  "range": {
+    "min": 3,
+    "max": 3
+  }
+}

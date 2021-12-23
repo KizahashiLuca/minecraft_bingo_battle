@@ -1,0 +1,16 @@
+{
+  "condition": "minecraft:value_check",
+  "value": {
+    "type": "minecraft:score",
+    "score": "MBB_KeepInve",
+    "target": {
+      "type": "minecraft:fixed",
+      "name": "#mbb"
+    },
+    "scale": 1
+  },
+  "range": {
+    "min": 0,
+    "max": 0
+  }
+}

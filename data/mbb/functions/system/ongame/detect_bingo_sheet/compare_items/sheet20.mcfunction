@@ -30,8 +30,8 @@ scoreboard players set @p[predicate=mbb:system/ongame/compare_items/sheet20] MBB
 execute store result score @p[tag=MBB_CompareSheet] MBB_SheetTmp3 run data get entity @p[tag=MBB_CompareSheet] EnderItems[{Slot:24b}].Count
 ### Compare id & tag
 execute as @p[tag=MBB_CompareSheet,scores={MBB_SheetTmp1=0,MBB_SheetTmp2=0}] run scoreboard players remove @s MBB_SheetTmp3 1
-execute if score #mbb MBB_GameGroup matches 1 run scoreboard players set @p[tag=MBB_CompareSheet,scores={MBB_SheetTmp1=0,MBB_SheetTmp2=0}] MBB_Sheet20 1
-execute if score #mbb MBB_GameGroup matches 2 run function mbb:system/ongame/detect_bingo_sheet/set_sheet/sheet20
+execute if predicate mbb:system/common/gamerule/individual_match run scoreboard players set @p[tag=MBB_CompareSheet,scores={MBB_SheetTmp1=0,MBB_SheetTmp2=0}] MBB_Sheet20 1
+execute if predicate mbb:system/common/gamerule/team_match run function mbb:system/ongame/detect_bingo_sheet/set_sheet/sheet20
 
 ## Copy item
 execute if entity @p[tag=MBB_CompareSheet,scores={MBB_Sheet20=0}] run data modify entity @s Item.Count set from entity @p[tag=MBB_CompareSheet] EnderItems[{Slot:24b}].Count

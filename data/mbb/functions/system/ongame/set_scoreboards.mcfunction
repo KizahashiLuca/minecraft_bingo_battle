@@ -10,7 +10,7 @@
 scoreboard players set #mbb MBB_Tick 0
 scoreboard players set #mbb MBB_Second 0
 scoreboard players set #mbb MBB_Minute 0
-execute if score #mbb MBB_GameMode matches 1 run scoreboard players operation #mbb MBB_Minute = #mbb MBB_GameTime
+execute if predicate mbb:system/common/gamemode/score_attack run scoreboard players operation #mbb MBB_Minute = #mbb MBB_GameTime
 scoreboard players operation #mbb MBB_TotalSecond = #mbb MBB_GameTime
 scoreboard players operation #mbb MBB_TotalSecond *= #mbb MBB_60
 execute store result bossbar mbb:bossbar max run scoreboard players get #mbb MBB_TotalSecond

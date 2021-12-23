@@ -9,20 +9,8 @@
           "name": "minecraft:campfire",
           "conditions": [
             {
-              "condition": "minecraft:value_check",
-              "value": {
-                "type": "minecraft:score",
-                "target": {
-                  "type": "minecraft:fixed",
-                  "name": "#mbb"
-                },
-                "score": "MBB_GameMode",
-                "scale": 1
-              },
-              "range": {
-                "min": 1,
-                "max": 1
-              }
+              "condition": "minecraft:reference",
+              "name": "mbb:system/common/gamemode/score_attack"
             }
           ],
           "functions": [
@@ -58,20 +46,8 @@
           "name": "minecraft:soul_campfire",
           "conditions": [
             {
-              "condition": "minecraft:value_check",
-              "value": {
-                "type": "minecraft:score",
-                "target": {
-                  "type": "minecraft:fixed",
-                  "name": "#mbb"
-                },
-                "score": "MBB_GameMode",
-                "scale": 1
-              },
-              "range": {
-                "min": 2,
-                "max": 2
-              }
+              "condition": "minecraft:reference",
+              "name": "mbb:system/common/gamemode/time_attack"
             }
           ],
           "functions": [

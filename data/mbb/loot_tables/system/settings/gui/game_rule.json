@@ -9,20 +9,8 @@
           "name": "minecraft:ender_pearl",
           "conditions": [
             {
-              "condition": "minecraft:value_check",
-              "value": {
-                "type": "minecraft:score",
-                "target": {
-                  "type": "minecraft:fixed",
-                  "name": "#mbb"
-                },
-                "score": "MBB_GameGroup",
-                "scale": 1
-              },
-              "range": {
-                "min": 1,
-                "max": 1
-              }
+              "condition": "minecraft:reference",
+              "name": "mbb:system/common/gamerule/individual_match"
             }
           ],
           "functions": [
@@ -39,7 +27,7 @@
             },
             {
               "function":"minecraft:set_nbt",
-              "tag":"{HideFlags:63,Tags:[\"MBB_SettingItem\",\"MBB_GameGroup\"]}"
+              "tag":"{HideFlags:63,Tags:[\"MBB_SettingItem\",\"MBB_GameRule\"]}"
             }
           ]
         },
@@ -48,20 +36,8 @@
           "name": "minecraft:ender_eye",
           "conditions": [
             {
-              "condition": "minecraft:value_check",
-              "value": {
-                "type": "minecraft:score",
-                "target": {
-                  "type": "minecraft:fixed",
-                  "name": "#mbb"
-                },
-                "score": "MBB_GameGroup",
-                "scale": 1
-              },
-              "range": {
-                "min": 2,
-                "max": 2
-              }
+              "condition": "minecraft:reference",
+              "name": "mbb:system/common/gamerule/team_match"
             }
           ],
           "functions": [
@@ -78,7 +54,7 @@
             },
             {
               "function":"minecraft:set_nbt",
-              "tag":"{HideFlags:63,Tags:[\"MBB_SettingItem\",\"MBB_GameGroup\"]}"
+              "tag":"{HideFlags:63,Tags:[\"MBB_SettingItem\",\"MBB_GameRule\"]}"
             }
           ]
         }

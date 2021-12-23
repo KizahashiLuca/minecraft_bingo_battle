@@ -5,20 +5,8 @@
       "rolls":1,
       "conditions": [
         {
-          "condition": "minecraft:value_check",
-          "value": {
-            "type": "minecraft:score",
-            "target": {
-              "type": "minecraft:fixed",
-              "name": "#mbb"
-            },
-            "score": "MBB_GameGroup",
-            "scale": 1
-          },
-          "range": {
-            "min": 2,
-            "max": 2
-          }
+          "condition": "minecraft:reference",
+          "name": "mbb:system/common/gamerule/team_match"
         }
       ],
       "entries":[
