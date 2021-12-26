@@ -1,42 +1,261 @@
 [
   {
-    "condition": "minecraft:entity_properties",
-    "entity": "this",
-    "predicate": {
-      "type": "minecraft:area_effect_cloud",
-      "nbt": "{Tags:[\"MBB_TeamChest\"]}"
-    }
+    "condition": "minecraft:reference",
+    "name": "mbb:system/common/team_chest/main"
   },
   {
     "condition": "minecraft:alternative",
     "terms": [
       {
-        "condition": "minecraft:inverted",
-        "entity": "this",
-        "term": {
-          "condition": "minecraft:location_check",
-          "offsetX": 0,
-          "offsetY": 0,
-          "offsetZ": 0,
-          "predicate": {
-            "block": {
-              "nbt": "{Items:[{tag:{Tags:[\"MBB_SheetItem\"]}}]}"
-            }
+        "condition": "minecraft:location_check",
+        "offsetX": 0,
+        "offsetY": 0,
+        "offsetZ": 0,
+        "predicate": {
+          "block": {
+            "nbt": "{Items:[{Slot:2b}]}"
           }
         }
       },
       {
-        "condition": "minecraft:inverted",
-        "entity": "this",
-        "term": {
-          "condition": "minecraft:location_check",
-          "offsetX": -1,
-          "offsetY": 0,
-          "offsetZ": 0,
-          "predicate": {
-            "block": {
-              "nbt": "{Items:[{tag:{Tags:[\"MBB_SheetItem\"]}}]}"
-            }
+        "condition": "minecraft:location_check",
+        "offsetX": 0,
+        "offsetY": 0,
+        "offsetZ": 0,
+        "predicate": {
+          "block": {
+            "nbt": "{Items:[{Slot:3b}]}"
+          }
+        }
+      },
+      {
+        "condition": "minecraft:location_check",
+        "offsetX": 0,
+        "offsetY": 0,
+        "offsetZ": 0,
+        "predicate": {
+          "block": {
+            "nbt": "{Items:[{Slot:4b}]}"
+          }
+        }
+      },
+      {
+        "condition": "minecraft:location_check",
+        "offsetX": 0,
+        "offsetY": 0,
+        "offsetZ": 0,
+        "predicate": {
+          "block": {
+            "nbt": "{Items:[{Slot:5b}]}"
+          }
+        }
+      },
+      {
+        "condition": "minecraft:location_check",
+        "offsetX": 0,
+        "offsetY": 0,
+        "offsetZ": 0,
+        "predicate": {
+          "block": {
+            "nbt": "{Items:[{Slot:6b}]}"
+          }
+        }
+      },
+      {
+        "condition": "minecraft:location_check",
+        "offsetX": 0,
+        "offsetY": 0,
+        "offsetZ": 0,
+        "predicate": {
+          "block": {
+            "nbt": "{Items:[{Slot:11b}]}"
+          }
+        }
+      },
+      {
+        "condition": "minecraft:location_check",
+        "offsetX": 0,
+        "offsetY": 0,
+        "offsetZ": 0,
+        "predicate": {
+          "block": {
+            "nbt": "{Items:[{Slot:12b}]}"
+          }
+        }
+      },
+      {
+        "condition": "minecraft:location_check",
+        "offsetX": 0,
+        "offsetY": 0,
+        "offsetZ": 0,
+        "predicate": {
+          "block": {
+            "nbt": "{Items:[{Slot:13b}]}"
+          }
+        }
+      },
+      {
+        "condition": "minecraft:location_check",
+        "offsetX": 0,
+        "offsetY": 0,
+        "offsetZ": 0,
+        "predicate": {
+          "block": {
+            "nbt": "{Items:[{Slot:14b}]}"
+          }
+        }
+      },
+      {
+        "condition": "minecraft:location_check",
+        "offsetX": 0,
+        "offsetY": 0,
+        "offsetZ": 0,
+        "predicate": {
+          "block": {
+            "nbt": "{Items:[{Slot:20b}]}"
+          }
+        }
+      },
+      {
+        "condition": "minecraft:location_check",
+        "offsetX": 0,
+        "offsetY": 0,
+        "offsetZ": 0,
+        "predicate": {
+          "block": {
+            "nbt": "{Items:[{Slot:21b}]}"
+          }
+        }
+      },
+      {
+        "condition": "minecraft:location_check",
+        "offsetX": 0,
+        "offsetY": 0,
+        "offsetZ": 0,
+        "predicate": {
+          "block": {
+            "nbt": "{Items:[{Slot:22b}]}"
+          }
+        }
+      },
+      {
+        "condition": "minecraft:location_check",
+        "offsetX": 0,
+        "offsetY": 0,
+        "offsetZ": 0,
+        "predicate": {
+          "block": {
+            "nbt": "{Items:[{Slot:23b}]}"
+          }
+        }
+      },
+      {
+        "condition": "minecraft:location_check",
+        "offsetX": 0,
+        "offsetY": 0,
+        "offsetZ": 0,
+        "predicate": {
+          "block": {
+            "nbt": "{Items:[{Slot:24b}]}"
+          }
+        }
+      },
+      {
+        "condition": "minecraft:location_check",
+        "offsetX": -1,
+        "offsetY": 0,
+        "offsetZ": 0,
+        "predicate": {
+          "block": {
+            "nbt": "{Items:[{Slot:2b}]}"
+          }
+        }
+      },
+      {
+        "condition": "minecraft:location_check",
+        "offsetX": -1,
+        "offsetY": 0,
+        "offsetZ": 0,
+        "predicate": {
+          "block": {
+            "nbt": "{Items:[{Slot:3b}]}"
+          }
+        }
+      },
+      {
+        "condition": "minecraft:location_check",
+        "offsetX": -1,
+        "offsetY": 0,
+        "offsetZ": 0,
+        "predicate": {
+          "block": {
+            "nbt": "{Items:[{Slot:4b}]}"
+          }
+        }
+      },
+      {
+        "condition": "minecraft:location_check",
+        "offsetX": -1,
+        "offsetY": 0,
+        "offsetZ": 0,
+        "predicate": {
+          "block": {
+            "nbt": "{Items:[{Slot:5b}]}"
+          }
+        }
+      },
+      {
+        "condition": "minecraft:location_check",
+        "offsetX": -1,
+        "offsetY": 0,
+        "offsetZ": 0,
+        "predicate": {
+          "block": {
+            "nbt": "{Items:[{Slot:6b}]}"
+          }
+        }
+      },
+      {
+        "condition": "minecraft:location_check",
+        "offsetX": -1,
+        "offsetY": 0,
+        "offsetZ": 0,
+        "predicate": {
+          "block": {
+            "nbt": "{Items:[{Slot:11b}]}"
+          }
+        }
+      },
+      {
+        "condition": "minecraft:location_check",
+        "offsetX": -1,
+        "offsetY": 0,
+        "offsetZ": 0,
+        "predicate": {
+          "block": {
+            "nbt": "{Items:[{Slot:12b}]}"
+          }
+        }
+      },
+      {
+        "condition": "minecraft:location_check",
+        "offsetX": -1,
+        "offsetY": 0,
+        "offsetZ": 0,
+        "predicate": {
+          "block": {
+            "nbt": "{Items:[{Slot:13b}]}"
+          }
+        }
+      },
+      {
+        "condition": "minecraft:location_check",
+        "offsetX": -1,
+        "offsetY": 0,
+        "offsetZ": 0,
+        "predicate": {
+          "block": {
+            "nbt": "{Items:[{Slot:14b}]}"
           }
         }
       }

@@ -13,8 +13,11 @@ execute as @e[predicate=mbb:system/ongame/compare_team_chest/main] at @s run fun
 execute as @e[predicate=mbb:system/ongame/compare_team_chest/detect_bingo/main] at @s run function mbb:system/ongame/compare_team_chest/set_bingo
 
 ## Detect blank
-execute as @e[predicate=mbb:system/ongame/compare_team_chest/detect_blank] run function mbb:system/ongame/compare_team_chest/set_blank
+execute as @e[predicate=mbb:system/ongame/compare_team_chest/detect_blank] at @s run function mbb:system/ongame/compare_team_chest/set_blank
 
 ## Clear item
 kill @e[predicate=mbb:system/ongame/dropped_item]
 clear @a minecraft:barrier
+
+## Set scoreboard
+scoreboard players reset @a MBB_SheetTmp4

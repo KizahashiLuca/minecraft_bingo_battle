@@ -11,8 +11,12 @@ scoreboard players set @s MBB_NumBingo 0
 scoreboard players operation @s MBB_NumBingo += @s MBB_BingoRow0
 scoreboard players operation @s MBB_NumBingo += @s MBB_BingoRow1
 scoreboard players operation @s MBB_NumBingo += @s MBB_BingoRow2
+scoreboard players operation @s MBB_NumBingo += @s MBB_BingoRow3
+scoreboard players operation @s MBB_NumBingo += @s MBB_BingoRow4
 scoreboard players operation @s MBB_NumBingo += @s MBB_BingoCol0
 scoreboard players operation @s MBB_NumBingo += @s MBB_BingoCol1
 scoreboard players operation @s MBB_NumBingo += @s MBB_BingoCol2
+scoreboard players operation @s MBB_NumBingo += @s MBB_BingoCol3
+scoreboard players operation @s MBB_NumBingo += @s MBB_BingoCol4
 scoreboard players operation @s MBB_NumBingo += @s MBB_Diagonal
 scoreboard players operation @s MBB_NumBingo += @s MBB_AntiDiagonal

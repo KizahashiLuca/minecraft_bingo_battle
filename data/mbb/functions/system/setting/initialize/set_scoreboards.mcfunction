@@ -75,6 +75,7 @@ scoreboard objectives add MBB_Sheet44 dummy
 scoreboard objectives add MBB_SheetTmp1 dummy
 scoreboard objectives add MBB_SheetTmp2 dummy
 scoreboard objectives add MBB_SheetTmp3 dummy
+scoreboard objectives add MBB_SheetTmp4 dummy
 ### Bingo
 scoreboard objectives add MBB_NumBingo dummy
 scoreboard objectives add MBB_ScoreWinner dummy

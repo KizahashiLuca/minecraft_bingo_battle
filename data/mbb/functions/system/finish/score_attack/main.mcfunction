@@ -15,11 +15,15 @@ title @a title ["",{"text":"Game Set!","color":"red","bold":true}]
 
 ## Set scoreboards
 scoreboard players set #mbb MBB_ScoreWinner 0
-execute as @a[tag=MBB_Player] run function mbb:system/finish/score_attack/calculate_bingo
+execute as @a[predicate=mbb:system/common/team_leader/main] run function mbb:system/finish/score_attack/calculate_bingo
 
 ## Send messages
 function mbb:system/common/message/begin
 tellraw @a ["",{"text":"  ","color":"white","bold":false},{"text":"Score Attack","color":"light_purple","bold":false},{"text":" Winner","color":"white","bold":false}]
+execute if score #mbb MBB_ScoreWinner matches 0 as @a[tag=MBB_Player,scores={MBB_NumBingo=12}] run function mbb:system/finish/score_attack/send_message_winner
+execute if score #mbb MBB_ScoreWinner matches 0 as @a[tag=MBB_Player,scores={MBB_NumBingo=11}] run function mbb:system/finish/score_attack/send_message_winner
+execute if score #mbb MBB_ScoreWinner matches 0 as @a[tag=MBB_Player,scores={MBB_NumBingo=10}] run function mbb:system/finish/score_attack/send_message_winner
+execute if score #mbb MBB_ScoreWinner matches 0 as @a[tag=MBB_Player,scores={MBB_NumBingo=9}] run function mbb:system/finish/score_attack/send_message_winner
 execute if score #mbb MBB_ScoreWinner matches 0 as @a[tag=MBB_Player,scores={MBB_NumBingo=8}] run function mbb:system/finish/score_attack/send_message_winner
 execute if score #mbb MBB_ScoreWinner matches 0 as @a[tag=MBB_Player,scores={MBB_NumBingo=7}] run function mbb:system/finish/score_attack/send_message_winner
 execute if score #mbb MBB_ScoreWinner matches 0 as @a[tag=MBB_Player,scores={MBB_NumBingo=6}] run function mbb:system/finish/score_attack/send_message_winner

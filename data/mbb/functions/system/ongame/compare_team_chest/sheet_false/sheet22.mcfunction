@@ -8,6 +8,7 @@
 
 ## Add a tag
 tag @s add MBB_CompareItems
+tellraw @a ["",{"text":"sheet_false"}]
 
 ## Compare bingo sheet
 ### Sheet00
