@@ -7,6 +7,7 @@
 #####################################
 
 ## in hardcore
+execute unless predicate mbb:system/common/difficulty/hardcore run gamemode survival @s
 execute if predicate mbb:system/common/difficulty/hardcore run gamemode spectator @s
 execute if predicate mbb:system/common/difficulty/hardcore run title @s title ["",{"text":"Game Over","color":"red","bold":true}]
 

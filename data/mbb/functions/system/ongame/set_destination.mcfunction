@@ -8,4 +8,4 @@
 
 ## Spread player
 execute if predicate mbb:system/common/gamerule/individual_match run spreadplayers ~ ~ 100 1000 false @a[tag=MBB_Player]
-execute if predicate mbb:system/common/gamerule/team_match run spreadplayers ~ ~ 100 10 true @a[tag=MBB_Player]
+execute if predicate mbb:system/common/gamerule/team_match run spreadplayers ~ ~ 100 1000 true @a[tag=MBB_Player]

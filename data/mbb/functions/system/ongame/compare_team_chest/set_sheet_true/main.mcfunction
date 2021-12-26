@@ -6,8 +6,6 @@
 ## Version   : β-1.0
 #####################################
 
-tellraw @a [{"text": "Set sheet true"}]
-
 ## Set sheet
 scoreboard players remove @s MBB_SheetTmp3 1
 scoreboard players set @s MBB_SheetTmp4 1

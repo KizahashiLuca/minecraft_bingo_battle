@@ -12,7 +12,7 @@ execute if score #mbb MBB_GamePhase matches 95 run function mbb:system/setting/p
 execute if score #mbb MBB_GamePhase matches 10 run function mbb:system/ongame/main
 
 ## Oxidization system
-execute as @e[predicate=mbb:oxidization/main] at @s run function mbb:oxidization/main
+#execute as @e[predicate=mbb:oxidization/main] at @s run function mbb:oxidization/main
 
 ## Small end portal frame system
-execute as @e[predicate=mbb:small_end_portal_frame/main] at @s run function mbb:small_end_portal_frame/main
+#execute as @e[predicate=mbb:small_end_portal_frame/main] at @s run function mbb:small_end_portal_frame/main

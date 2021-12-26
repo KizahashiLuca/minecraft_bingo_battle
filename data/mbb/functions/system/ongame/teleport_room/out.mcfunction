@@ -9,5 +9,8 @@
 ## Teleport
 tp @s @e[predicate=mbb:system/common/world_spawn,limit=1]
 
+## Set effects 
+effect clear @s
+
 ## Set gamemode
 gamemode survival @s

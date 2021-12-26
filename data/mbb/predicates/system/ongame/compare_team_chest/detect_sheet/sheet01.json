@@ -1,0 +1,32 @@
+[
+  {
+    "condition": "minecraft:reference",
+    "name": "mbb:system/common/team_chest/main"
+  },
+  {
+    "condition": "minecraft:location_check",
+    "offsetX": 0,
+    "offsetY": 0,
+    "offsetZ": 0,
+    "predicate": {
+      "block": {
+        "nbt": "{Items:[{Slot:3b}]}"
+      }
+    }
+  },
+  {
+    "condition": "minecraft:inverted",
+    "entity": "this",
+    "term": {
+      "condition": "minecraft:location_check",
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "predicate": {
+        "block": {
+          "nbt": "{Items:[{Slot:3b,tag:{Tags:[\"MBB_SheetItem\"]}}]}"
+        }
+      }
+    }
+  }
+]

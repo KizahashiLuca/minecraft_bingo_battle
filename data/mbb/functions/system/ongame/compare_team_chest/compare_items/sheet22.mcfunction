@@ -5,7 +5,6 @@
 ## Date      : 14 Oct 2021
 ## Version   : β-1.0
 #####################################
-tellraw @a ["",{"text":"compare_items"}]
 
 ## Reset scoreboards
 scoreboard players set @e[predicate=mbb:system/ongame/compare_team_chest/compare_items/main,limit=1] MBB_SheetTmp1 1

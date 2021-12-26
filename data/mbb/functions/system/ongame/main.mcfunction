@@ -25,10 +25,9 @@ execute as @a[tag=MBB_Player,scores={MBB_Death=1,MBB_LiveTime=10..}] run functio
 
 ## Teleport
 execute as @a[predicate=mbb:system/ongame/teleport_room/in] run function mbb:system/ongame/teleport_room/in
-execute as @a[predicate=mbb:system/ongame/teleport_room/out] at @s if entity @e[type=minecraft:area_effect_cloud,tag=MBB_RespawnBeacon,distance=..2] run function mbb:system/ongame/teleport_room/out
 
 ## Compare team chest
-function mbb:system/ongame/compare_team_chest/main
+execute at @e[predicate=mbb:system/common/world_spawn] positioned ~ -62 ~ if entity @p[tag=MBB_Player,distance=..20] run function mbb:system/ongame/compare_team_chest/main
 
 ## Change phase
 execute if predicate mbb:system/common/gamemode/score_attack if score #mbb MBB_Minute matches 0 if score #mbb MBB_Second matches 0 if score #mbb MBB_Tick matches 0 run function mbb:system/finish/score_attack/main
