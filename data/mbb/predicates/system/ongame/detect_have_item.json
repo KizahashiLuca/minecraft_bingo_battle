@@ -5,14 +5,14 @@
       "condition": "minecraft:entity_properties",
       "entity": "this",
       "predicate": {
-        "nbt": "{Inventory:[{tag:{Tags:[\"MBB_EnderChestItem\"]}}]}"
+        "nbt": "{Inventory:[{tag:{Tags:[\"MBB_SheetItem\"]}}]}"
       }
     },
     {
       "condition": "minecraft:entity_properties",
       "entity": "this",
       "predicate": {
-        "nbt": "{ArmorItems:[{tag:{Tags:[\"MBB_EnderChestItem\"]}}]}"
+        "nbt": "{ArmorItems:[{tag:{Tags:[\"MBB_SheetItem\"]}}]}"
       }
     }
   ]

@@ -23,14 +23,12 @@ execute as @a[tag=MBB_Player,scores={MBB_Death=1,MBB_LiveTime=10..}] run functio
 ## Set position
 # execute as @a run function mbb:system/common/position/main
 
-## Compare ender chest
-execute as @a[predicate=mbb:system/ongame/detect_enderchest/main] at @s run function mbb:system/ongame/detect_bingo_sheet/detect_enderchest/main
+## Teleport
+execute as @a[predicate=mbb:system/ongame/teleport_room/in] run function mbb:system/ongame/teleport_room/in
+execute as @a[predicate=mbb:system/ongame/teleport_room/out] at @s if entity @e[type=minecraft:area_effect_cloud,tag=MBB_RespawnBeacon,distance=..2] run function mbb:system/ongame/teleport_room/out
 
-## Detect bingo
-execute as @a[predicate=mbb:system/ongame/detect_bingo/main] at @s run function mbb:system/ongame/detect_bingo_sheet/detect_bingo/main
-
-## Spawn ender chest
-function mbb:system/ongame/spawn_enderchest/main
+## Compare team chest
+function mbb:system/ongame/compare_team_chest/main
 
 ## Change phase
 execute if predicate mbb:system/common/gamemode/score_attack if score #mbb MBB_Minute matches 0 if score #mbb MBB_Second matches 0 if score #mbb MBB_Tick matches 0 run function mbb:system/finish/score_attack/main

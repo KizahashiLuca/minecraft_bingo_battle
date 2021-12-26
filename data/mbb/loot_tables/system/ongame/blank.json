@@ -6,7 +6,7 @@
       "entries":[
         {
           "type":"minecraft:item",
-          "name":"minecraft:light_gray_stained_glass_pane",
+          "name":"minecraft:barrier",
           "functions":[
             {
               "function":"minecraft:set_name",
@@ -18,7 +18,7 @@
               ]
             },{
               "function":"minecraft:set_nbt",
-              "tag":"{HideFlags:63,Tags:[\"MBB_EnderChestItem\"]}"
+              "tag":"{HideFlags:63,Tags:[\"MBB_SheetItem\",\"MBB_SheetBlank\"]}"
             }
           ]
         }

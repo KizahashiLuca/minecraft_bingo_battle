@@ -1,0 +1,46 @@
+[
+  {
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+      "type": "minecraft:area_effect_cloud",
+      "nbt": "{Tags:[\"MBB_TeamChest\"]}"
+    }
+  },
+  {
+    "condition": "minecraft:location_check",
+    "offsetX": -1,
+    "offsetY": 0,
+    "offsetZ": 0,
+    "predicate": {
+      "block": {
+        "nbt": "{Items:[{Slot:3b}]}"
+      }
+    }
+  },
+  {
+    "condition": "minecraft:inverted",
+    "entity": "this",
+    "term": {
+      "condition": "minecraft:location_check",
+      "offsetX": -1,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "predicate": {
+        "block": {
+          "nbt": "{Items:[{Slot:3b,tag:{Tags:[\"MBB_SheetItem\"]}}]}"
+        }
+      }
+    }
+  },
+  {
+    "condition": "minecraft:entity_scores",
+    "entity": "this",
+    "scores": {
+      "MBB_Sheet31": {
+        "min": 1,
+        "max": 1
+      }
+    }
+  }
+]

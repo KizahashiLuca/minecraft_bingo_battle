@@ -19,6 +19,6 @@ tag @a remove MBB_AfterDescend
 tag @a remove MBB_ChestOwner
 tag @a remove MBB_DetectChest
 tag @a remove MBB_DetectChestOwner
-tag @a remove MBB_CompareSheet
+tag @a remove MBB_CompareItems
 tag @a remove MBB_DetectBingo
 tag @a remove MBB_ExchangeItems

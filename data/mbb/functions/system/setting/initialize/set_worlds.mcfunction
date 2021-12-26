@@ -17,6 +17,7 @@ kill @e[type=minecraft:item]
 kill @e[type=minecraft:arrow]
 kill @e[type=minecraft:spectral_arrow]
 kill @e[type=minecraft:area_effect_cloud]
+kill @e[type=minecraft:item_frame,tag=MBB_ItemFrame]
 
 ## Kill pets
 execute as @e[type=!minecraft:player] if data entity @s Owner run kill @s

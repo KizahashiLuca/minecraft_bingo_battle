@@ -44,26 +44,34 @@ scoreboard objectives add MBB_60 dummy
 ### Death
 scoreboard objectives add MBB_Death minecraft.custom:minecraft.deaths
 scoreboard objectives add MBB_LiveTime minecraft.custom:minecraft.time_since_death
-### EnderChest
-scoreboard objectives add MBB_UUID0 dummy
-scoreboard objectives add MBB_UUID1 dummy
-scoreboard objectives add MBB_UUID2 dummy
-scoreboard objectives add MBB_UUID3 dummy
-scoreboard objectives add MBB_OwnerUUID0 dummy
-scoreboard objectives add MBB_OwnerUUID1 dummy
-scoreboard objectives add MBB_OwnerUUID2 dummy
-scoreboard objectives add MBB_OwnerUUID3 dummy
-scoreboard objectives add MBB_SpawnChest minecraft.used:minecraft.carrot_on_a_stick
+### Teleport
+scoreboard objectives add MBB_TeleportRoom minecraft.used:minecraft.carrot_on_a_stick
 ### Sheet
 scoreboard objectives add MBB_Sheet00 dummy
 scoreboard objectives add MBB_Sheet01 dummy
 scoreboard objectives add MBB_Sheet02 dummy
+scoreboard objectives add MBB_Sheet03 dummy
+scoreboard objectives add MBB_Sheet04 dummy
 scoreboard objectives add MBB_Sheet10 dummy
 scoreboard objectives add MBB_Sheet11 dummy
 scoreboard objectives add MBB_Sheet12 dummy
+scoreboard objectives add MBB_Sheet13 dummy
+scoreboard objectives add MBB_Sheet14 dummy
 scoreboard objectives add MBB_Sheet20 dummy
 scoreboard objectives add MBB_Sheet21 dummy
 scoreboard objectives add MBB_Sheet22 dummy
+scoreboard objectives add MBB_Sheet23 dummy
+scoreboard objectives add MBB_Sheet24 dummy
+scoreboard objectives add MBB_Sheet30 dummy
+scoreboard objectives add MBB_Sheet31 dummy
+scoreboard objectives add MBB_Sheet32 dummy
+scoreboard objectives add MBB_Sheet33 dummy
+scoreboard objectives add MBB_Sheet34 dummy
+scoreboard objectives add MBB_Sheet40 dummy
+scoreboard objectives add MBB_Sheet41 dummy
+scoreboard objectives add MBB_Sheet42 dummy
+scoreboard objectives add MBB_Sheet43 dummy
+scoreboard objectives add MBB_Sheet44 dummy
 scoreboard objectives add MBB_SheetTmp1 dummy
 scoreboard objectives add MBB_SheetTmp2 dummy
 scoreboard objectives add MBB_SheetTmp3 dummy
@@ -73,9 +81,13 @@ scoreboard objectives add MBB_ScoreWinner dummy
 scoreboard objectives add MBB_BingoRow0 dummy
 scoreboard objectives add MBB_BingoRow1 dummy
 scoreboard objectives add MBB_BingoRow2 dummy
+scoreboard objectives add MBB_BingoRow3 dummy
+scoreboard objectives add MBB_BingoRow4 dummy
 scoreboard objectives add MBB_BingoCol0 dummy
 scoreboard objectives add MBB_BingoCol1 dummy
 scoreboard objectives add MBB_BingoCol2 dummy
+scoreboard objectives add MBB_BingoCol3 dummy
+scoreboard objectives add MBB_BingoCol4 dummy
 scoreboard objectives add MBB_Diagonal dummy
 scoreboard objectives add MBB_AntiDiagonal dummy
 

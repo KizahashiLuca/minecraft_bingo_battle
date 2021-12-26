@@ -1,0 +1,39 @@
+[
+  {
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+      "nbt": "{Tags:[\"MBB_Player\"]}"
+    }
+  },
+  {
+    "condition": "minecraft:entity_scores",
+    "entity": "this",
+    "scores": {
+      "MBB_Sheet00": {
+        "min": 1,
+        "max": 1
+      },
+      "MBB_Sheet11": {
+        "min": 1,
+        "max": 1
+      },
+      "MBB_Sheet22": {
+        "min": 1,
+        "max": 1
+      },
+      "MBB_Sheet33": {
+        "min": 1,
+        "max": 1
+      },
+      "MBB_Sheet44": {
+        "min": 1,
+        "max": 1
+      },
+      "MBB_Diagonal": {
+        "min": 0,
+        "max": 0
+      }
+    }
+  }
+]

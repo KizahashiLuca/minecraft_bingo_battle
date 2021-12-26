@@ -13,6 +13,8 @@ execute store result score #mbb MBB_PosZ run data get entity @s Pos[2]
 setworldspawn ~ ~ ~
 spawnpoint @a ~ ~ ~
 
-## Set world spawn chest
-setblock ~ 0 ~ minecraft:chest
-setblock ~ 1 ~ minecraft:bedrock
+## Set world spawn room
+function mbb:system/setting/prepare/set_room_chest/main
+
+## Set chest 
+function mbb:system/setting/prepare/set_team_chest/main

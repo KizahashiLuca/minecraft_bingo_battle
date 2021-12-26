@@ -11,10 +11,190 @@
             {
               "function":"minecraft:set_name",
               "entity": "this",
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "team": "MBB_TeamA"
+                  }
+                }
+              ],
               "name": [
                 [
                   "",
-                  {"text":"Summon an Ender Chest","color":"aqua","italic":false}
+                  {"text":"TeamA Key","color":"red","bold":false,"italic":false}
+                ]
+              ]
+            },
+            {
+              "function":"minecraft:set_name",
+              "entity": "this",
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "team": "MBB_TeamB"
+                  }
+                }
+              ],
+              "name": [
+                [
+                  "",
+                  {"text":"TeamB Key","color":"blue","bold":false,"italic":false}
+                ]
+              ]
+            },
+            {
+              "function":"minecraft:set_name",
+              "entity": "this",
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "team": "MBB_TeamC"
+                  }
+                }
+              ],
+              "name": [
+                [
+                  "",
+                  {"text":"TeamC Key","color":"yellow","bold":false,"italic":false}
+                ]
+              ]
+            },
+            {
+              "function":"minecraft:set_name",
+              "entity": "this",
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "team": "MBB_TeamD"
+                  }
+                }
+              ],
+              "name": [
+                [
+                  "",
+                  {"text":"TeamD Key","color":"green","bold":false,"italic":false}
+                ]
+              ]
+            },
+            {
+              "function":"minecraft:set_name",
+              "entity": "this",
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "team": "MBB_TeamE"
+                  }
+                }
+              ],
+              "name": [
+                [
+                  "",
+                  {"text":"TeamE Key","color":"light_purple","bold":false,"italic":false}
+                ]
+              ]
+            },
+            {
+              "function":"minecraft:set_name",
+              "entity": "this",
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "team": "MBB_TeamF"
+                  }
+                }
+              ],
+              "name": [
+                [
+                  "",
+                  {"text":"TeamF Key","color":"dark_red","bold":false,"italic":false}
+                ]
+              ]
+            },
+            {
+              "function":"minecraft:set_name",
+              "entity": "this",
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "team": "MBB_TeamG"
+                  }
+                }
+              ],
+              "name": [
+                [
+                  "",
+                  {"text":"TeamG Key","color":"dark_blue","bold":false,"italic":false}
+                ]
+              ]
+            },
+            {
+              "function":"minecraft:set_name",
+              "entity": "this",
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "team": "MBB_TeamH"
+                  }
+                }
+              ],
+              "name": [
+                [
+                  "",
+                  {"text":"TeamH Key","color":"gold","bold":false,"italic":false}
+                ]
+              ]
+            },
+            {
+              "function":"minecraft:set_name",
+              "entity": "this",
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "team": "MBB_TeamI"
+                  }
+                }
+              ],
+              "name": [
+                [
+                  "",
+                  {"text":"TeamI Key","color":"dark_green","bold":false,"italic":false}
+                ]
+              ]
+            },
+            {
+              "function":"minecraft:set_name",
+              "entity": "this",
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "team": "MBB_TeamJ"
+                  }
+                }
+              ],
+              "name": [
+                [
+                  "",
+                  {"text":"TeamJ Key","color":"dark_purple","bold":false,"italic":false}
                 ]
               ]
             },

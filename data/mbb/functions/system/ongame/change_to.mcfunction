@@ -17,9 +17,6 @@ function mbb:system/ongame/set_worlds
 ## Set scoreboards
 function mbb:system/ongame/set_scoreboards
 
-## Set ender chest (BINGO Sheet)
-function mbb:system/ongame/set_ender_chest/main
-
 ## Teleport randomly
 execute at @e[predicate=mbb:system/common/world_spawn,limit=1] run function mbb:system/ongame/set_destination
 execute as @a[tag=MBB_Player] at @s run tp @s ~ 160 ~

@@ -31,7 +31,7 @@ cat << EOS > ${ItemJson}
         },
         {
           "function": "minecraft:set_nbt",
-          "tag": "{HideFlags:63,Tags:[\"MBB_EnderChestItem\"]}"
+          "tag": "{HideFlags:63,Tags:[\"MBB_SheetItem\"]}"
         }
       ],
       "entries":[
@@ -346,14 +346,38 @@ while read R; do
           "name":"minecraft:${f}",
           "conditions": [
             {
-              "condition": "minecraft:inverted",
-              "term": {
-                "condition": "minecraft:entity_properties",
-                "entity": "this",
-                "predicate": {
-                  "nbt": "{EnderItems:[{id:\"minecraft:${f}\"}]}"
+              "condition": "minecraft:alternative",
+              "entity": "this",
+              "terms": [
+                {
+                  "condition": "minecraft:inverted",
+                  "term": {
+                    "condition": "minecraft:location_check",
+                    "offsetX": 0,
+                    "offsetY": 0,
+                    "offsetZ": 0,
+                    "predicate": {
+                      "block": {
+                        "nbt": "{Items:[{id:\"minecraft:${f}\"}]}"
+                      }
+                    }
+                  }
+                },
+                {
+                  "condition": "minecraft:inverted",
+                  "term": {
+                    "condition": "minecraft:location_check",
+                    "offsetX": -1,
+                    "offsetY": 0,
+                    "offsetZ": 0,
+                    "predicate": {
+                      "block": {
+                        "nbt": "{Items:[{id:\"minecraft:${f}\"}]}"
+                      }
+                    }
+                  }
                 }
-              }
+              ]
             }
           ]
         },

@@ -17,8 +17,9 @@ execute as @p[predicate=mbb:system/settings/gui/weather_cycle] run function mbb:
 execute as @p[predicate=mbb:system/settings/gui/daylight_cycle] run function mbb:system/setting/gui/daylight_cycle
 ### KeepInventory - 0:FALSE, 1:TRUE
 execute as @p[predicate=mbb:system/settings/gui/keep_inventory] run function mbb:system/setting/gui/keep_inventory
-### GameRule - 0:Individual, 1:Team
-execute as @p[predicate=mbb:system/settings/gui/game_rule] run function mbb:system/setting/gui/game_rule
+### GameRule - 0:Individual, 1:Team (Current ver. TeamMatch only)
+# execute as @p[predicate=mbb:system/settings/gui/game_rule] run function mbb:system/setting/gui/game_rule
+execute as @p[predicate=mbb:system/settings/gui/game_rule] run function mbb:system/setting/gui/change_to
 ### GameMode - 1:ScoreAttack, 2:TimeAttack
 execute as @p[predicate=mbb:system/settings/gui/game_mode] run function mbb:system/setting/gui/game_mode
 ### Difficulty - 1:easy, 2:normal, 3:hard, 4:hardcore

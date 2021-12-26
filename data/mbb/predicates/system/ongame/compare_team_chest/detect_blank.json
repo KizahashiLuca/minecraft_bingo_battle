@@ -1,0 +1,43 @@
+[
+  {
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+      "type": "minecraft:area_effect_cloud",
+      "nbt": "{Tags:[\"MBB_TeamChest\"]}"
+    }
+  },
+  {
+    "condition": "minecraft:alternative",
+    "terms": [
+      {
+        "condition": "minecraft:inverted",
+        "term": {
+          "condition": "minecraft:location_check",
+          "offsetX": 0,
+          "offsetY": 0,
+          "offsetZ": 0,
+          "predicate": {
+            "block": {
+              "nbt": "{Items:[{Slot:0b,tag:{Tags:[\"MBB_SheetBlank\"]}},{Slot:1b,tag:{Tags:[\"MBB_SheetBlank\"]}},{Slot:7b,tag:{Tags:[\"MBB_SheetBlank\"]}},{Slot:8b,tag:{Tags:[\"MBB_SheetBlank\"]}},{Slot:9b,tag:{Tags:[\"MBB_SheetBlank\"]}},{Slot:10b,tag:{Tags:[\"MBB_SheetBlank\"]}},{Slot:16b,tag:{Tags:[\"MBB_SheetBlank\"]}},{Slot:17b,tag:{Tags:[\"MBB_SheetBlank\"]}},{Slot:18b,tag:{Tags:[\"MBB_SheetBlank\"]}},{Slot:19b,tag:{Tags:[\"MBB_SheetBlank\"]}},{Slot:25b,tag:{Tags:[\"MBB_SheetBlank\"]}},{Slot:26b,tag:{Tags:[\"MBB_SheetBlank\"]}}]}"
+            }
+          }
+        }
+      },
+      {
+        "condition": "minecraft:inverted",
+        "term": {
+          "condition": "minecraft:location_check",
+          "offsetX": -1,
+          "offsetY": 0,
+          "offsetZ": 0,
+          "predicate": {
+            "block": {
+              "nbt": "{Items:[{Slot:0b,tag:{Tags:[\"MBB_SheetBlank\"]}},{Slot:1b,tag:{Tags:[\"MBB_SheetBlank\"]}},{Slot:7b,tag:{Tags:[\"MBB_SheetBlank\"]}},{Slot:8b,tag:{Tags:[\"MBB_SheetBlank\"]}},{Slot:9b,tag:{Tags:[\"MBB_SheetBlank\"]}},{Slot:10b,tag:{Tags:[\"MBB_SheetBlank\"]}},{Slot:16b,tag:{Tags:[\"MBB_SheetBlank\"]}},{Slot:17b,tag:{Tags:[\"MBB_SheetBlank\"]}},{Slot:18b,tag:{Tags:[\"MBB_SheetBlank\"]}},{Slot:19b,tag:{Tags:[\"MBB_SheetBlank\"]}},{Slot:20b,tag:{Tags:[\"MBB_SheetBlank\"]}},{Slot:21b,tag:{Tags:[\"MBB_SheetBlank\"]}},{Slot:22b,tag:{Tags:[\"MBB_SheetBlank\"]}},{Slot:23b,tag:{Tags:[\"MBB_SheetBlank\"]}},{Slot:24b,tag:{Tags:[\"MBB_SheetBlank\"]}},{Slot:25b,tag:{Tags:[\"MBB_SheetBlank\"]}},{Slot:26b,tag:{Tags:[\"MBB_SheetBlank\"]}}]}"
+            }
+          }
+        }
+      }
+    ]
+  }
+]
