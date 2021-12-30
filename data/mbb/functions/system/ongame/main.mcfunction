@@ -29,6 +29,9 @@ execute as @a[predicate=mbb:system/ongame/teleport_room/in] run function mbb:sys
 ## Compare team chest
 execute at @e[predicate=mbb:system/common/world_spawn] positioned ~ -62 ~ if entity @p[tag=MBB_Player,distance=..20] run function mbb:system/ongame/compare_team_chest/main
 
+## Set room chest
+execute at @e[predicate=mbb:system/common/world_spawn] positioned ~ -62 ~ if entity @p[tag=MBB_Player,distance=..20] run function mbb:system/ongame/compare_room_chest/main
+
 ## Change phase
 execute if predicate mbb:system/common/gamemode/score_attack if score #mbb MBB_Minute matches 0 if score #mbb MBB_Second matches 0 if score #mbb MBB_Tick matches 0 run function mbb:system/finish/score_attack/main
 execute if predicate mbb:system/common/gamemode/time_attack if entity @p[predicate=mbb:system/ongame/detect_winner/time_attack] run function mbb:system/finish/time_attack/main

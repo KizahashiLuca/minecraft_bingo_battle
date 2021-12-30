@@ -35,7 +35,7 @@ execute if predicate mbb:system/common/gamerule/team_match run tag @a[tag=MBB_Pl
 execute if predicate mbb:system/common/gamerule/team_match run function mbb:system/setting/prepare/set_team_randomly/main
 
 ## Set chest (BINGO Sheet)
-execute at @e[predicate=mbb:system/common/world_spawn] positioned ~-1 -62 ~13 run function mbb:system/ongame/set_room_chest/main
+execute at @e[predicate=mbb:system/common/room_chest/chest_a] run function mbb:system/setting/prepare/set_room_chest/main
 
 ## Set scoreboards
 function mbb:system/setting/prepare/set_scoreboards

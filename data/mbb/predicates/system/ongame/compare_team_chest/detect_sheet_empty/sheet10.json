@@ -1,0 +1,20 @@
+[
+  {
+    "condition": "minecraft:reference",
+    "name": "mbb:system/common/team_chest/main"
+  },
+  {
+    "condition": "minecraft:inverted",
+    "term": {
+      "condition": "minecraft:location_check",
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "predicate": {
+        "block": {
+          "nbt": "{Items:[{Slot:11b}]}"
+        }
+      }
+    }
+  }
+]

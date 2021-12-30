@@ -14,7 +14,7 @@ setworldspawn ~ ~ ~
 spawnpoint @a ~ ~ ~
 
 ## Set world spawn room
-function mbb:system/setting/prepare/set_room_chest/main
+function mbb:system/setting/prepare/set_room/main
 
 ## Set chest 
 function mbb:system/setting/prepare/set_team_chest/main

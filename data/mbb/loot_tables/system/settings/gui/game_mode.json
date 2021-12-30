@@ -3,6 +3,23 @@
   "pools": [
     {
       "rolls": 1,
+      "functions": [
+        {
+          "function": "minecraft:set_name",
+          "entity": "this",
+          "name": [
+            [
+              "",
+              {"translate":"selectWorld.gameMode","color":"white","bold":false,"italic":false},
+              {"text":":","color":"white","bold":false,"italic":false}
+            ]
+          ]
+        },
+        {
+          "function":"minecraft:set_nbt",
+          "tag":"{HideFlags:63,Tags:[\"MBB_SettingItem\",\"MBB_GameMode\"]}"
+        }
+      ],
       "entries": [
         {
           "type": "minecraft:item",
@@ -15,29 +32,17 @@
           ],
           "functions": [
             {
-              "function": "minecraft:set_name",
-              "entity": "this",
-              "name": [
-                [
-                  "",
-                  {"text":"Game Mode","color":"white","bold":false,"italic":false}
-                ]
-              ]
-            },
-            {
               "function": "minecraft:set_lore",
               "entity": "this",
               "lore": [
                 [
                   "",
+                  {"text":" ","color":"white","bold":false,"italic":false},
                   {"text":"Score Attack Mode","color":"light_purple","bold":true,"italic":false},
-                  {"text":" selected","color":"white","bold":false,"italic":false}
+                  {"text":" ","color":"white","bold":false,"italic":false},
+                  {"translate":"pack.selected.title","color":"white","bold":false,"italic":false}
                 ]
               ]
-            },
-            {
-              "function":"minecraft:set_nbt",
-              "tag":"{HideFlags:63,Tags:[\"MBB_SettingItem\",\"MBB_GameMode\"]}"
             }
           ]
         },
@@ -52,29 +57,17 @@
           ],
           "functions": [
             {
-              "function": "minecraft:set_name",
-              "entity": "this",
-              "name": [
-                [
-                  "",
-                  {"text":"Game Mode","color":"white","bold":false,"italic":false}
-                ]
-              ]
-            },
-            {
               "function": "minecraft:set_lore",
               "entity": "this",
               "lore": [
                 [
                   "",
+                  {"text":" ","color":"white","bold":false,"italic":false},
                   {"text":"Time Attack Mode","color":"aqua","bold":true,"italic":false},
-                  {"text":" selected","color":"white","bold":false,"italic":false}
+                  {"text":" ","color":"white","bold":false,"italic":false},
+                  {"translate":"pack.selected.title","color":"white","bold":false,"italic":false}
                 ]
               ]
-            },
-            {
-              "function":"minecraft:set_nbt",
-              "tag":"{HideFlags:63,Tags:[\"MBB_SettingItem\",\"MBB_GameMode\"]}"
             }
           ]
         }

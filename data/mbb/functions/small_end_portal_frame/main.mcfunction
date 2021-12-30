@@ -6,5 +6,15 @@
 ## Version   : β-1.0
 #####################################
 
-## Detect structure
-execute as @s at @s if block ~ ~ ~1 minecraft:cobblestone if block ~ ~ ~-1 minecraft:cobblestone if block ~1 ~ ~ minecraft:cobblestone if block ~-1 ~ ~ minecraft:cobblestone run function mbb:small_end_portal_frame/set_structure
+## Replace structure
+setblock ~-1 ~ ~ minecraft:end_portal_frame[facing=east,eye=true]
+setblock ~1 ~ ~ minecraft:end_portal_frame[facing=west,eye=true]
+setblock ~ ~ ~-1 minecraft:end_portal_frame[facing=north,eye=true]
+setblock ~ ~ ~1 minecraft:end_portal_frame[facing=south,eye=true]
+setblock ~ ~ ~ minecraft:end_portal
+
+## Play sound
+summon minecraft:lightning_bolt ~ ~ ~
+
+## Kill me
+kill @s

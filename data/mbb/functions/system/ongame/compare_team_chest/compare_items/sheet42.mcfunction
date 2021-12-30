@@ -21,12 +21,13 @@ data remove entity @s Item.tag.HideFlags
 
 ## Compare item data
 ### id
-execute store success score @e[predicate=mbb:system/ongame/compare_team_chest/compare_items/main,limit=1] MBB_SheetTmp1 run data modify entity @s Item.id set from block ~-1 ~ ~ Items[{Slot:13b}].id
+execute as @s[predicate=mbb:system/ongame/compare_team_chest/compare_items/music_disc] if predicate mbb:system/ongame/compare_team_chest/music_disc/sheet42 run scoreboard players set @e[predicate=mbb:system/ongame/compare_team_chest/compare_items/main,limit=1] MBB_SheetTmp1 0
+execute as @s[predicate=!mbb:system/ongame/compare_team_chest/compare_items/music_disc] store success score @e[predicate=mbb:system/ongame/compare_team_chest/compare_items/main,limit=1] MBB_SheetTmp1 run data modify entity @s Item.id set from block ~-1 ~ ~ Items[{Slot:13b}].id
 ### tag
 execute store success score @e[predicate=mbb:system/ongame/compare_team_chest/compare_items/main,limit=1] MBB_SheetTmp2 if data block ~-1 ~ ~ Items[{Slot:13b}].tag run data modify entity @s Item.tag set from block ~-1 ~ ~ Items[{Slot:13b}].tag
 execute unless data block ~-1 ~ ~ Items[{Slot:13b}].tag run scoreboard players set @e[predicate=mbb:system/ongame/compare_team_chest/compare_items/main,limit=1] MBB_SheetTmp2 0
 execute unless data block ~-1 ~ ~ Items[{Slot:13b}].tag run data remove entity @s Item.tag
-execute if predicate mbb:system/ongame/compare_team_chest/tagged_items/sheet42 run scoreboard players set @e[predicate=mbb:system/ongame/compare_team_chest/compare_items/main,limit=1] MBB_SheetTmp2 0
+execute if predicate mbb:system/ongame/compare_team_chest/tagged_items/sheet42 unless data block ~-1 ~ ~ Items[{Slot:13b,tag:{Potion:"minecraft:water"}}] run scoreboard players set @e[predicate=mbb:system/ongame/compare_team_chest/compare_items/main,limit=1] MBB_SheetTmp2 0
 ### item count
 execute store result score @e[predicate=mbb:system/ongame/compare_team_chest/compare_items/main,limit=1] MBB_SheetTmp3 run data get block ~-1 ~ ~ Items[{Slot:13b}].Count
 ### Compare id & tag
@@ -39,6 +40,7 @@ execute if entity @e[predicate=mbb:system/ongame/compare_team_chest/compare_item
 execute if entity @e[predicate=mbb:system/ongame/compare_team_chest/compare_items/not_same] run item replace block ~-1 ~ ~ container.13 with minecraft:air
 
 execute if entity @e[predicate=mbb:system/ongame/compare_team_chest/compare_items/same,scores={MBB_SheetTmp3=1..}] store result entity @s Item.Count int 1.0 run scoreboard players get @e[predicate=mbb:system/ongame/compare_team_chest/compare_items/main,limit=1] MBB_SheetTmp3
+execute if entity @e[predicate=mbb:system/ongame/compare_team_chest/compare_items/same] if predicate mbb:system/ongame/compare_team_chest/music_disc/sheet42 run data modify block ~-1 ~ ~ Items[{Slot:13b}].id set from entity @s Item.id
 execute if entity @e[predicate=mbb:system/ongame/compare_team_chest/compare_items/same] run data modify block ~-1 ~ ~ Items[{Slot:13b}].Count set value 1
 execute if entity @e[predicate=mbb:system/ongame/compare_team_chest/compare_items/same] run data modify block ~-1 ~ ~ Items[{Slot:13b}].tag.Tags set value ["MBB_SheetItem"]
 execute if entity @e[predicate=mbb:system/ongame/compare_team_chest/compare_items/same] run data modify block ~-1 ~ ~ Items[{Slot:13b}].tag.HideFlags set value 63b

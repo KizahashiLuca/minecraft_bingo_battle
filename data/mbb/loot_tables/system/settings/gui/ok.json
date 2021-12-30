@@ -14,7 +14,7 @@
               "name": [
                 [
                   "",
-                  {"text":"OK","color":"aqua","bold":false,"italic":false}
+                  {"translate":"gui.done","color":"aqua","bold":false,"italic":false}
                 ]
               ]
             },{

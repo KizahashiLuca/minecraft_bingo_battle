@@ -3,6 +3,12 @@
   "pools": [
     {
       "rolls": 1,
+      "functions": [
+        {
+          "function":"minecraft:set_nbt",
+          "tag":"{HideFlags:63,Tags:[\"MBB_SettingItem\",\"MBB_GameRule\"]}"
+        }
+      ],
       "entries": [
         {
           "type": "minecraft:item",
@@ -21,13 +27,10 @@
                 [
                   "",
                   {"text":"Individual Match","color":"green","bold":true,"italic":false},
-                  {"text":" selected","color":"white","bold":false,"italic":false}
+                  {"text":" ","color":"white","bold":false,"italic":false},
+                  {"translate":"pack.selected.title","color":"white","bold":false,"italic":false}
                 ]
               ]
-            },
-            {
-              "function":"minecraft:set_nbt",
-              "tag":"{HideFlags:63,Tags:[\"MBB_SettingItem\",\"MBB_GameRule\"]}"
             }
           ]
         },
@@ -48,13 +51,10 @@
                 [
                   "",
                   {"text":"Team Match","color":"red","bold":true,"italic":false},
-                  {"text":" selected","color":"white","bold":false,"italic":false}
+                  {"text":" ","color":"white","bold":false,"italic":false},
+                  {"translate":"pack.selected.title","color":"white","bold":false,"italic":false}
                 ]
               ]
-            },
-            {
-              "function":"minecraft:set_nbt",
-              "tag":"{HideFlags:63,Tags:[\"MBB_SettingItem\",\"MBB_GameRule\"]}"
             }
           ]
         }

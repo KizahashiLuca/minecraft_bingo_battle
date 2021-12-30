@@ -18,9 +18,9 @@ declare -a ColorArray=("white" "orange" "magenta" "light_blue" "yellow" "lime" "
 cat << EOS > ${ItemJson}
 {
   "type": "generic",
-  "pools":[
+  "pools": [
     {
-      "rolls":1,
+      "rolls": 1,
       "functions": [
         {
           "function": "minecraft:set_count",
@@ -34,7 +34,7 @@ cat << EOS > ${ItemJson}
           "tag": "{HideFlags:63,Tags:[\"MBB_SheetItem\"]}"
         }
       ],
-      "entries":[
+      "entries": [
 EOS
 
 cat << EOS > ${BingoJson}
@@ -340,48 +340,33 @@ while read R; do
 
   ## Add item lines
   for f in "${ItemArray[@]}"; do
-    cat << EOS >> ${ItemJson}
+    if [ "${f}" = "potion" ] || [ "${f}" = "splash_potion" ] || [ "${f}" = "lingering_potion" ] || [ "${f}" = "enchanted_book" ] || [ "${f}" = "music_disc_(.*)" ]; then
+      cat << EOS >> ${ItemJson}
         {
-          "type":"minecraft:item",
-          "name":"minecraft:${f}",
-          "conditions": [
+          "type": "minecraft:item",
+          "name": "minecraft:${f}",
+          "functions": [
             {
-              "condition": "minecraft:alternative",
+              "function": "minecraft:set_name",
               "entity": "this",
-              "terms": [
-                {
-                  "condition": "minecraft:inverted",
-                  "term": {
-                    "condition": "minecraft:location_check",
-                    "offsetX": 0,
-                    "offsetY": 0,
-                    "offsetZ": 0,
-                    "predicate": {
-                      "block": {
-                        "nbt": "{Items:[{id:\"minecraft:${f}\"}]}"
-                      }
-                    }
-                  }
-                },
-                {
-                  "condition": "minecraft:inverted",
-                  "term": {
-                    "condition": "minecraft:location_check",
-                    "offsetX": -1,
-                    "offsetY": 0,
-                    "offsetZ": 0,
-                    "predicate": {
-                      "block": {
-                        "nbt": "{Items:[{id:\"minecraft:${f}\"}]}"
-                      }
-                    }
-                  }
-                }
+              "name": [
+                [
+                  "",
+                  {"translate":"item.minecraft.${f}","italic":false}
+                ]
               ]
             }
           ]
         },
 EOS
+    else 
+      cat << EOS >> ${ItemJson}
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:${f}"
+        },
+EOS
+    fi
     cat << EOS >> ${BingoJson}
     "minecraft:${f}",
 EOS

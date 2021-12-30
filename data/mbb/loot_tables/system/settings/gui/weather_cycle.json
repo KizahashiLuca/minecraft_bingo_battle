@@ -3,6 +3,23 @@
   "pools": [
     {
       "rolls": 1,
+      "functions": [
+        {
+          "function": "minecraft:set_name",
+          "entity": "this",
+          "name": [
+            [
+              "",
+              {"translate":"gamerule.doWeatherCycle","color":"white","bold":false,"italic":false},
+              {"text":":","color":"white","bold":false,"italic":false}
+            ]
+          ]
+        },
+        {
+          "function":"minecraft:set_nbt",
+          "tag":"{HideFlags:63,Tags:[\"MBB_SettingItem\",\"MBB_WeatherCycle\"]}"
+        }
+      ],
       "entries": [
         {
           "type": "minecraft:item",
@@ -15,29 +32,17 @@
           ],
           "functions": [
             {
-              "function": "minecraft:set_name",
-              "entity": "this",
-              "name": [
-                [
-                  "",
-                  {"text":"Weather Cycle","color":"white","bold":false,"italic":false}
-                ]
-              ]
-            },
-            {
               "function": "minecraft:set_lore",
               "entity": "this",
               "lore": [
                 [
                   "",
+                  {"text":" ","color":"white","bold":false,"italic":false},
                   {"text":"FALSE","color":"red","bold":true,"italic":false},
-                  {"text":" selected","color":"white","bold":false,"italic":false}
+                  {"text":" ","color":"white","bold":false,"italic":false},
+                  {"translate":"pack.selected.title","color":"white","bold":false,"italic":false}
                 ]
               ]
-            },
-            {
-              "function":"minecraft:set_nbt",
-              "tag":"{HideFlags:63,Tags:[\"MBB_SettingItem\",\"MBB_WeatherCycle\"]}"
             }
           ]
         },
@@ -52,29 +57,17 @@
           ],
           "functions": [
             {
-              "function": "minecraft:set_name",
-              "entity": "this",
-              "name": [
-                [
-                  "",
-                  {"text":"Weather Cycle","color":"white","bold":false,"italic":false}
-                ]
-              ]
-            },
-            {
               "function": "minecraft:set_lore",
               "entity": "this",
               "lore": [
                 [
                   "",
+                  {"text":" ","color":"white","bold":false,"italic":false},
                   {"text":"TRUE","color":"green","bold":true,"italic":false},
-                  {"text":" selected","color":"white","bold":false,"italic":false}
+                  {"text":" ","color":"white","bold":false,"italic":false},
+                  {"translate":"pack.selected.title","color":"white","bold":false,"italic":false}
                 ]
               ]
-            },
-            {
-              "function":"minecraft:set_nbt",
-              "tag":"{HideFlags:63,Tags:[\"MBB_SettingItem\",\"MBB_WeatherCycle\"]}"
             }
           ]
         }

@@ -1,0 +1,159 @@
+{
+  "condition": "minecraft:alternative",
+  "terms": [
+    {
+      "condition": "minecraft:location_check",
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "predicate": {
+        "block": {
+          "nbt": "{Items:[{id:\"minecraft:music_disc_13\",Slot:11b}]}"
+        }
+      }
+    },
+    {
+      "condition": "minecraft:location_check",
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "predicate": {
+        "block": {
+          "nbt": "{Items:[{id:\"minecraft:music_disc_cat\",Slot:11b}]}"
+        }
+      }
+    },
+    {
+      "condition": "minecraft:location_check",
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "predicate": {
+        "block": {
+          "nbt": "{Items:[{id:\"minecraft:music_disc_blocks\",Slot:11b}]}"
+        }
+      }
+    },
+    {
+      "condition": "minecraft:location_check",
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "predicate": {
+        "block": {
+          "nbt": "{Items:[{id:\"minecraft:music_disc_chirp\",Slot:11b}]}"
+        }
+      }
+    },
+    {
+      "condition": "minecraft:location_check",
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "predicate": {
+        "block": {
+          "nbt": "{Items:[{id:\"minecraft:music_disc_far\",Slot:11b}]}"
+        }
+      }
+    },
+    {
+      "condition": "minecraft:location_check",
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "predicate": {
+        "block": {
+          "nbt": "{Items:[{id:\"minecraft:music_disc_mall\",Slot:11b}]}"
+        }
+      }
+    },
+    {
+      "condition": "minecraft:location_check",
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "predicate": {
+        "block": {
+          "nbt": "{Items:[{id:\"minecraft:music_disc_mellohi\",Slot:11b}]}"
+        }
+      }
+    },
+    {
+      "condition": "minecraft:location_check",
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "predicate": {
+        "block": {
+          "nbt": "{Items:[{id:\"minecraft:music_disc_stal\",Slot:11b}]}"
+        }
+      }
+    },
+    {
+      "condition": "minecraft:location_check",
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "predicate": {
+        "block": {
+          "nbt": "{Items:[{id:\"minecraft:music_disc_strad\",Slot:11b}]}"
+        }
+      }
+    },
+    {
+      "condition": "minecraft:location_check",
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "predicate": {
+        "block": {
+          "nbt": "{Items:[{id:\"minecraft:music_disc_ward\",Slot:11b}]}"
+        }
+      }
+    },
+    {
+      "condition": "minecraft:location_check",
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "predicate": {
+        "block": {
+          "nbt": "{Items:[{id:\"minecraft:music_disc_11\",Slot:11b}]}"
+        }
+      }
+    },
+    {
+      "condition": "minecraft:location_check",
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "predicate": {
+        "block": {
+          "nbt": "{Items:[{id:\"minecraft:music_disc_wait\",Slot:11b}]}"
+        }
+      }
+    },
+    {
+      "condition": "minecraft:location_check",
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "predicate": {
+        "block": {
+          "nbt": "{Items:[{id:\"minecraft:music_disc_pigstep\",Slot:11b}]}"
+        }
+      }
+    },
+    {
+      "condition": "minecraft:location_check",
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "predicate": {
+        "block": {
+          "nbt": "{Items:[{id:\"minecraft:music_disc_otherside\",Slot:11b}]}"
+        }
+      }
+    }
+  ]
+}

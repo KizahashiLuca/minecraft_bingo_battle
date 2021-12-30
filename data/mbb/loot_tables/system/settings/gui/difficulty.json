@@ -3,6 +3,23 @@
   "pools": [
     {
       "rolls": 1,
+      "functions": [
+        {
+          "function": "minecraft:set_name",
+          "entity": "this",
+          "name": [
+            [
+              "",
+              {"translate":"options.difficulty","color":"white","bold":false,"italic":false},
+              {"text":":","color":"white","bold":false,"italic":false}
+            ]
+          ]
+        },
+        {
+          "function":"minecraft:set_nbt",
+          "tag":"{HideFlags:63,Tags:[\"MBB_SettingItem\",\"MBB_Difficulty\"]}"
+        }
+      ],
       "entries": [
         {
           "type": "minecraft:item",
@@ -15,29 +32,17 @@
           ],
           "functions": [
             {
-              "function": "minecraft:set_name",
-              "entity": "this",
-              "name": [
-                [
-                  "",
-                  {"text":"Difficulty","color":"white","bold":false,"italic":false}
-                ]
-              ]
-            },
-            {
               "function": "minecraft:set_lore",
               "entity": "this",
               "lore": [
                 [
                   "",
-                  {"text":"Easy","color":"blue","bold":true,"italic":false},
-                  {"text":" selected","color":"white","bold":false,"italic":false}
+                  {"text":" ","color":"white","bold":false,"italic":false},
+                  {"translate":"options.difficulty.easy","color":"blue","bold":true,"italic":false},
+                  {"text":" ","color":"white","bold":false,"italic":false},
+                  {"translate":"pack.selected.title","color":"white","bold":false,"italic":false}
                 ]
               ]
-            },
-            {
-              "function":"minecraft:set_nbt",
-              "tag":"{HideFlags:63,Tags:[\"MBB_SettingItem\",\"MBB_Difficulty\"]}"
             }
           ]
         },
@@ -52,29 +57,17 @@
           ],
           "functions": [
             {
-              "function": "minecraft:set_name",
-              "entity": "this",
-              "name": [
-                [
-                  "",
-                  {"text":"Difficulty","color":"white","bold":false,"italic":false}
-                ]
-              ]
-            },
-            {
               "function": "minecraft:set_lore",
               "entity": "this",
               "lore": [
                 [
                   "",
-                  {"text":"Normal","color":"green","bold":true,"italic":false},
-                  {"text":" selected","color":"white","bold":false,"italic":false}
+                  {"text":" ","color":"white","bold":false,"italic":false},
+                  {"translate":"options.difficulty.normal","color":"green","bold":true,"italic":false},
+                  {"text":" ","color":"white","bold":false,"italic":false},
+                  {"translate":"pack.selected.title","color":"white","bold":false,"italic":false}
                 ]
               ]
-            },
-            {
-              "function":"minecraft:set_nbt",
-              "tag":"{HideFlags:63,Tags:[\"MBB_SettingItem\",\"MBB_Difficulty\"]}"
             }
           ]
         },
@@ -89,29 +82,17 @@
           ],
           "functions": [
             {
-              "function": "minecraft:set_name",
-              "entity": "this",
-              "name": [
-                [
-                  "",
-                  {"text":"Difficulty","color":"white","bold":false,"italic":false}
-                ]
-              ]
-            },
-            {
               "function": "minecraft:set_lore",
               "entity": "this",
               "lore": [
                 [
                   "",
-                  {"text":"Hard","color":"yellow","bold":true,"italic":false},
-                  {"text":" selected","color":"white","bold":false,"italic":false}
+                  {"text":" ","color":"white","bold":false,"italic":false},
+                  {"translate":"options.difficulty.hard","color":"yellow","bold":true,"italic":false},
+                  {"text":" ","color":"white","bold":false,"italic":false},
+                  {"translate":"pack.selected.title","color":"white","bold":false,"italic":false}
                 ]
               ]
-            },
-            {
-              "function":"minecraft:set_nbt",
-              "tag":"{HideFlags:63,Tags:[\"MBB_SettingItem\",\"MBB_Difficulty\"]}"
             }
           ]
         },
@@ -126,29 +107,17 @@
           ],
           "functions": [
             {
-              "function": "minecraft:set_name",
-              "entity": "this",
-              "name": [
-                [
-                  "",
-                  {"text":"Difficulty","color":"white","bold":false,"italic":false}
-                ]
-              ]
-            },
-            {
               "function": "minecraft:set_lore",
               "entity": "this",
               "lore": [
                 [
                   "",
-                  {"text":"HardCore","color":"red","bold":true,"italic":false},
-                  {"text":" selected","color":"white","bold":false,"italic":false}
+                  {"text":" ","color":"white","bold":false,"italic":false},
+                  {"translate":"options.difficulty.hardcore","color":"red","bold":true,"italic":false},
+                  {"text":" ","color":"white","bold":false,"italic":false},
+                  {"translate":"pack.selected.title","color":"white","bold":false,"italic":false}
                 ]
               ]
-            },
-            {
-              "function":"minecraft:set_nbt",
-              "tag":"{HideFlags:63,Tags:[\"MBB_SettingItem\",\"MBB_Difficulty\"]}"
             }
           ]
         }

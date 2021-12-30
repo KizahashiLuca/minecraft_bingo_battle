@@ -6,14 +6,13 @@
 ## Version   : β-1.0
 #####################################
 
-## Set world spawn room
-execute positioned ~ -64 ~ run function mbb:system/setting/prepare/set_room_chest/room
+## Set chest - Host
+function mbb:system/setting/prepare/set_room_chest/host
+data modify block ~2 ~ ~ Items set from block ~-1 ~ ~ Items
+data modify block ~3 ~ ~ Items set from block ~ ~ ~ Items
 
 ## Set item frame
-execute positioned ~ -61 ~12 run function mbb:system/setting/prepare/set_room_chest/item_frame
+function mbb:system/setting/prepare/set_room_chest/item_frame
 
-## Set chest - Host
-execute positioned ~ -62 ~13 run function mbb:system/setting/prepare/set_room_chest/room_chest
-
-## Set respawn beacon
-execute positioned ~ -63 ~-9 run function mbb:system/setting/prepare/set_room_chest/respawn_beacon
+## Kill item
+kill @e[type=minecraft:item]

@@ -1,7 +1,16 @@
 [
   {
-    "condition": "minecraft:reference",
-    "name": "mbb:system/ongame/compare_team_chest/detect_sheet/sheet44"
+    "condition": "minecraft:alternative",
+    "terms": [
+      {
+        "condition": "minecraft:reference",
+        "name": "mbb:system/ongame/compare_team_chest/detect_sheet/sheet44"
+      },
+      {
+        "condition": "minecraft:reference",
+        "name": "mbb:system/ongame/compare_team_chest/detect_sheet_empty/sheet44"
+      }
+    ]
   },
   {
     "condition": "minecraft:entity_scores",

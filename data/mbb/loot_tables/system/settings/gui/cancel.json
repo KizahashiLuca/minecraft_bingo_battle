@@ -14,7 +14,7 @@
               "name": [
                 [
                   "",
-                  {"text":"Cancel","color":"white","bold":false,"italic":false}
+                  {"translate":"gui.cancel","color":"white","bold":false,"italic":false}
                 ]
               ]
             },{

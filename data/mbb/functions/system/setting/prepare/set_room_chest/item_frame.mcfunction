@@ -7,32 +7,32 @@
 #####################################
 
 ## Set item frame
-summon minecraft:item_frame ~-2 ~ ~ {Fixed:1b,Invisible:0b,ItemDropChance:0.0f,Facing:2b,Tags:["MBB_ItemFrame","MBB_Sheet44"]}
-summon minecraft:item_frame ~-1 ~ ~ {Fixed:1b,Invisible:0b,ItemDropChance:0.0f,Facing:2b,Tags:["MBB_ItemFrame","MBB_Sheet43"]}
-summon minecraft:item_frame ~0 ~ ~ {Fixed:1b,Invisible:0b,ItemDropChance:0.0f,Facing:2b,Tags:["MBB_ItemFrame","MBB_Sheet42"]}
-summon minecraft:item_frame ~1 ~ ~ {Fixed:1b,Invisible:0b,ItemDropChance:0.0f,Facing:2b,Tags:["MBB_ItemFrame","MBB_Sheet41"]}
-summon minecraft:item_frame ~2 ~ ~ {Fixed:1b,Invisible:0b,ItemDropChance:0.0f,Facing:2b,Tags:["MBB_ItemFrame","MBB_Sheet40"]}
+data modify entity @e[type=minecraft:item_frame,tag=MBB_Sheet00,limit=1] Item set from block ~ ~ ~ Items[{Slot:2b}]
+data modify entity @e[type=minecraft:item_frame,tag=MBB_Sheet01,limit=1] Item set from block ~ ~ ~ Items[{Slot:3b}]
+data modify entity @e[type=minecraft:item_frame,tag=MBB_Sheet02,limit=1] Item set from block ~ ~ ~ Items[{Slot:4b}]
+data modify entity @e[type=minecraft:item_frame,tag=MBB_Sheet03,limit=1] Item set from block ~ ~ ~ Items[{Slot:5b}]
+data modify entity @e[type=minecraft:item_frame,tag=MBB_Sheet04,limit=1] Item set from block ~ ~ ~ Items[{Slot:6b}]
 
-summon minecraft:item_frame ~-2 ~1 ~ {Fixed:1b,Invisible:0b,ItemDropChance:0.0f,Facing:2b,Tags:["MBB_ItemFrame","MBB_Sheet34"]}
-summon minecraft:item_frame ~-1 ~1 ~ {Fixed:1b,Invisible:0b,ItemDropChance:0.0f,Facing:2b,Tags:["MBB_ItemFrame","MBB_Sheet33"]}
-summon minecraft:item_frame ~0 ~1 ~ {Fixed:1b,Invisible:0b,ItemDropChance:0.0f,Facing:2b,Tags:["MBB_ItemFrame","MBB_Sheet32"]}
-summon minecraft:item_frame ~1 ~1 ~ {Fixed:1b,Invisible:0b,ItemDropChance:0.0f,Facing:2b,Tags:["MBB_ItemFrame","MBB_Sheet31"]}
-summon minecraft:item_frame ~2 ~1 ~ {Fixed:1b,Invisible:0b,ItemDropChance:0.0f,Facing:2b,Tags:["MBB_ItemFrame","MBB_Sheet30"]}
+data modify entity @e[type=minecraft:item_frame,tag=MBB_Sheet10,limit=1] Item set from block ~ ~ ~ Items[{Slot:11b}]
+data modify entity @e[type=minecraft:item_frame,tag=MBB_Sheet11,limit=1] Item set from block ~ ~ ~ Items[{Slot:12b}]
+data modify entity @e[type=minecraft:item_frame,tag=MBB_Sheet12,limit=1] Item set from block ~ ~ ~ Items[{Slot:13b}]
+data modify entity @e[type=minecraft:item_frame,tag=MBB_Sheet13,limit=1] Item set from block ~ ~ ~ Items[{Slot:14b}]
+data modify entity @e[type=minecraft:item_frame,tag=MBB_Sheet14,limit=1] Item set from block ~ ~ ~ Items[{Slot:15b}]
 
-summon minecraft:item_frame ~-2 ~2 ~ {Fixed:1b,Invisible:0b,ItemDropChance:0.0f,Facing:2b,Tags:["MBB_ItemFrame","MBB_Sheet24"]}
-summon minecraft:item_frame ~-1 ~2 ~ {Fixed:1b,Invisible:0b,ItemDropChance:0.0f,Facing:2b,Tags:["MBB_ItemFrame","MBB_Sheet23"]}
-summon minecraft:item_frame ~0 ~2 ~ {Fixed:1b,Invisible:0b,ItemDropChance:0.0f,Facing:2b,Tags:["MBB_ItemFrame","MBB_Sheet22"]}
-summon minecraft:item_frame ~1 ~2 ~ {Fixed:1b,Invisible:0b,ItemDropChance:0.0f,Facing:2b,Tags:["MBB_ItemFrame","MBB_Sheet21"]}
-summon minecraft:item_frame ~2 ~2 ~ {Fixed:1b,Invisible:0b,ItemDropChance:0.0f,Facing:2b,Tags:["MBB_ItemFrame","MBB_Sheet20"]}
+data modify entity @e[type=minecraft:item_frame,tag=MBB_Sheet20,limit=1] Item set from block ~ ~ ~ Items[{Slot:20b}]
+data modify entity @e[type=minecraft:item_frame,tag=MBB_Sheet21,limit=1] Item set from block ~ ~ ~ Items[{Slot:21b}]
+data modify entity @e[type=minecraft:item_frame,tag=MBB_Sheet22,limit=1] Item set from block ~ ~ ~ Items[{Slot:22b}]
+data modify entity @e[type=minecraft:item_frame,tag=MBB_Sheet23,limit=1] Item set from block ~ ~ ~ Items[{Slot:23b}]
+data modify entity @e[type=minecraft:item_frame,tag=MBB_Sheet24,limit=1] Item set from block ~ ~ ~ Items[{Slot:24b}]
 
-summon minecraft:item_frame ~-2 ~3 ~ {Fixed:1b,Invisible:0b,ItemDropChance:0.0f,Facing:2b,Tags:["MBB_ItemFrame","MBB_Sheet14"]}
-summon minecraft:item_frame ~-1 ~3 ~ {Fixed:1b,Invisible:0b,ItemDropChance:0.0f,Facing:2b,Tags:["MBB_ItemFrame","MBB_Sheet13"]}
-summon minecraft:item_frame ~0 ~3 ~ {Fixed:1b,Invisible:0b,ItemDropChance:0.0f,Facing:2b,Tags:["MBB_ItemFrame","MBB_Sheet12"]}
-summon minecraft:item_frame ~1 ~3 ~ {Fixed:1b,Invisible:0b,ItemDropChance:0.0f,Facing:2b,Tags:["MBB_ItemFrame","MBB_Sheet11"]}
-summon minecraft:item_frame ~2 ~3 ~ {Fixed:1b,Invisible:0b,ItemDropChance:0.0f,Facing:2b,Tags:["MBB_ItemFrame","MBB_Sheet10"]}
+data modify entity @e[type=minecraft:item_frame,tag=MBB_Sheet30,limit=1] Item set from block ~-1 ~ ~ Items[{Slot:2b}]
+data modify entity @e[type=minecraft:item_frame,tag=MBB_Sheet31,limit=1] Item set from block ~-1 ~ ~ Items[{Slot:3b}]
+data modify entity @e[type=minecraft:item_frame,tag=MBB_Sheet32,limit=1] Item set from block ~-1 ~ ~ Items[{Slot:4b}]
+data modify entity @e[type=minecraft:item_frame,tag=MBB_Sheet33,limit=1] Item set from block ~-1 ~ ~ Items[{Slot:5b}]
+data modify entity @e[type=minecraft:item_frame,tag=MBB_Sheet34,limit=1] Item set from block ~-1 ~ ~ Items[{Slot:6b}]
 
-summon minecraft:item_frame ~-2 ~4 ~ {Fixed:1b,Invisible:0b,ItemDropChance:0.0f,Facing:2b,Tags:["MBB_ItemFrame","MBB_Sheet04"]}
-summon minecraft:item_frame ~-1 ~4 ~ {Fixed:1b,Invisible:0b,ItemDropChance:0.0f,Facing:2b,Tags:["MBB_ItemFrame","MBB_Sheet03"]}
-summon minecraft:item_frame ~0 ~4 ~ {Fixed:1b,Invisible:0b,ItemDropChance:0.0f,Facing:2b,Tags:["MBB_ItemFrame","MBB_Sheet02"]}
-summon minecraft:item_frame ~1 ~4 ~ {Fixed:1b,Invisible:0b,ItemDropChance:0.0f,Facing:2b,Tags:["MBB_ItemFrame","MBB_Sheet01"]}
-summon minecraft:item_frame ~2 ~4 ~ {Fixed:1b,Invisible:0b,ItemDropChance:0.0f,Facing:2b,Tags:["MBB_ItemFrame","MBB_Sheet00"]}
+data modify entity @e[type=minecraft:item_frame,tag=MBB_Sheet40,limit=1] Item set from block ~-1 ~ ~ Items[{Slot:11b}]
+data modify entity @e[type=minecraft:item_frame,tag=MBB_Sheet41,limit=1] Item set from block ~-1 ~ ~ Items[{Slot:12b}]
+data modify entity @e[type=minecraft:item_frame,tag=MBB_Sheet42,limit=1] Item set from block ~-1 ~ ~ Items[{Slot:13b}]
+data modify entity @e[type=minecraft:item_frame,tag=MBB_Sheet43,limit=1] Item set from block ~-1 ~ ~ Items[{Slot:14b}]
+data modify entity @e[type=minecraft:item_frame,tag=MBB_Sheet44,limit=1] Item set from block ~-1 ~ ~ Items[{Slot:15b}]
