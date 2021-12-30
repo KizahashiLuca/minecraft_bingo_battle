@@ -10,6 +10,11 @@
 scoreboard players reset @a
 ### Death
 scoreboard players set @a[tag=MBB_Player] MBB_Death 0
+### Teleport source
+execute as @a store result score @s MBB_UUID0 run data get entity @s UUID[0]
+execute as @a store result score @s MBB_UUID1 run data get entity @s UUID[1]
+execute as @a store result score @s MBB_UUID2 run data get entity @s UUID[2]
+execute as @a store result score @s MBB_UUID3 run data get entity @s UUID[3]
 ### Sheet
 scoreboard players set @a[predicate=mbb:system/common/team_leader/main] MBB_Sheet00 0
 scoreboard players set @a[predicate=mbb:system/common/team_leader/main] MBB_Sheet01 0

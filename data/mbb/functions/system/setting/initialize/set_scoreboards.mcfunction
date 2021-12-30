@@ -46,6 +46,12 @@ scoreboard objectives add MBB_Death minecraft.custom:minecraft.deaths
 scoreboard objectives add MBB_LiveTime minecraft.custom:minecraft.time_since_death
 ### Teleport
 scoreboard objectives add MBB_TeleportRoom minecraft.used:minecraft.carrot_on_a_stick
+### Teleport source - 0:overworld, 1:nether, 2:end
+scoreboard objectives add MBB_TeleportSrcD dummy
+scoreboard objectives add MBB_UUID0 dummy
+scoreboard objectives add MBB_UUID1 dummy
+scoreboard objectives add MBB_UUID2 dummy
+scoreboard objectives add MBB_UUID3 dummy
 ### Sheet
 scoreboard objectives add MBB_Sheet00 dummy
 scoreboard objectives add MBB_Sheet01 dummy

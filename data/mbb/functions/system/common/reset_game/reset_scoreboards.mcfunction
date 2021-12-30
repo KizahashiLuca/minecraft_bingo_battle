@@ -46,6 +46,12 @@ scoreboard objectives remove MBB_Death
 scoreboard objectives remove MBB_LiveTime
 ### Teleport
 scoreboard objectives remove MBB_TeleportRoom
+### Teleport source - 0:overworld, 1:nether, 2:end
+scoreboard objectives remove MBB_TeleportSrcD
+scoreboard objectives remove MBB_UUID0
+scoreboard objectives remove MBB_UUID1
+scoreboard objectives remove MBB_UUID2
+scoreboard objectives remove MBB_UUID3
 ### Sheet
 scoreboard objectives remove MBB_Sheet00
 scoreboard objectives remove MBB_Sheet01

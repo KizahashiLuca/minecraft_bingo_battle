@@ -27,10 +27,7 @@ execute as @a[tag=MBB_Player,scores={MBB_Death=1,MBB_LiveTime=10..}] run functio
 execute as @a[predicate=mbb:system/ongame/teleport_room/in] run function mbb:system/ongame/teleport_room/in
 
 ## Compare team chest
-execute at @e[predicate=mbb:system/common/world_spawn] positioned ~ -62 ~ if entity @p[tag=MBB_Player,distance=..20] run function mbb:system/ongame/compare_team_chest/main
-
-## Set room chest
-execute at @e[predicate=mbb:system/common/world_spawn] positioned ~ -62 ~ if entity @p[tag=MBB_Player,distance=..20] run function mbb:system/ongame/compare_room_chest/main
+execute at @e[predicate=mbb:system/common/world_spawn] positioned ~ -62 ~ if entity @p[tag=MBB_Player,distance=..20] run function mbb:system/ongame/room
 
 ## Change phase
 execute if predicate mbb:system/common/gamemode/score_attack if score #mbb MBB_Minute matches 0 if score #mbb MBB_Second matches 0 if score #mbb MBB_Tick matches 0 run function mbb:system/finish/score_attack/main

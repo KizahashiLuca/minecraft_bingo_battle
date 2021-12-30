@@ -8,7 +8,3 @@
 
 ## Detect blank
 execute as @e[predicate=mbb:system/ongame/compare_room_chest/main] at @s run function mbb:system/ongame/compare_room_chest/set_client
-
-## Clear item
-kill @e[predicate=mbb:system/ongame/dropped_item]
-clear @a #mbb:bingo_items{Tags:["MBB_SheetItem"]}

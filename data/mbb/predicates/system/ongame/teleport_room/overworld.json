@@ -1,0 +1,10 @@
+{
+  "condition": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "nbt": "{Tags:[\"MBB_Player\"]}",
+    "location": {
+      "dimension": "minecraft:overworld"
+    }
+  }
+}
