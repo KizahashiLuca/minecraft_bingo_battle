@@ -1,0 +1,96 @@
+[
+  {
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+      "type": "minecraft:area_effect_cloud",
+      "nbt": "{Tags:[\"MBB_TeleportDst\"]}"
+    }
+  },
+  {
+    "condition": "minecraft:entity_scores",
+    "entity": "this",
+    "scores": {
+      "MBB_UUID0": {
+        "min": {
+          "type": "minecraft:score",
+          "target": {
+            "type": "minecraft:fixed",
+            "name": "@p[tag=MBB_DetectTeleport]"
+          },
+          "score": "MBB_UUID0",
+          "scale": 1
+        },
+        "max": {
+          "type": "minecraft:score",
+          "target": {
+            "type": "minecraft:fixed",
+            "name": "@p[tag=MBB_DetectTeleport]"
+          },
+          "score": "MBB_UUID0",
+          "scale": 1
+        }
+      },
+      "MBB_UUID1": {
+        "min": {
+          "type": "minecraft:score",
+          "target": {
+            "type": "minecraft:fixed",
+            "name": "@p[tag=MBB_DetectTeleport]"
+          },
+          "score": "MBB_UUID1",
+          "scale": 1
+        },
+        "max": {
+          "type": "minecraft:score",
+          "target": {
+            "type": "minecraft:fixed",
+            "name": "@p[tag=MBB_DetectTeleport]"
+          },
+          "score": "MBB_UUID1",
+          "scale": 1
+        }
+      },
+      "MBB_UUID2": {
+        "min": {
+          "type": "minecraft:score",
+          "target": {
+            "type": "minecraft:fixed",
+            "name": "@p[tag=MBB_DetectTeleport]"
+          },
+          "score": "MBB_UUID2",
+          "scale": 1
+        },
+        "max": {
+          "type": "minecraft:score",
+          "target": {
+            "type": "minecraft:fixed",
+            "name": "@p[tag=MBB_DetectTeleport]"
+          },
+          "score": "MBB_UUID2",
+          "scale": 1
+        }
+      },
+      "MBB_UUID3": {
+        "min": {
+          "type": "minecraft:score",
+          "target": {
+            "type": "minecraft:fixed",
+            "name": "@p[tag=MBB_DetectTeleport]"
+          },
+          "score": "MBB_UUID3",
+          "scale": 1
+        },
+        "max": {
+          "type": "minecraft:score",
+          "target": {
+            "type": "minecraft:fixed",
+            "name": "@p[tag=MBB_DetectTeleport]"
+          },
+          "score": "MBB_UUID3",
+          "scale": 1
+        }
+      }
+    }
+  }
+]
