@@ -6,11 +6,11 @@
 ## Version   : β-1.0
 #####################################
 
-## Detect sheet
-execute as @e[predicate=mbb:system/ongame/compare_team_chest/detect_sheet/main] at @s run function mbb:system/ongame/compare_team_chest/detect_sheet/main
+## Detect sheet true
+execute as @s[predicate=mbb:system/ongame/compare_team_chest/sheet_true/main] at @s run function mbb:system/ongame/compare_team_chest/sheet_true/main
 
-## Detect bingo
-execute as @e[predicate=mbb:system/ongame/compare_team_chest/detect_bingo/main] at @s run function mbb:system/ongame/compare_team_chest/set_bingo
+## Detect sheet false
+execute as @s[predicate=mbb:system/ongame/compare_team_chest/sheet_false/main] at @s run function mbb:system/ongame/compare_team_chest/sheet_false/main
 
 ## Detect blank
-execute as @e[predicate=mbb:system/ongame/compare_team_chest/detect_blank] at @s run function mbb:system/ongame/compare_team_chest/set_blank
+execute as @s[predicate=mbb:system/ongame/compare_team_chest/detect_blank] at @s run function mbb:system/ongame/compare_team_chest/set_blank

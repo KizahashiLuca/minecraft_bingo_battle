@@ -1,53 +1,62 @@
-{
-  "condition": "minecraft:alternative",
-  "terms": [
-    {
-      "condition": "minecraft:reference",
-      "name": "mbb:system/ongame/compare_team_chest/detect_bingo/row0"
-    },
-    {
-      "condition": "minecraft:reference",
-      "name": "mbb:system/ongame/compare_team_chest/detect_bingo/row1"
-    },
-    {
-      "condition": "minecraft:reference",
-      "name": "mbb:system/ongame/compare_team_chest/detect_bingo/row2"
-    },
-    {
-      "condition": "minecraft:reference",
-      "name": "mbb:system/ongame/compare_team_chest/detect_bingo/row3"
-    },
-    {
-      "condition": "minecraft:reference",
-      "name": "mbb:system/ongame/compare_team_chest/detect_bingo/row4"
-    },
-    {
-      "condition": "minecraft:reference",
-      "name": "mbb:system/ongame/compare_team_chest/detect_bingo/col0"
-    },
-    {
-      "condition": "minecraft:reference",
-      "name": "mbb:system/ongame/compare_team_chest/detect_bingo/col1"
-    },
-    {
-      "condition": "minecraft:reference",
-      "name": "mbb:system/ongame/compare_team_chest/detect_bingo/col2"
-    },
-    {
-      "condition": "minecraft:reference",
-      "name": "mbb:system/ongame/compare_team_chest/detect_bingo/col3"
-    },
-    {
-      "condition": "minecraft:reference",
-      "name": "mbb:system/ongame/compare_team_chest/detect_bingo/col4"
-    },
-    {
-      "condition": "minecraft:reference",
-      "name": "mbb:system/ongame/compare_team_chest/detect_bingo/diagonal"
-    },
-    {
-      "condition": "minecraft:reference",
-      "name": "mbb:system/ongame/compare_team_chest/detect_bingo/anti_diagonal"
+[
+  {
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+      "nbt": "{Tags:[\"MBB_TeamLeader\"]}"
     }
-  ]
-}
+  },
+  {
+    "condition": "minecraft:alternative",
+    "terms": [
+      {
+        "condition": "minecraft:reference",
+        "name": "mbb:system/ongame/compare_team_chest/detect_bingo/row0"
+      },
+      {
+        "condition": "minecraft:reference",
+        "name": "mbb:system/ongame/compare_team_chest/detect_bingo/row1"
+      },
+      {
+        "condition": "minecraft:reference",
+        "name": "mbb:system/ongame/compare_team_chest/detect_bingo/row2"
+      },
+      {
+        "condition": "minecraft:reference",
+        "name": "mbb:system/ongame/compare_team_chest/detect_bingo/row3"
+      },
+      {
+        "condition": "minecraft:reference",
+        "name": "mbb:system/ongame/compare_team_chest/detect_bingo/row4"
+      },
+      {
+        "condition": "minecraft:reference",
+        "name": "mbb:system/ongame/compare_team_chest/detect_bingo/col0"
+      },
+      {
+        "condition": "minecraft:reference",
+        "name": "mbb:system/ongame/compare_team_chest/detect_bingo/col1"
+      },
+      {
+        "condition": "minecraft:reference",
+        "name": "mbb:system/ongame/compare_team_chest/detect_bingo/col2"
+      },
+      {
+        "condition": "minecraft:reference",
+        "name": "mbb:system/ongame/compare_team_chest/detect_bingo/col3"
+      },
+      {
+        "condition": "minecraft:reference",
+        "name": "mbb:system/ongame/compare_team_chest/detect_bingo/col4"
+      },
+      {
+        "condition": "minecraft:reference",
+        "name": "mbb:system/ongame/compare_team_chest/detect_bingo/diagonal"
+      },
+      {
+        "condition": "minecraft:reference",
+        "name": "mbb:system/ongame/compare_team_chest/detect_bingo/anti_diagonal"
+      }
+    ]
+  }
+]

@@ -7,8 +7,18 @@
         "name": "mbb:system/ongame/compare_team_chest/detect_sheet/sheet12"
       },
       {
-        "condition": "minecraft:reference",
-        "name": "mbb:system/ongame/compare_team_chest/detect_sheet_empty/sheet12"
+        "condition": "minecraft:inverted",
+        "term": {
+          "condition": "minecraft:location_check",
+          "offsetX": 0,
+          "offsetY": 0,
+          "offsetZ": 0,
+          "predicate": {
+            "block": {
+              "nbt": "{Items:[{Slot:13b}]}"
+            }
+          }
+        }
       }
     ]
   },

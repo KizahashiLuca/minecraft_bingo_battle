@@ -10,7 +10,8 @@
 tag @s add MBB_DetectTeleport
 
 ## Set cloud
-tag @e[predicate=mbb:system/ongame/teleport_room/dst_cloud/own_cloud] add MBB_DetectTeleportDst
+execute as @e[type=minecraft:area_effect_cloud,tag=MBB_TeleportDst] if score @s MBB_UUID0 = @p[tag=MBB_DetectTeleport] MBB_UUID0 if score @s MBB_UUID1 = @p[tag=MBB_DetectTeleport] MBB_UUID1 if score @s MBB_UUID2 = @p[tag=MBB_DetectTeleport] MBB_UUID2 if score @s MBB_UUID3 = @p[tag=MBB_DetectTeleport] MBB_UUID3 run tag @s add MBB_DetectTeleportDst
+# tag @e[predicate=mbb:system/ongame/teleport_room/dst_cloud/own_cloud] add MBB_DetectTeleportDst
 
 ## Teleport
 execute at @s[scores={MBB_TeleportSrcD=0}] in minecraft:overworld run tp @s @e[predicate=mbb:system/ongame/teleport_room/dst_cloud/own_cloud_detected,limit=1]

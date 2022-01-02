@@ -1,0 +1,105 @@
+{
+  "condition": "minecraft:alternative",
+  "terms": [
+    {
+      "condition": "minecraft:reference",
+      "name": "mbb:system/ongame/compare_team_chest/sheet_true/sheet00"
+    },
+    {
+      "condition": "minecraft:reference",
+      "name": "mbb:system/ongame/compare_team_chest/sheet_true/sheet01"
+    },
+    {
+      "condition": "minecraft:reference",
+      "name": "mbb:system/ongame/compare_team_chest/sheet_true/sheet02"
+    },
+    {
+      "condition": "minecraft:reference",
+      "name": "mbb:system/ongame/compare_team_chest/sheet_true/sheet03"
+    },
+    {
+      "condition": "minecraft:reference",
+      "name": "mbb:system/ongame/compare_team_chest/sheet_true/sheet04"
+    },
+    {
+      "condition": "minecraft:reference",
+      "name": "mbb:system/ongame/compare_team_chest/sheet_true/sheet10"
+    },
+    {
+      "condition": "minecraft:reference",
+      "name": "mbb:system/ongame/compare_team_chest/sheet_true/sheet11"
+    },
+    {
+      "condition": "minecraft:reference",
+      "name": "mbb:system/ongame/compare_team_chest/sheet_true/sheet12"
+    },
+    {
+      "condition": "minecraft:reference",
+      "name": "mbb:system/ongame/compare_team_chest/sheet_true/sheet13"
+    },
+    {
+      "condition": "minecraft:reference",
+      "name": "mbb:system/ongame/compare_team_chest/sheet_true/sheet14"
+    },
+    {
+      "condition": "minecraft:reference",
+      "name": "mbb:system/ongame/compare_team_chest/sheet_true/sheet20"
+    },
+    {
+      "condition": "minecraft:reference",
+      "name": "mbb:system/ongame/compare_team_chest/sheet_true/sheet21"
+    },
+    {
+      "condition": "minecraft:reference",
+      "name": "mbb:system/ongame/compare_team_chest/sheet_true/sheet22"
+    },
+    {
+      "condition": "minecraft:reference",
+      "name": "mbb:system/ongame/compare_team_chest/sheet_true/sheet23"
+    },
+    {
+      "condition": "minecraft:reference",
+      "name": "mbb:system/ongame/compare_team_chest/sheet_true/sheet24"
+    },
+    {
+      "condition": "minecraft:reference",
+      "name": "mbb:system/ongame/compare_team_chest/sheet_true/sheet30"
+    },
+    {
+      "condition": "minecraft:reference",
+      "name": "mbb:system/ongame/compare_team_chest/sheet_true/sheet31"
+    },
+    {
+      "condition": "minecraft:reference",
+      "name": "mbb:system/ongame/compare_team_chest/sheet_true/sheet32"
+    },
+    {
+      "condition": "minecraft:reference",
+      "name": "mbb:system/ongame/compare_team_chest/sheet_true/sheet33"
+    },
+    {
+      "condition": "minecraft:reference",
+      "name": "mbb:system/ongame/compare_team_chest/sheet_true/sheet34"
+    },
+    {
+      "condition": "minecraft:reference",
+      "name": "mbb:system/ongame/compare_team_chest/sheet_true/sheet40"
+    },
+    {
+      "condition": "minecraft:reference",
+      "name": "mbb:system/ongame/compare_team_chest/sheet_true/sheet41"
+    },
+    {
+      "condition": "minecraft:reference",
+      "name": "mbb:system/ongame/compare_team_chest/sheet_true/sheet42"
+    },
+    {
+      "condition": "minecraft:reference",
+      "name": "mbb:system/ongame/compare_team_chest/sheet_true/sheet43"
+    },
+    {
+      "condition": "minecraft:reference",
+      "name": "mbb:system/ongame/compare_team_chest/sheet_true/sheet44"
+    }
+  ]
+}

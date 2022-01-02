@@ -18,7 +18,7 @@ tag @a[predicate=mbb:system/ongame/not_on_ground] add MBB_Descending
 execute as @a[predicate=mbb:system/ongame/on_ground] run function mbb:system/ongame/on_ground
 
 ## Detect death
-execute as @a[tag=MBB_Player,scores={MBB_Death=1,MBB_LiveTime=10..}] run function mbb:system/ongame/detect_death/main
+execute as @a[predicate=mbb:system/ongame/detect_death/main] run function mbb:system/ongame/detect_death/main
 
 ## Set position
 # execute as @a run function mbb:system/common/position/main
@@ -30,5 +30,5 @@ execute as @a[predicate=mbb:system/ongame/teleport_room/in] run function mbb:sys
 execute at @e[predicate=mbb:system/common/world_spawn] positioned ~ -62 ~ if entity @p[tag=MBB_Player,distance=..20] run function mbb:system/ongame/room
 
 ## Change phase
-execute if predicate mbb:system/common/gamemode/score_attack if score #mbb MBB_Minute matches 0 if score #mbb MBB_Second matches 0 if score #mbb MBB_Tick matches 0 run function mbb:system/finish/score_attack/main
+execute if predicate mbb:system/common/gamemode/score_attack if predicate mbb:system/ongame/detect_winner/score_attack run function mbb:system/finish/score_attack/main
 execute if predicate mbb:system/common/gamemode/time_attack if entity @p[predicate=mbb:system/ongame/detect_winner/time_attack] run function mbb:system/finish/time_attack/main

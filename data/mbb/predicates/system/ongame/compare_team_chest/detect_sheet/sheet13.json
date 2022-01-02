@@ -1,9 +1,5 @@
 [
   {
-    "condition": "minecraft:reference",
-    "name": "mbb:system/common/team_chest/main"
-  },
-  {
     "condition": "minecraft:location_check",
     "offsetX": 0,
     "offsetY": 0,

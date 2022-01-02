@@ -13,7 +13,7 @@ scoreboard players reset @s MBB_TeleportRoom
 execute as @s[gamemode=survival] at @s run function mbb:system/ongame/teleport_room/store_src
 
 ## Teleport
-execute as @s[gamemode=survival] at @e[predicate=mbb:system/common/world_spawn] positioned ~ -62 ~ run tp @s ~ ~ ~
+execute as @s[gamemode=survival] at @e[predicate=mbb:system/common/world_spawn] run tp @s ~ -62 ~
 
 ## Set effects
 effect give @s minecraft:resistance 1000000 10 true

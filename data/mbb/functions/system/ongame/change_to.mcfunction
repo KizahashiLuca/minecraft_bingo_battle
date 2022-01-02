@@ -19,7 +19,7 @@ function mbb:system/ongame/set_scoreboards
 
 ## Teleport randomly
 execute at @e[predicate=mbb:system/common/world_spawn,limit=1] run function mbb:system/ongame/set_destination
-execute as @a[tag=MBB_Player] at @s run tp @s ~ 160 ~
+execute as @a[tag=MBB_Player] at @s run tp @s ~ 200 ~
 
 ## Send title messages
 title @a title ["",{"text":"Game start","color":"white"}]

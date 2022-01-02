@@ -6,5 +6,6 @@
 ## Version   : β-1.0
 #####################################
 
-## Detect blank
-execute as @e[predicate=mbb:system/ongame/compare_room_chest/main] at @s run function mbb:system/ongame/compare_room_chest/set_client
+## Set room chest b
+data modify block ~ ~ ~ Items set from block ~-3 ~ ~ Items
+data modify block ~-1 ~ ~ Items set from block ~-4 ~ ~ Items
