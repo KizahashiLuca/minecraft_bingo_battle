@@ -7,27 +7,36 @@
 #####################################
 
 ## Oxidization
-### Copper block
-execute as @s[predicate=mbb:oxidization/items/copper_block] at @s run function mbb:oxidization/items/copper_block
-### Exposed copper block
-execute as @s[predicate=mbb:oxidization/items/exposed_copper] at @s run function mbb:oxidization/items/exposed_copper
-### Weathered copper block
-execute as @s[predicate=mbb:oxidization/items/weathered_copper] at @s run function mbb:oxidization/items/weathered_copper
-### Cut copper block
-execute as @s[predicate=mbb:oxidization/items/cut_copper] at @s run function mbb:oxidization/items/cut_copper
-### Exposed cut copper block
-execute as @s[predicate=mbb:oxidization/items/exposed_cut_copper] at @s run function mbb:oxidization/items/exposed_cut_copper
-### Weathered cut copper block
-execute as @s[predicate=mbb:oxidization/items/weathered_cut_copper] at @s run function mbb:oxidization/items/weathered_cut_copper
-### Cut copper stairs
-execute as @s[predicate=mbb:oxidization/items/cut_copper_stairs] at @s run function mbb:oxidization/items/cut_copper_stairs
-### Exposed cut copper stairs
-execute as @s[predicate=mbb:oxidization/items/exposed_cut_copper_stairs] at @s run function mbb:oxidization/items/exposed_cut_copper_stairs
-### Weathered cut copper stairs
-execute as @s[predicate=mbb:oxidization/items/weathered_cut_copper_stairs] at @s run function mbb:oxidization/items/weathered_cut_copper_stairs
-### Cut copper slab
-execute as @s[predicate=mbb:oxidization/items/cut_copper_slab] at @s run function mbb:oxidization/items/cut_copper_slab
-### Exposed cut copper slab
-execute as @s[predicate=mbb:oxidization/items/exposed_cut_copper_slab] at @s run function mbb:oxidization/items/exposed_cut_copper_slab
 ### Weathered cut copper slab
-execute as @s[predicate=mbb:oxidization/items/weathered_cut_copper_slab] at @s run function mbb:oxidization/items/weathered_cut_copper_slab
+data modify entity @s[predicate=mbb:oxidization/item_in_cauldron/weathered_cut_copper_slab] Item.id set value "minecraft:oxidized_cut_copper_slab"
+### Exposed cut copper slab
+data modify entity @s[predicate=mbb:oxidization/item_in_cauldron/exposed_cut_copper_slab] Item.id set value "minecraft:weathered_cut_copper_slab"
+### Cut copper slab
+data modify entity @s[predicate=mbb:oxidization/item_in_cauldron/cut_copper_slab] Item.id set value "minecraft:exposed_cut_copper_slab"
+### Weathered cut copper stairs
+data modify entity @s[predicate=mbb:oxidization/item_in_cauldron/weathered_cut_copper_stairs] Item.id set value "minecraft:oxidized_cut_copper_stairs"
+### Exposed cut copper stairs
+data modify entity @s[predicate=mbb:oxidization/item_in_cauldron/exposed_cut_copper_stairs] Item.id set value "minecraft:weathered_cut_copper_stairs"
+### Cut copper stairs
+data modify entity @s[predicate=mbb:oxidization/item_in_cauldron/cut_copper_stairs] Item.id set value "minecraft:exposed_cut_copper_stairs"
+### Weathered cut copper block
+data modify entity @s[predicate=mbb:oxidization/item_in_cauldron/weathered_cut_copper] Item.id set value "minecraft:oxidized_cut_copper"
+### Exposed cut copper block
+data modify entity @s[predicate=mbb:oxidization/item_in_cauldron/exposed_cut_copper] Item.id set value "minecraft:weathered_cut_copper"
+### Cut copper block
+data modify entity @s[predicate=mbb:oxidization/item_in_cauldron/cut_copper] Item.id set value "minecraft:exposed_cut_copper"
+### Weathered copper block
+data modify entity @s[predicate=mbb:oxidization/item_in_cauldron/weathered_copper] Item.id set value "minecraft:oxidized_copper"
+### Exposed copper block
+data modify entity @s[predicate=mbb:oxidization/item_in_cauldron/exposed_copper] Item.id set value "minecraft:weathered_copper"
+### Copper block
+data modify entity @s[predicate=mbb:oxidization/item_in_cauldron/copper_block] Item.id set value "minecraft:exposed_copper"
+
+## Play sound
+playsound minecraft:item.bottle.empty block @a ~ ~ ~ 1.0 1.5
+
+## Particle
+particle minecraft:bubble_column_up ~ ~ ~ 0.1 0.1 0.1 1 15 normal
+
+## Drain water
+setblock ~ ~ ~ minecraft:cauldron replace
